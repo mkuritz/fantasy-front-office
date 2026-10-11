@@ -1,0 +1,756 @@
+{
+ "source": "KAL league Google Sheet 'Fantasy salaries', tab 2026 (read-only)",
+ "sheet": "https://docs.google.com/spreadsheets/d/1U6mjYaMjQQ0OLi_hRpQQIvnGhB0lAJwoFnGeBsAV-GM",
+ "season": 2026,
+ "cap": 200,
+ "keepers": 18,
+ "myOwner": "Mikey",
+ "owners": {
+  "Steven": [
+   {
+    "name": "DJ Moore",
+    "pos": "WR",
+    "nfl": "BUF",
+    "salary": 26,
+    "ifKept2728": null
+   },
+   {
+    "name": "Jaxon Smith-Njigba",
+    "pos": "WR",
+    "nfl": "SEA",
+    "salary": 26,
+    "ifKept2728": null
+   },
+   {
+    "name": "Brock Bowers",
+    "pos": "TE",
+    "nfl": "LV",
+    "salary": 23,
+    "ifKept2728": null
+   },
+   {
+    "name": "Amon-Ra St. Brown",
+    "pos": "WR",
+    "nfl": "DET",
+    "salary": 15,
+    "ifKept2728": null
+   },
+   {
+    "name": "Jordan Addison",
+    "pos": "WR",
+    "nfl": "MIN",
+    "salary": 13,
+    "ifKept2728": null
+   },
+   {
+    "name": "Kyren Williams",
+    "pos": "RB",
+    "nfl": "LAR",
+    "salary": 13,
+    "ifKept2728": null
+   },
+   {
+    "name": "Travis Etienne",
+    "pos": "RB",
+    "nfl": "NO",
+    "salary": 9,
+    "ifKept2728": null
+   },
+   {
+    "name": "Bo Nix",
+    "pos": "QB",
+    "nfl": "DEN",
+    "salary": 8,
+    "ifKept2728": null
+   }
+  ],
+  "Chung": [
+   {
+    "name": "Ja'Marr Chase",
+    "pos": "WR",
+    "nfl": "CIN",
+    "salary": 61,
+    "ifKept2728": null
+   },
+   {
+    "name": "Garrett Wilson",
+    "pos": "WR",
+    "nfl": "NYJ",
+    "salary": 29,
+    "ifKept2728": null
+   },
+   {
+    "name": "Jayden Waddle",
+    "pos": "WR",
+    "nfl": "DEN",
+    "salary": 18,
+    "ifKept2728": null
+   },
+   {
+    "name": "Jaylen Warren",
+    "pos": "RB",
+    "nfl": "PIT",
+    "salary": 12,
+    "ifKept2728": null
+   },
+   {
+    "name": "Colston Loveland",
+    "pos": "TE",
+    "nfl": "CHI",
+    "salary": 11,
+    "ifKept2728": null
+   },
+   {
+    "name": "Tyler Allgeier",
+    "pos": "RB",
+    "nfl": "ATL",
+    "salary": 4,
+    "ifKept2728": null
+   },
+   {
+    "name": "Daniel Jones",
+    "pos": "QB",
+    "nfl": "IND",
+    "salary": 4,
+    "ifKept2728": null
+   }
+  ],
+  "JJ": [
+   {
+    "name": "James Cook",
+    "pos": "RB",
+    "nfl": "BUF",
+    "salary": 35,
+    "ifKept2728": null
+   },
+   {
+    "name": "Zay Flowers",
+    "pos": "WR",
+    "nfl": "BAL",
+    "salary": 22,
+    "ifKept2728": null
+   },
+   {
+    "name": "Lamar Jackson",
+    "pos": "QB",
+    "nfl": "BAL",
+    "salary": 18,
+    "ifKept2728": null
+   },
+   {
+    "name": "AJ Brown",
+    "pos": "WR",
+    "nfl": "NE",
+    "salary": 17,
+    "ifKept2728": null
+   },
+   {
+    "name": "De'Von Achane",
+    "pos": "RB",
+    "nfl": "MIA",
+    "salary": 14,
+    "ifKept2728": null
+   },
+   {
+    "name": "Cam Skattebo",
+    "pos": "RB",
+    "nfl": "NYG",
+    "salary": 11,
+    "ifKept2728": null
+   },
+   {
+    "name": "Quinshon Judkins",
+    "pos": "RB",
+    "nfl": "CLE",
+    "salary": 10,
+    "ifKept2728": null
+   },
+   {
+    "name": "Javonte Williams",
+    "pos": "RB",
+    "nfl": "DAL",
+    "salary": 10,
+    "ifKept2728": null
+   },
+   {
+    "name": "Matthew Stafford",
+    "pos": "QB",
+    "nfl": "LAR",
+    "salary": 4,
+    "ifKept2728": null
+   }
+  ],
+  "Roper": [
+   {
+    "name": "Drake London",
+    "pos": "WR",
+    "nfl": "ATL",
+    "salary": 43,
+    "ifKept2728": null
+   },
+   {
+    "name": "Jonathan Taylor",
+    "pos": "RB",
+    "nfl": "IND",
+    "salary": 34,
+    "ifKept2728": null
+   },
+   {
+    "name": "Jayden Daniels",
+    "pos": "QB",
+    "nfl": "WSH",
+    "salary": 22,
+    "ifKept2728": null
+   },
+   {
+    "name": "Courtland Sutton",
+    "pos": "WR",
+    "nfl": "DEN",
+    "salary": 18,
+    "ifKept2728": null
+   },
+   {
+    "name": "Sam LaPorta",
+    "pos": "TE",
+    "nfl": "DET",
+    "salary": 15,
+    "ifKept2728": null
+   },
+   {
+    "name": "Michael Pittman Jr.",
+    "pos": "WR",
+    "nfl": "PIT",
+    "salary": 10,
+    "ifKept2728": null
+   },
+   {
+    "name": "Blake Corum",
+    "pos": "RB",
+    "nfl": "LAR",
+    "salary": 4,
+    "ifKept2728": null
+   },
+   {
+    "name": "Keaton Mitchell",
+    "pos": "RB",
+    "nfl": "LAC",
+    "salary": 4,
+    "ifKept2728": null
+   },
+   {
+    "name": "Isaac TeSlaa",
+    "pos": "WR",
+    "nfl": "DET",
+    "salary": 4,
+    "ifKept2728": null
+   },
+   {
+    "name": "Bryce Young",
+    "pos": "QB",
+    "nfl": "CAR",
+    "salary": 4,
+    "ifKept2728": null
+   }
+  ],
+  "BG": [
+   {
+    "name": "Emeka Egbuka",
+    "pos": "WR",
+    "nfl": "TB",
+    "salary": 26,
+    "ifKept2728": null
+   },
+   {
+    "name": "Tyler Warren",
+    "pos": "TE",
+    "nfl": "IND",
+    "salary": 20,
+    "ifKept2728": null
+   },
+   {
+    "name": "Rome Odunze",
+    "pos": "WR",
+    "nfl": "CHI",
+    "salary": 18,
+    "ifKept2728": null
+   },
+   {
+    "name": "Devonta Smith",
+    "pos": "WR",
+    "nfl": "PHI",
+    "salary": 17,
+    "ifKept2728": null
+   },
+   {
+    "name": "Jalen Hurts",
+    "pos": "QB",
+    "nfl": "PHI",
+    "salary": 15,
+    "ifKept2728": null
+   },
+   {
+    "name": "Drake Maye",
+    "pos": "QB",
+    "nfl": "NE",
+    "salary": 7,
+    "ifKept2728": null
+   },
+   {
+    "name": "Kenneth Gainwell",
+    "pos": "RB",
+    "nfl": "TB",
+    "salary": 4,
+    "ifKept2728": null
+   },
+   {
+    "name": "Kyle Monangi",
+    "pos": "RB",
+    "nfl": "CHI",
+    "salary": 4,
+    "ifKept2728": null
+   }
+  ],
+  "Mikey": [
+   {
+    "name": "Malik Nabers",
+    "pos": "WR",
+    "nfl": "NYG",
+    "salary": 41,
+    "ifKept2728": null
+   },
+   {
+    "name": "Kenneth Walker",
+    "pos": "RB",
+    "nfl": "KC",
+    "salary": 38,
+    "ifKept2728": null
+   },
+   {
+    "name": "George Pickens",
+    "pos": "WR",
+    "nfl": "PIT",
+    "salary": 34,
+    "ifKept2728": null
+   },
+   {
+    "name": "George Kittle",
+    "pos": "TE",
+    "nfl": "SF",
+    "salary": 19,
+    "ifKept2728": null
+   },
+   {
+    "name": "Tee Higgins",
+    "pos": "WR",
+    "nfl": "CIN",
+    "salary": 15,
+    "ifKept2728": null
+   },
+   {
+    "name": "Joe Burrow",
+    "pos": "QB",
+    "nfl": "CIN",
+    "salary": 14,
+    "ifKept2728": null
+   },
+   {
+    "name": "CJ Stroud",
+    "pos": "QB",
+    "nfl": "HOU",
+    "salary": 7,
+    "ifKept2728": null
+   }
+  ],
+  "Morgan": [
+   {
+    "name": "CeeDee Lamb",
+    "pos": "WR",
+    "nfl": "DAL",
+    "salary": 57,
+    "ifKept2728": null
+   },
+   {
+    "name": "Jameson Williams",
+    "pos": "WR",
+    "nfl": "DET",
+    "salary": 23,
+    "ifKept2728": null
+   },
+   {
+    "name": "DK Metcalf",
+    "pos": "WR",
+    "nfl": "PIT",
+    "salary": 18,
+    "ifKept2728": null
+   },
+   {
+    "name": "Dak Prescott",
+    "pos": "QB",
+    "nfl": "DAL",
+    "salary": 11,
+    "ifKept2728": null
+   },
+   {
+    "name": "Brandon Aubrey",
+    "pos": "K",
+    "nfl": "DAL",
+    "salary": 10,
+    "ifKept2728": null
+   },
+   {
+    "name": "Chase Brown",
+    "pos": "RB",
+    "nfl": "CIN",
+    "salary": 10,
+    "ifKept2728": null
+   },
+   {
+    "name": "Kyle Pitts",
+    "pos": "TE",
+    "nfl": "ATL",
+    "salary": 10,
+    "ifKept2728": null
+   },
+   {
+    "name": "Braelon Allen",
+    "pos": "RB",
+    "nfl": "NYJ",
+    "salary": 8,
+    "ifKept2728": null
+   },
+   {
+    "name": "Malik Davis",
+    "pos": "RB",
+    "nfl": "DAL",
+    "salary": 4,
+    "ifKept2728": null
+   }
+  ],
+  "Glenn": [
+   {
+    "name": "Jahmyr Gibbs",
+    "pos": "RB",
+    "nfl": "DET",
+    "salary": 57,
+    "ifKept2728": null
+   },
+   {
+    "name": "Derrick Henry",
+    "pos": "RB",
+    "nfl": "BAL",
+    "salary": 33,
+    "ifKept2728": null
+   },
+   {
+    "name": "Isaiah Likely",
+    "pos": "TE",
+    "nfl": "NYG",
+    "salary": 7,
+    "ifKept2728": null
+   },
+   {
+    "name": "Parker Washington",
+    "pos": "WR",
+    "nfl": "JAX",
+    "salary": 4,
+    "ifKept2728": null
+   },
+   {
+    "name": "Rachaad White",
+    "pos": "RB",
+    "nfl": "WSH",
+    "salary": 4,
+    "ifKept2728": null
+   },
+   {
+    "name": "Michael Wilson",
+    "pos": "WR",
+    "nfl": "ARI",
+    "salary": 4,
+    "ifKept2728": null
+   }
+  ],
+  "Seth": [
+   {
+    "name": "Saquon Barkley",
+    "pos": "RB",
+    "nfl": "PHI",
+    "salary": 73,
+    "ifKept2728": null
+   },
+   {
+    "name": "Chris Olave",
+    "pos": "WR",
+    "nfl": "NO",
+    "salary": 16,
+    "ifKept2728": null
+   },
+   {
+    "name": "Dallas Goedert",
+    "pos": "TE",
+    "nfl": "PHI",
+    "salary": 5,
+    "ifKept2728": null
+   },
+   {
+    "name": "Quentin Johnson",
+    "pos": "WR",
+    "nfl": "LAC",
+    "salary": 5,
+    "ifKept2728": null
+   },
+   {
+    "name": "Jared Goff",
+    "pos": "QB",
+    "nfl": "DET",
+    "salary": 4,
+    "ifKept2728": null
+   },
+   {
+    "name": "Alec Pierce",
+    "pos": "WR",
+    "nfl": "IND",
+    "salary": 4,
+    "ifKept2728": null
+   },
+   {
+    "name": "Wan'Dale Robinson",
+    "pos": "WR",
+    "nfl": "TEN",
+    "salary": 4,
+    "ifKept2728": null
+   },
+   {
+    "name": "Chris Rodriguez",
+    "pos": "RB",
+    "nfl": "JAX",
+    "salary": 4,
+    "ifKept2728": null
+   }
+  ],
+  "Darin": [
+   {
+    "name": "Bijan Robinson",
+    "pos": "RB",
+    "nfl": "ATL",
+    "salary": 55,
+    "ifKept2728": null
+   },
+   {
+    "name": "Omario Hampton",
+    "pos": "RB",
+    "nfl": "LAC",
+    "salary": 33,
+    "ifKept2728": null
+   },
+   {
+    "name": "Tetairoa McMillan",
+    "pos": "WR",
+    "nfl": "CAR",
+    "salary": 23,
+    "ifKept2728": null
+   },
+   {
+    "name": "Nico Collins",
+    "pos": "WR",
+    "nfl": "HOU",
+    "salary": 13,
+    "ifKept2728": null
+   },
+   {
+    "name": "Rashee Rice",
+    "pos": "WR",
+    "nfl": "KC",
+    "salary": 12,
+    "ifKept2728": null
+   },
+   {
+    "name": "Bhayshal Tuten",
+    "pos": "RB",
+    "nfl": "JAX",
+    "salary": 12,
+    "ifKept2728": null
+   },
+   {
+    "name": "Luther Burden",
+    "pos": "WR",
+    "nfl": "CHI",
+    "salary": 10,
+    "ifKept2728": null
+   },
+   {
+    "name": "Trey McBride",
+    "pos": "TE",
+    "nfl": "ARI",
+    "salary": 10,
+    "ifKept2728": null
+   },
+   {
+    "name": "Puka Nacua",
+    "pos": "WR",
+    "nfl": "LAR",
+    "salary": 10,
+    "ifKept2728": null
+   },
+   {
+    "name": "Jaxson Dart",
+    "pos": "QB",
+    "nfl": "NYG",
+    "salary": 4,
+    "ifKept2728": null
+   },
+   {
+    "name": "Harold Fannin",
+    "pos": "TE",
+    "nfl": "CLE",
+    "salary": 4,
+    "ifKept2728": null
+   }
+  ],
+  "Dave": [
+   {
+    "name": "D'Andre Swift",
+    "pos": "RB",
+    "nfl": "CHI",
+    "salary": 22,
+    "ifKept2728": null
+   },
+   {
+    "name": "Terry McLaurin",
+    "pos": "WR",
+    "nfl": "WSH",
+    "salary": 17,
+    "ifKept2728": null
+   },
+   {
+    "name": "JK Dobbins",
+    "pos": "RB",
+    "nfl": "DEN",
+    "salary": 13,
+    "ifKept2728": null
+   },
+   {
+    "name": "Jake Ferguson",
+    "pos": "TE",
+    "nfl": "DAL",
+    "salary": 13,
+    "ifKept2728": null
+   },
+   {
+    "name": "Tucker Kraft",
+    "pos": "TE",
+    "nfl": "GB",
+    "salary": 7,
+    "ifKept2728": null
+   },
+   {
+    "name": "Baker Mayfield",
+    "pos": "QB",
+    "nfl": "TB",
+    "salary": 7,
+    "ifKept2728": null
+   },
+   {
+    "name": "Caleb Williams",
+    "pos": "QB",
+    "nfl": "CHI",
+    "salary": 7,
+    "ifKept2728": null
+   },
+   {
+    "name": "Christian Watson",
+    "pos": "WR",
+    "nfl": "GB",
+    "salary": 4,
+    "ifKept2728": null
+   }
+  ],
+  "Fiss": [
+   {
+    "name": "Davante Adams",
+    "pos": "WR",
+    "nfl": "LV",
+    "salary": 48,
+    "ifKept2728": null
+   },
+   {
+    "name": "Justin Jefferson",
+    "pos": "WR",
+    "nfl": "MIN",
+    "salary": 46,
+    "ifKept2728": null
+   },
+   {
+    "name": "Chubba Hubbard",
+    "pos": "RB",
+    "nfl": "CAR",
+    "salary": 23,
+    "ifKept2728": null
+   },
+   {
+    "name": "Josh Allen",
+    "pos": "QB",
+    "nfl": "BUF",
+    "salary": 17,
+    "ifKept2728": null
+   },
+   {
+    "name": "Jalen Coker",
+    "pos": "WR",
+    "nfl": "CAR",
+    "salary": 8,
+    "ifKept2728": null
+   },
+   {
+    "name": "Bucky Irving",
+    "pos": "RB",
+    "nfl": "TB",
+    "salary": 7,
+    "ifKept2728": null
+   },
+   {
+    "name": "Dalton Kincaid",
+    "pos": "TE",
+    "nfl": "BUF",
+    "salary": 7,
+    "ifKept2728": null
+   },
+   {
+    "name": "Jordan Mason",
+    "pos": "RB",
+    "nfl": "MIN",
+    "salary": 7,
+    "ifKept2728": null
+   },
+   {
+    "name": "Elic Ayomanor",
+    "pos": "WR",
+    "nfl": "TEN",
+    "salary": 6,
+    "ifKept2728": null
+   },
+   {
+    "name": "Rico Dowdle",
+    "pos": "RB",
+    "nfl": "PIT",
+    "salary": 4,
+    "ifKept2728": null
+   }
+  ],
+  "Free Agents with Determined Salaries": []
+ },
+ "sheetTotals": {
+  "Steven": 133,
+  "Chung": 139,
+  "JJ": 141,
+  "Roper": 158,
+  "BG": 111,
+  "Mikey": 168,
+  "Morgan": 151,
+  "Glenn": 109,
+  "Seth": 115,
+  "Darin": 186,
+  "Dave": 90,
+  "Fiss": 173
+ }
+}

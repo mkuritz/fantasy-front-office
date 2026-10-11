@@ -1,0 +1,66 @@
+{
+ "espnConnected": false,
+ "lastRun": "2026-10-11T19:53:07-04:00",
+ "sources": {
+  "espn_dcigs.json": {
+   "error": "ESPN_S2 / ESPN_SWID secrets not set (connect pending)",
+   "label": "ESPN D CIGS (private; needs secrets)",
+   "ok": false,
+   "pending": true
+  },
+  "espn_kal.json": {
+   "error": "ESPN_S2 / ESPN_SWID secrets not set (connect pending)",
+   "label": "ESPN KAL (private; needs secrets)",
+   "ok": false,
+   "pending": true
+  },
+  "espn_lomo.json": {
+   "error": "ESPN_S2 / ESPN_SWID secrets not set (connect pending)",
+   "label": "ESPN LOMOFAGS (private; needs secrets)",
+   "ok": false,
+   "pending": true
+  },
+  "news.json": {
+   "error": null,
+   "label": "ESPN NFL news (public)",
+   "lastChange": "2026-10-11T19:53:04-04:00",
+   "lastSuccess": "2026-10-11T19:53:04-04:00",
+   "ok": true,
+   "pending": false
+  },
+  "performance.json": {
+   "error": null,
+   "label": "nflverse weekly stats \u2192 league-scored Performance Score",
+   "lastChange": "2026-10-11T19:48:23-04:00",
+   "lastSuccess": "2026-10-11T19:53:07-04:00",
+   "ok": true,
+   "pending": false
+  },
+  "players.json": {
+   "error": null,
+   "label": "Sleeper player DB (rostered + relevant FAs)",
+   "lastChange": "2026-10-11T19:48:23-04:00",
+   "lastSuccess": "2026-10-11T19:53:07-04:00",
+   "ok": true,
+   "pending": false
+  },
+  "sleeper_dynasty.json": {
+   "error": null,
+   "label": "Sleeper league (public API)",
+   "lastChange": "2026-10-11T19:48:19-04:00",
+   "lastSuccess": "2026-10-11T19:53:03-04:00",
+   "ok": true,
+   "pending": false
+  },
+  "values_market.json": {
+   "error": null,
+   "label": "FantasyCalc market values (public)",
+   "lastChange": "2026-10-11T19:48:22-04:00",
+   "lastSuccess": "2026-10-11T19:53:06-04:00",
+   "ok": true,
+   "pending": false
+  }
+ },
+ "timezone": "America/New_York",
+ "updated": "2026-10-11T19:53:04-04:00"
+}

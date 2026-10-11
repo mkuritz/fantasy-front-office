@@ -1,0 +1,34 @@
+name: Update fantasy data
+on:
+  schedule:
+    - cron: "7,37 * * * 0,1"      # every 30 min Sun/Mon (UTC) game days
+    - cron: "17 */2 * * 2-6"      # every 2h other days
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Fetch data
+        env:
+          # Private ESPN leagues: set with `gh secret set ESPN_S2` / `gh secret set ESPN_SWID`. Never committed.
+          ESPN_S2: ${{ secrets.ESPN_S2 }}
+          ESPN_SWID: ${{ secrets.ESPN_SWID }}
+        run: python scripts/fetch_data.py
+      - name: Commit if data changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898475+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet -- data/ ':!data/meta.json'; then echo "No data changes"; exit 0; fi
+          git commit -m "Update fantasy data $(TZ=America/New_York date '+%Y-%m-%d %H:%M %Z')"
+          git pull --rebase -q && git push
