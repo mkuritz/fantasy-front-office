@@ -245,7 +245,7 @@ const V = {
   news(lg, m) {
     const mine = m.me ? new Set(m.me.players.map((p) => U.norm(pname(p)))) : new Set(); const inj = (m.me ? m.me.players : []).filter((p) => (D.players[p] || {}).i).map((p) => ({ id: p, ...D.players[p] }));
     const leagueInj = Object.entries(D.players).filter(([, p]) => p.i && (p.r || 9999) < 200).map(([id, p]) => ({ id, ...p })).sort((a, b) => a.r - b.r).slice(0, 30);
-    return `<div class="grid sidebar-right"><div class="card"><div class="card-head"><h2>ESPN NFL news</h2><span class="sub">refreshes every 5 min in your browser</span></div>${D.news.map((n) => newsRow(n, mine)).join('')}</div>
+    return `<div class="grid sidebar-right"><div class="card"><div class="card-head"><h2>ESPN NFL news</h2><span class="sub">pipeline pulls ESPN every 30 min on game days; page re-checks every 5 min</span></div>${D.news.map((n) => newsRow(n, mine)).join('')}</div>
       <div class="stack"><div class="card"><div class="card-head"><h2>My injury report</h2></div>${inj.map((p) => `<div class="wire-row">${injTag(p.id)}<span><b>${U.esc(p.n)}</b> <span class="muted small">${p.p} · ${p.t || 'FA'}</span><div class="small muted">${U.esc(p.in || '')}</div></span></div>`).join('') || '<div class="small muted">No injuries on your roster (or roster pending).</div>'}</div>
       <div class="card"><div class="card-head"><h2>Notable injuries league-wide</h2><span class="sub">Sleeper injury status</span></div>${leagueInj.map((p) => `<div class="wire-row">${injTag(p.id)}<span>${U.esc(p.n)} <span class="muted small">${p.p} · ${p.t} ${p.in ? '· ' + U.esc(p.in) : ''}</span></span></div>`).join('')}</div></div></div>`;
   },
@@ -381,7 +381,7 @@ document.addEventListener('change', (e) => {
 });
 document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); if ((e.metaKey || e.ctrlKey) && e.key === 's') { e.preventDefault(); save(); } });
 window.addEventListener('hashchange', () => { const h = location.hash.slice(1); if (h && h !== state.module && V[h]) actions.module(h); });
-async function refreshNews() { try { const r = await fetch('https://site.api.espn.com/apis/site/v2/sports/football/nfl/news?limit=50'); const j = await r.json(); if (!j.articles || !j.articles.length) return; D.news = j.articles.map((a) => ({ h: a.headline, d: a.description, t: a.published, u: ((a.links || {}).web || {}).href, ath: (a.categories || []).filter((c) => c.type === 'athlete').map((c) => c.description) })); if (['news', 'hub'].includes(state.module) && !document.getElementById('modal').classList.contains('open')) render(); } catch (e) { /* keep pipeline copy */ } }
+async function refreshNews() { try { const j = await getJson('news.json'); if (!j.data || !j.data.length) return; D.news = j.data; if (['news', 'hub'].includes(state.module) && !document.getElementById('modal').classList.contains('open')) render(); } catch (e) { /* keep current */ } }
 (async () => {
   mount(); try { await loadData(); } catch (e) { console.warn(e); }
   const q = new URLSearchParams(location.search).get('league'); if (q && LEAGUES[q]) state.league = q;
