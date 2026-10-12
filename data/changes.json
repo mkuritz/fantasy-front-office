@@ -1,5 +1,41 @@
 [
  {
+  "detected": "2026-10-12T16:14:25-04:00",
+  "t": "2026-10-12T20:10:29Z",
+  "kind": "Injury",
+  "src": "ESPN news",
+  "text": "Shanahan says 49ers WR Deebo Samuel to miss time with hamstring injury",
+  "players": [
+   "Deebo Samuel Sr"
+  ],
+  "url": "https://www.espn.com/nfl/story/_/id/50168446/shanahan-49ers-wr-samuel-miss-hamstring-injury"
+ },
+ {
+  "detected": "2026-10-12T16:14:25-04:00",
+  "t": "2026-10-12T19:00:05Z",
+  "kind": "Injury",
+  "src": "ESPN news",
+  "text": "Judkins, Schwesinger (ankles) add to injury woes for Browns",
+  "players": [
+   "Quinshon Judkins",
+   "Carson Schwesinger",
+   "KC Concepcion",
+   "Mason Graham"
+  ],
+  "url": "https://www.espn.com/nfl/story/_/id/50167865/judkins-schwesinger-ankles-add-injury-woes-browns"
+ },
+ {
+  "detected": "2026-10-12T16:14:25-04:00",
+  "t": "2026-10-12T18:09:11Z",
+  "kind": "IR",
+  "src": "ESPN news",
+  "text": "Source: Packers lose DT Javon Hargrave for season to torn Achilles",
+  "players": [
+   "Javon Hargrave"
+  ],
+  "url": "https://www.espn.com/nfl/story/_/id/50167021/source-packers-lose-hargrave-season-ending-torn-achilles"
+ },
+ {
   "detected": "2026-10-12T10:07:19-04:00",
   "t": "2026-10-12T12:57:57Z",
   "kind": "Trade",
