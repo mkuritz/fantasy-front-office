@@ -1,0 +1,1553 @@
+{
+ "updated": "2026-10-12T10:04:49-04:00",
+ "trigger": "manual",
+ "edgeScore": true,
+ "betlab": {
+  "lines": 1,
+  "cascades": 2
+ },
+ "leagues": {
+  "kal": {
+   "name": "KAL",
+   "short": "Keeper auction",
+   "scoring": "Full PPR, $200 auction, keepers with salaries",
+   "team": "Higgins her Kittle from behind",
+   "record": "2-2",
+   "week": 6,
+   "sections": {
+    "startsit": [
+     {
+      "section": "startsit",
+      "call": "Start Kenneth Walker, bench Roschon Johnson",
+      "conf": 95,
+      "confLabel": "High",
+      "headline": "+16.5 pts",
+      "narrative": [
+       "Start Kenneth Walker (RB, KC) over Roschon Johnson. Roschon Johnson projects for 1.5, while Walker projects for 18.0, a gain of 16.5 points for this one swap. Across the whole lineup, your saved lineup projects 71.3 and the optimal one projects 114.3 (+43.0).",
+       "The matchup is at home against LAC: LAC has allowed the 13th-most fantasy points to RBs of 32 defenses, which our schedule model scores at 1.04x average (a middle-of-the-pack matchup).",
+       "Walker has played 74% of snaps (74% over the last two games) with a 14.9% target share (6.2% last two), a 75.0% carry share (78.3% the last two games) at 21.8 carries a game, 4.8 targets per game. Week by week lately: Wk2 23.8, Wk3 21.3, Wk4 30.9. His opportunity (yards and TDs expected from his targets and carries) is worth 21.4 points a game; he has scored 27.5, running hot (+6.1). Touchdowns: 6 scored on 3.6 expected.",
+       "No injury designation and no flagged news on Walker in this refresh.",
+       "We project 18.0 points (80% band 11.3-24.7), built from a 17.8 ppg blend of this year and last year adjusted for the matchup. Rest of season: 213.8 projected points through Week 17. Sports Labs Edge Score 94, Risk Score 15 (1-99, ranked against every RB in this league's scoring).",
+       "The matchup is on the road at ATL: ATL has allowed the 19th-most fantasy points to RBs of 32 defenses, which our schedule model scores at 0.90x average (a middle-of-the-pack matchup). No injury designation and no flagged news on Johnson in this refresh.",
+       "The counter-case: he has scored 6 TDs on 3.6 expected, so some touchdown regression is likely. On the other side, Johnson has his own flags: his weekly scoring is volatile (standard deviation 3.7 on a 1.6 ppg base).",
+       "What you give up: Johnson's ceiling this week is about 6.1 points against 24.7 for Walker."
+      ],
+      "metrics": {
+       "gain": 16.5,
+       "lineupNow": 71.3,
+       "lineupBest": 114.3,
+       "proj": 18.0,
+       "lo": 11.3,
+       "hi": 24.7,
+       "edge": 94,
+       "risk": 15
+      },
+      "players": [
+       "8151",
+       "10235"
+      ],
+      "priority": 8.5,
+      "rank": 2
+     },
+     {
+      "section": "startsit",
+      "call": "Start C.J. Stroud, bench Joe Burrow",
+      "conf": 95,
+      "confLabel": "High",
+      "headline": "+15.6 pts",
+      "narrative": [
+       "The call is C.J. Stroud in, Joe Burrow out. Joe Burrow is on bye; Stroud is at 15.6, so the swap is worth about 15.6 projected points. Across the whole lineup, your saved lineup projects 71.3 and the optimal one projects 114.3 (+43.0).",
+       "The matchup is on the road at JAX: JAX has allowed the 21st-most fantasy points to QBs of 32 defenses, which our schedule model scores at 0.88x average (a middle-of-the-pack matchup).",
+       "Stroud is adding 3.0 rushes a game. Week by week lately: Wk3 11.7, Wk4 23.1, Wk5 20.9. That is up 4.2 points a game against his season average of 17.8.",
+       "Latest news: Fantasy football buzz: What's the impact of MHJ trade on Texans and Cardinals?. From the wire: C.J. Stroud excited for 'dynamic playmaker' Marvin Harrison Jr. to join Texans.",
+       "We project 15.6 points (80% band 10.8-20.5), built from a 16.2 ppg blend of this year and last year adjusted for the matchup. Rest of season: 177.8 projected points through Week 17. Sports Labs Edge Score 68, Risk Score 24 (1-99, ranked against every QB in this league's scoring).",
+       "Joe Burrow has no game in Week 6 on the schedule we pull (bye), so the Week 6 projection is zero.",
+       "The counter-case: his snap rate dipped from 100% to 50% over the last two games. On the other side, Burrow has his own flags: his snap rate dipped from 100% to 50% over the last two games.",
+       "What you give up: nothing this week, because Burrow cannot score for you in Week 6."
+      ],
+      "metrics": {
+       "gain": 15.6,
+       "lineupNow": 71.3,
+       "lineupBest": 114.3,
+       "proj": 15.6,
+       "lo": 10.8,
+       "hi": 20.5,
+       "edge": 68,
+       "risk": 24
+      },
+      "players": [
+       "9758",
+       "6770"
+      ],
+      "priority": 8.21,
+      "rank": 3
+     },
+     {
+      "section": "startsit",
+      "call": "Start Josh Jacobs, bench Kendre Miller",
+      "conf": 95,
+      "confLabel": "High",
+      "headline": "+10.0 pts",
+      "narrative": [
+       "The call is Josh Jacobs in, Kendre Miller out. Kendre Miller projects for 5.2; Jacobs is at 15.2, so the swap is worth about 10.0 projected points. Across the whole lineup, your saved lineup projects 71.3 and the optimal one projects 114.3 (+43.0).",
+       "Week 6 puts Jacobs at home against DAL. DAL ranks 6th of 32 in fantasy points allowed to RBs (one of the softest matchups), a 1.24x multiplier against league average.",
+       "No injury designation and no flagged news on Jacobs in this refresh.",
+       "We project 15.2 points for Week 6 from a 14.2 ppg blend adjusted for the matchup (not enough weekly games for a range). Rest of season: 158.4 projected points through Week 17.",
+       "Miller draws NYG in Week 6 (road). Against RBs that defense ranks 14th of 32 in points allowed, a 1.01x matchup factor, a middle-of-the-pack matchup. Miller carries no injury tag, and the news check found nothing new.",
+       "The counter-case: at 28 he is past the typical RB peak. On the other side, Miller has his own flags: his snap rate dipped from 25% to 13% over the last two games.",
+       "What you give up: Miller's ceiling this week is about 9.3 points against 15.2 for Jacobs."
+      ],
+      "metrics": {
+       "gain": 10.0,
+       "lineupNow": 71.3,
+       "lineupBest": 114.3,
+       "proj": 15.2,
+       "lo": 15.2,
+       "hi": 15.2
+      },
+      "players": [
+       "5850",
+       "9757"
+      ],
+      "priority": 6.33,
+      "rank": 4
+     },
+     {
+      "section": "startsit",
+      "call": "Start Chris Godwin, bench Dontayvion Wicks",
+      "conf": 58,
+      "confLabel": "Low",
+      "headline": "+0.8 pts",
+      "narrative": [
+       "The call is Chris Godwin in, Dontayvion Wicks out. Dontayvion Wicks projects for 7.3; Godwin is at 8.1, so the swap is worth about 0.8 projected points. Across the whole lineup, your saved lineup projects 71.3 and the optimal one projects 114.3 (+43.0).",
+       "Godwin draws PIT in Week 6 (home). Against WRs that defense ranks 27th of 32 in points allowed, a 0.84x matchup factor, one of the toughest matchups.",
+       "Godwin has played 82% of snaps (88% over the last two games) with a 14.9% target share (19.5% last two), 4.2 targets per game. The last three box scores in this league's scoring were Wk3 5.5, Wk4 9.1, Wk5 7.0. His opportunity (yards and TDs expected from his targets and carries) is worth 7.4 points a game; he has scored 7.7, right in line (+0.4). Touchdowns: 0 scored on 1.0 expected.",
+       "No injury designation and no flagged news on Godwin in this refresh.",
+       "We project 8.1 points (80% band 6.5-9.8), built from a 8.6 ppg blend of this year and last year adjusted for the matchup. Rest of season: 94.3 projected points through Week 17. Sports Labs Edge Score 74, Risk Score 11 (1-99, ranked against every WR in this league's scoring).",
+       "The matchup is at home against CAR: CAR has allowed the 26th-most fantasy points to WRs of 32 defenses, which our schedule model scores at 0.86x average (one of the toughest matchups). No injury designation and no flagged news on Wicks in this refresh.",
+       "The counter-case: the PIT defense is a tough draw for WRs; at 30 he is past the typical WR peak. On the other side, Wicks has his own flags: the CAR defense is a tough draw for WRs; his snap rate dipped from 83% to 46% over the last two games.",
+       "What you give up: Wicks's ceiling this week is about 12.4 points against 9.8 for Godwin."
+      ],
+      "metrics": {
+       "gain": 0.8,
+       "lineupNow": 71.3,
+       "lineupBest": 114.3,
+       "proj": 8.1,
+       "lo": 6.5,
+       "hi": 9.8,
+       "edge": 74,
+       "risk": 11
+      },
+      "players": [
+       "4037",
+       "9486"
+      ],
+      "priority": 3.28,
+      "rank": 7
+     }
+    ],
+    "waivers": [
+     {
+      "section": "waivers",
+      "call": "Add Wan'Dale Robinson, drop Tyler Higbee",
+      "conf": 90,
+      "confLabel": "High",
+      "headline": "Best available",
+      "narrative": [
+       "Add Wan'Dale Robinson (WR, TEN). Best available: he is the type of producer rarely left on waivers: 10.3 ppg and positive value over replacement (2.4). You have $100 of FAAB left.",
+       "Usage: 66% snap rate, 34% in the last two, and 19.3% of team targets (18.9% recently), 6.0 targets per game. Week by week lately: Wk3 18.7, Wk4 11.0, Wk5 11.3. His opportunity (yards and TDs expected from his targets and carries) is worth 10.2 points a game; he has scored 10.3, right in line (+0.1). Touchdowns: 2 scored on 1.4 expected.",
+       "The matchup is on the road at IND: IND has allowed the 15th-most fantasy points to WRs of 32 defenses, which our schedule model scores at 1.00x average (a middle-of-the-pack matchup).",
+       "Robinson carries no injury tag, and the news check found nothing new.",
+       "The projection is 12.1 points for Week 6, with an 80% range of roughly 5.2 to 19.0 based on his week-to-week spread (5.4 pt standard deviation). Rest of season: 136.6 projected points through Week 17. Sports Labs Edge Score 88, Risk Score 37 (1-99, ranked against every WR in this league's scoring).",
+       "Drop Tyler Higbee: he is not in your optimal lineup and projects 0.0 rest-of-season points against 136.6 for Robinson, a net +136.6.",
+       "What could go wrong: his snap rate dipped from 66% to 34% over the last two games.",
+       "What you give up: Tyler Higbee's 0.0 projected rest-of-season points and his roster spot."
+      ],
+      "metrics": {
+       "kind": "Best available",
+       "ros": 136.6,
+       "proj": 12.1,
+       "net": 136.6,
+       "edge": 88,
+       "risk": 37
+      },
+      "players": [
+       "8126",
+       "3271"
+      ],
+      "priority": 8.83,
+      "rank": 1
+     },
+     {
+      "section": "waivers",
+      "call": "Add Jalon Daniels, drop Kaleb Johnson",
+      "conf": 86,
+      "confLabel": "High",
+      "headline": "Opportunity spike",
+      "narrative": [
+       "Opportunity spike add: Jalon Daniels (QB, TB) is unrostered in KAL, and his usage jumped over the last two games (snaps 69% to 100%, targets 0.0% to 0.0%, carries 16.2% to 21.9%). You have $100 of FAAB left.",
+       "Daniels is adding 5.3 rushes a game. Recent scoring: Wk3 -1.1, Wk4 11.4, Wk5 13.9. That is up 4.6 points a game against his season average of 8.1.",
+       "Week 6 puts Daniels at home against PIT. PIT ranks 30th of 32 in fantasy points allowed to QBs (one of the toughest matchups), a 0.77x multiplier against league average.",
+       "Daniels carries no injury tag, and the news check found nothing new.",
+       "The projection is 7.5 points for Week 6, with an 80% range of roughly 0.0 to 15.3 based on his week-to-week spread (6.5 pt standard deviation). Rest of season: 89.7 projected points through Week 17. Sports Labs Edge Score 29, Risk Score 87 (1-99, ranked against every QB in this league's scoring).",
+       "Drop Kaleb Johnson: he is not in your optimal lineup and projects 16.0 rest-of-season points against 89.7 for Daniels, a net +73.7.",
+       "The counter-case: his weekly scoring is volatile (standard deviation 6.5 on a 8.1 ppg base); the PIT defense is a tough draw for QBs.",
+       "What you give up: Kaleb Johnson's 16.0 projected rest-of-season points and his roster spot."
+      ],
+      "metrics": {
+       "kind": "Opportunity spike",
+       "ros": 89.7,
+       "proj": 7.5,
+       "net": 73.7,
+       "edge": 29,
+       "risk": 87
+      },
+      "players": [
+       "13425",
+       "12504"
+      ],
+      "priority": 5.68,
+      "rank": 5
+     },
+     {
+      "section": "waivers",
+      "call": "Add Mason Taylor, drop Roschon Johnson",
+      "conf": 84,
+      "confLabel": "High",
+      "headline": "Their shot",
+      "narrative": [
+       "Their shot add: Mason Taylor (TE, NYJ) is unrostered in KAL, and Kenyon Sadiq is Out (Concussion), and Mason Taylor is next on the NYJ TE depth chart. You have $100 of FAAB left.",
+       "Usage: 66% snap rate, 33% in the last two, and 11.7% of team targets (11.7% recently), 3.0 targets per game. The last three box scores in this league's scoring were Wk1 1.8, Wk5 5.4. His opportunity (yards and TDs expected from his targets and carries) is worth 5.2 points a game; he has scored 3.6, leaving points on the table (-1.6). Touchdowns: 0 scored on 0.3 expected.",
+       "The matchup is on the road at NE: NE has allowed the 21st-most fantasy points to TEs of 32 defenses, which our schedule model scores at 0.72x average (a middle-of-the-pack matchup).",
+       "Cascade: Kenyon Sadiq (Out) is ahead of Taylor on the NYJ depth chart and is not available, which moves Taylor up to the top of the TE room.",
+       "The projection is 5.5 points for Week 6, with an 80% range of roughly 3.4 to 7.6 based on his week-to-week spread (1.8 pt standard deviation). Rest of season: 68.3 projected points through Week 17. Sports Labs Edge Score 64, Risk Score 18 (1-99, ranked against every TE in this league's scoring).",
+       "Drop Roschon Johnson: he is not in your optimal lineup and projects 17.3 rest-of-season points against 68.3 for Taylor, a net +51.0.",
+       "What could go wrong: his snap rate dipped from 66% to 33% over the last two games.",
+       "What you give up: Roschon Johnson's 17.3 projected rest-of-season points and his roster spot."
+      ],
+      "metrics": {
+       "kind": "Their shot",
+       "ros": 68.3,
+       "proj": 5.5,
+       "net": 51.0,
+       "edge": 64,
+       "risk": 18
+      },
+      "players": [
+       "12498",
+       "10235"
+      ],
+      "priority": 5.55,
+      "rank": 6
+     }
+    ],
+    "trades": [
+     {
+      "section": "trades",
+      "call": "Trade Marvin Harrison + Malik Nabers to End Me for Javonte Williams",
+      "conf": 58,
+      "confLabel": "Low",
+      "headline": "+2.5 ppg",
+      "narrative": [
+       "Propose this to End Me: you send Marvin Harrison + Malik Nabers, you get Javonte Williams. RB is a need for you (need score 70/100: your starters average 32.0 ppg there vs a league average of 33.4). End Me is thin where you are deep (WR need score 90/100).",
+       "The numbers: on our blended value scale you send 3,339 and receive 3,797 (+458). Your optimal lineup improves by 2.5 points a week and theirs changes by -0.1, which is why it is pitchable: both sides start better players. Estimated acceptance: 28%. Keeper salaries: Javonte Williams $10 (projected worth $38, +28 surplus); Malik Nabers $41 (projected worth $26, -15 surplus).",
+       "Williams has played 77% of snaps (80% over the last two games) with a 11.2% target share (9.4% last two), a 71.1% carry share (84.2% the last two games) at 14.8 carries a game, 4.0 targets per game. Week by week lately: Wk3 18.3, Wk4 31.3, Wk5 14.2. That is up 3.6 points a game against his season average of 19.2. His opportunity (yards and TDs expected from his targets and carries) is worth 16.0 points a game; he has scored 19.2, running hot (+3.2). Touchdowns: 7 scored on 3.3 expected.",
+       "Williams carries no injury tag, and the news check found nothing new.",
+       "We project 18.8 points (80% band 7.4-30.2), built from a 17.0 ppg blend of this year and last year adjusted for the matchup. Rest of season: 186.1 projected points through Week 17. Sports Labs Edge Score 94, Risk Score 38 (1-99, ranked against every RB in this league's scoring).",
+       "What you give up: Marvin Harrison (WR, HOU) projects 84.7 rest-of-season points. Harrison has played 74% of snaps (71% over the last two games) with a 8.3% target share (10.7% last two), 3.2 targets per game. The last three box scores in this league's scoring were Wk2 0.0, Wk3 7.0, Wk4 8.2. That is up 2.7 points a game against his season average of 4.9. His opportunity (yards and TDs expected from his targets and carries) is worth 5.5 points a game; he has scored 4.9, right in line (-0.6). Touchdowns: 1 scored on 0.6 expected.",
+       "What you give up: Malik Nabers (WR, NYG) projects 163.7 rest-of-season points. Nabers has played 70% of snaps (38% over the last two games) with a 26.9% target share (31.3% last two), 9.2 targets per game. The last three box scores in this league's scoring were Wk3 7.6, Wk4 23.2, Wk5 29.1. That is up 11.4 points a game against his season average of 14.8. His opportunity (yards and TDs expected from his targets and carries) is worth 15.5 points a game; he has scored 14.8, right in line (-0.7). Touchdowns: 2 scored on 2.1 expected.",
+       "What could go wrong: he has scored 7 TDs on 3.3 expected, so some touchdown regression is likely; at 26 he is past the typical RB peak. On the other side, Harrison has no specific red flags, so he is a reasonable fallback if news changes."
+      ],
+      "metrics": {
+       "give": 3339,
+       "get": 3797,
+       "lineupGain": 2.5,
+       "accept": 28,
+       "edge": 94,
+       "risk": 38
+      },
+      "players": [
+       "7588",
+       "11628",
+       "11632"
+      ],
+      "priority": 2.75,
+      "rank": 8
+     }
+    ],
+    "sellhold": [
+     {
+      "section": "sellhold",
+      "call": "Sell high on Kenneth Walker",
+      "conf": 85,
+      "confLabel": "High",
+      "headline": "Sell high",
+      "narrative": [
+       "Shop Kenneth Walker while the box scores look great. He is scoring 27.5 points a game, but his opportunity is worth 21.4 a game (+6.1).",
+       "Usage: 74% snap rate, 74% in the last two, and 14.9% of team targets (6.2% recently), a 75.0% carry share (78.3% the last two games) at 21.8 carries a game, 4.8 targets per game. The last three box scores in this league's scoring were Wk2 23.8, Wk3 21.3, Wk4 30.9. His opportunity (yards and TDs expected from his targets and carries) is worth 21.4 points a game; he has scored 27.5, running hot (+6.1). Touchdowns: 6 scored on 3.6 expected.",
+       "Walker carries no injury tag, and the news check found nothing new.",
+       "The projection is 18.0 points for Week 6, with an 80% range of roughly 11.3 to 24.7 based on his week-to-week spread (5.2 pt standard deviation). Rest of season: 213.8 projected points through Week 17. Sports Labs Edge Score 94, Risk Score 15 (1-99, ranked against every RB in this league's scoring).",
+       "Market check: Kenneth Walker is valued at 9,551 in the public trade market (position rank 3).",
+       "The counter-case: talent can sustain efficiency for a while, and if he is your only reliable starter at the position, selling creates a hole. Only sell for a starter you need.",
+       "What you give up by selling: 213.8 projected rest-of-season points."
+      ],
+      "metrics": {
+       "ppg": 27.52,
+       "xfp": 21.4,
+       "edge": 94,
+       "risk": 15
+      },
+      "players": [
+       "8151"
+      ],
+      "priority": 2.52,
+      "rank": 9
+     },
+     {
+      "section": "sellhold",
+      "call": "Sell high on George Kittle",
+      "conf": 80,
+      "confLabel": "High",
+      "headline": "Sell high",
+      "narrative": [
+       "George Kittle is a sell-high candidate. He is scoring 14.4 points a game, but his opportunity is worth 9.5 a game (+4.9).",
+       "Usage: 68% snap rate, 46% in the last two, and 20.7% of team targets (21.5% recently), 5.6 targets per game. Recent scoring: Wk3 26.2, Wk4 17.0, Wk5 7.4. That is down 2.2 points a game against his season average of 14.4. His opportunity (yards and TDs expected from his targets and carries) is worth 9.5 points a game; he has scored 14.4, running hot (+4.9). Touchdowns: 4 scored on 1.3 expected.",
+       "Kittle carries no injury tag, and the news check found nothing new.",
+       "The projection is 17.7 points for Week 6, with an 80% range of roughly 5.0 to 30.3 based on his week-to-week spread (8.2 pt standard deviation). Rest of season: 159.7 projected points through Week 17. Sports Labs Edge Score 98, Risk Score 44 (1-99, ranked against every TE in this league's scoring).",
+       "Market check: George Kittle is valued at 2,699 in the public trade market (position rank 3).",
+       "The counter-case: talent can sustain efficiency for a while, and if he is your only reliable starter at the position, selling creates a hole. Only sell for a starter you need.",
+       "What you give up by selling: 159.7 projected rest-of-season points."
+      ],
+      "metrics": {
+       "ppg": 14.36,
+       "xfp": 9.5,
+       "edge": 98,
+       "risk": 44
+      },
+      "players": [
+       "4217"
+      ],
+      "priority": 2.23,
+      "rank": 10
+     }
+    ]
+   },
+   "actions": [
+    {
+     "rank": 1,
+     "section": "waivers",
+     "call": "Add Wan'Dale Robinson, drop Tyler Higbee",
+     "conf": 90,
+     "confLabel": "High"
+    },
+    {
+     "rank": 2,
+     "section": "startsit",
+     "call": "Start Kenneth Walker, bench Roschon Johnson",
+     "conf": 95,
+     "confLabel": "High"
+    },
+    {
+     "rank": 3,
+     "section": "startsit",
+     "call": "Start C.J. Stroud, bench Joe Burrow",
+     "conf": 95,
+     "confLabel": "High"
+    },
+    {
+     "rank": 4,
+     "section": "startsit",
+     "call": "Start Josh Jacobs, bench Kendre Miller",
+     "conf": 95,
+     "confLabel": "High"
+    },
+    {
+     "rank": 5,
+     "section": "waivers",
+     "call": "Add Jalon Daniels, drop Kaleb Johnson",
+     "conf": 86,
+     "confLabel": "High"
+    },
+    {
+     "rank": 6,
+     "section": "waivers",
+     "call": "Add Mason Taylor, drop Roschon Johnson",
+     "conf": 84,
+     "confLabel": "High"
+    },
+    {
+     "rank": 7,
+     "section": "startsit",
+     "call": "Start Chris Godwin, bench Dontayvion Wicks",
+     "conf": 58,
+     "confLabel": "Low"
+    },
+    {
+     "rank": 8,
+     "section": "trades",
+     "call": "Trade Marvin Harrison + Malik Nabers to End Me for Javonte Williams",
+     "conf": 58,
+     "confLabel": "Low"
+    },
+    {
+     "rank": 9,
+     "section": "sellhold",
+     "call": "Sell high on Kenneth Walker",
+     "conf": 85,
+     "confLabel": "High"
+    },
+    {
+     "rank": 10,
+     "section": "sellhold",
+     "call": "Sell high on George Kittle",
+     "conf": 80,
+     "confLabel": "High"
+    }
+   ]
+  },
+  "dcigs": {
+   "name": "D CIGS",
+   "short": "Redraft superflex",
+   "scoring": "Full PPR, superflex",
+   "team": "The Lotion HJs",
+   "record": "1-3",
+   "week": 6,
+   "sections": {
+    "startsit": [
+     {
+      "section": "startsit",
+      "call": "Start Josh Jacobs, bench Ollie Gordon",
+      "conf": 95,
+      "confLabel": "High",
+      "headline": "+15.2 pts",
+      "narrative": [
+       "The call is Josh Jacobs in, Ollie Gordon out. Ollie Gordon is on bye; Jacobs is at 15.2, so the swap is worth about 15.2 projected points. Across the whole lineup, your saved lineup projects 98.7 and the optimal one projects 123.4 (+24.7).",
+       "Week 6 puts Jacobs at home against DAL. DAL ranks 6th of 32 in fantasy points allowed to RBs (one of the softest matchups), a 1.24x multiplier against league average.",
+       "No injury designation and no flagged news on Jacobs in this refresh.",
+       "We project 15.2 points for Week 6 from a 14.2 ppg blend adjusted for the matchup (not enough weekly games for a range). Rest of season: 158.4 projected points through Week 17.",
+       "Ollie Gordon has no game in Week 6 on the schedule we pull (bye), so the Week 6 projection is zero. Injury status: Questionable (Undisclosed).",
+       "The counter-case: at 28 he is past the typical RB peak. On the other side, Gordon has his own flags: his weekly scoring is volatile (standard deviation 6.7 on a 6.7 ppg base); his snap rate dipped from 53% to 28% over the last two games; he is listed Questionable, so check the inactive list before kickoff.",
+       "What you give up: nothing this week, because Gordon cannot score for you in Week 6."
+      ],
+      "metrics": {
+       "gain": 15.2,
+       "lineupNow": 98.7,
+       "lineupBest": 123.4,
+       "proj": 15.2,
+       "lo": 15.2,
+       "hi": 15.2
+      },
+      "players": [
+       "5850",
+       "12495"
+      ],
+      "priority": 8.08,
+      "rank": 1
+     }
+    ],
+    "waivers": [
+     {
+      "section": "waivers",
+      "call": "Add Wan'Dale Robinson, drop Adonai Mitchell",
+      "conf": 79,
+      "confLabel": "High",
+      "headline": "Best available",
+      "narrative": [
+       "Best available add: Wan'Dale Robinson (WR, TEN) is unrostered in D CIGS, and he is the type of producer rarely left on waivers: 10.3 ppg and positive value over replacement (2.4). You have $100 of FAAB left.",
+       "Robinson has played 66% of snaps (34% over the last two games) with a 19.3% target share (18.9% last two), 6.0 targets per game. The last three box scores in this league's scoring were Wk3 18.7, Wk4 11.0, Wk5 11.3. His opportunity (yards and TDs expected from his targets and carries) is worth 10.2 points a game; he has scored 10.3, right in line (+0.1). Touchdowns: 2 scored on 1.4 expected.",
+       "Robinson draws IND in Week 6 (road). Against WRs that defense ranks 15th of 32 in points allowed, a 1.00x matchup factor, a middle-of-the-pack matchup.",
+       "Robinson carries no injury tag, and the news check found nothing new.",
+       "The projection is 12.1 points for Week 6, with an 80% range of roughly 5.2 to 19.0 based on his week-to-week spread (5.4 pt standard deviation). Rest of season: 136.6 projected points through Week 17. Sports Labs Edge Score 88, Risk Score 37 (1-99, ranked against every WR in this league's scoring).",
+       "Drop Adonai Mitchell: he is not in your optimal lineup and projects 66.1 rest-of-season points against 136.6 for Robinson, a net +70.5.",
+       "The risk on this call: his snap rate dipped from 66% to 34% over the last two games.",
+       "What you give up: Adonai Mitchell's 66.1 projected rest-of-season points and his roster spot."
+      ],
+      "metrics": {
+       "kind": "Best available",
+       "ros": 136.6,
+       "proj": 12.1,
+       "net": 70.5,
+       "edge": 88,
+       "risk": 37
+      },
+      "players": [
+       "8126",
+       "11625"
+      ],
+      "priority": 5.53,
+      "rank": 2
+     },
+     {
+      "section": "waivers",
+      "call": "Add Keenan Allen, drop Ollie Gordon",
+      "conf": 68,
+      "confLabel": "Medium",
+      "headline": "Best available",
+      "narrative": [
+       "Add Keenan Allen (WR, IND). Best available: he is the type of producer rarely left on waivers: 9.6 ppg and positive value over replacement (0.6). You have $100 of FAAB left.",
+       "Allen has played 64% of snaps (36% over the last two games) with a 21.0% target share (23.3% last two), 7.2 targets per game. Recent scoring: Wk2 1.5, Wk3 18.3, Wk5 9.5. That is up 4.3 points a game against his season average of 9.6. His opportunity (yards and TDs expected from his targets and carries) is worth 12.2 points a game; he has scored 9.6, leaving points on the table (-2.5). Touchdowns: 1 scored on 1.3 expected.",
+       "Allen draws TEN in Week 6 (home). Against WRs that defense ranks 12th of 32 in points allowed, a 1.10x matchup factor, a middle-of-the-pack matchup.",
+       "No injury designation and no flagged news on Allen in this refresh.",
+       "The projection is 10.6 points for Week 6, with an 80% range of roughly 2.8 to 18.5 based on his week-to-week spread (6.0 pt standard deviation). Rest of season: 114.9 projected points through Week 17. Sports Labs Edge Score 84, Risk Score 52 (1-99, ranked against every WR in this league's scoring).",
+       "Drop Ollie Gordon: he is not in your optimal lineup and projects 76.5 rest-of-season points against 114.9 for Allen, a net +38.4.",
+       "The risk on this call: his snap rate dipped from 64% to 36% over the last two games; at 34 he is past the typical WR peak.",
+       "What you give up: Ollie Gordon's 76.5 projected rest-of-season points and his roster spot."
+      ],
+      "metrics": {
+       "kind": "Best available",
+       "ros": 114.9,
+       "proj": 10.6,
+       "net": 38.4,
+       "edge": 84,
+       "risk": 52
+      },
+      "players": [
+       "1479",
+       "12495"
+      ],
+      "priority": 3.92,
+      "rank": 4
+     },
+     {
+      "section": "waivers",
+      "call": "Add Dalton Schultz, drop Marvin Harrison",
+      "conf": 63,
+      "confLabel": "Medium",
+      "headline": "Best available",
+      "narrative": [
+       "Best available add: Dalton Schultz (TE, HOU) is unrostered in D CIGS, and he is the type of producer rarely left on waivers: 9.7 ppg and positive value over replacement (0.2). You have $100 of FAAB left.",
+       "Usage: 63% snap rate, 32% in the last two, and 16.3% of team targets (9.9% recently), 6.2 targets per game. The last three box scores in this league's scoring were Wk3 6.0, Wk4 2.9, Wk5 6.0. That is down 5.2 points a game against his season average of 9.7. His opportunity (yards and TDs expected from his targets and carries) is worth 10.4 points a game; he has scored 9.7, right in line (-0.8). Touchdowns: 0 scored on 1.4 expected.",
+       "Schultz draws JAX in Week 6 (road). Against TEs that defense ranks 23rd of 32 in points allowed, a 0.69x matchup factor, one of the toughest matchups.",
+       "Schultz carries no injury tag, and the news check found nothing new.",
+       "The projection is 9.2 points for Week 6, with an 80% range of roughly 0.0 to 18.8 based on his week-to-week spread (8.3 pt standard deviation). Rest of season: 108.8 projected points through Week 17. Sports Labs Edge Score 85, Risk Score 60 (1-99, ranked against every TE in this league's scoring).",
+       "Drop Marvin Harrison: he is not in your optimal lineup and projects 84.7 rest-of-season points against 108.8 for Schultz, a net +24.1.",
+       "What could go wrong: his weekly scoring is volatile (standard deviation 8.3 on a 10.1 ppg base); the JAX defense is a tough draw for TEs; his snap rate dipped from 63% to 32% over the last two games; at 30 he is past the typical TE peak.",
+       "What you give up: Marvin Harrison's 84.7 projected rest-of-season points and his roster spot."
+      ],
+      "metrics": {
+       "kind": "Best available",
+       "ros": 108.8,
+       "proj": 9.2,
+       "net": 24.1,
+       "edge": 85,
+       "risk": 60
+      },
+      "players": [
+       "5001",
+       "11628"
+      ],
+      "priority": 3.21,
+      "rank": 7
+     }
+    ],
+    "trades": [
+     {
+      "section": "trades",
+      "call": "Trade Matthew Golden + David Montgomery to Cigosaurus Rex  for C.J. Stroud",
+      "conf": 87,
+      "confLabel": "High",
+      "headline": "+6.4 ppg",
+      "narrative": [
+       "Propose this to Cigosaurus Rex : you send Matthew Golden + David Montgomery, you get C.J. Stroud. QB is a need for you (need score 100/100: your starters average 15.8 ppg there vs a league average of 34.0). Cigosaurus Rex  is thin where you are deep (RB need score 100/100, WR need score 50/100).",
+       "The numbers: on our blended value scale you send 1,698 and receive 1,818 (+120). Your optimal lineup improves by 6.4 points a week and theirs changes by +1.8, which is why it is pitchable: both sides start better players. Estimated acceptance: 54%.",
+       "Stroud is adding 3.0 rushes a game. The last three box scores in this league's scoring were Wk3 11.7, Wk4 23.1, Wk5 20.9. That is up 4.2 points a game against his season average of 17.8.",
+       "In the news: Fantasy football buzz: What's the impact of MHJ trade on Texans and Cardinals?. In the news: C.J. Stroud excited for 'dynamic playmaker' Marvin Harrison Jr. to join Texans.",
+       "The projection is 15.6 points for Week 6, with an 80% range of roughly 10.8 to 20.5 based on his week-to-week spread (3.9 pt standard deviation). Rest of season: 177.8 projected points through Week 17. Sports Labs Edge Score 68, Risk Score 24 (1-99, ranked against every QB in this league's scoring).",
+       "What you give up: Matthew Golden (WR, GB) projects 108.9 rest-of-season points. Golden has played 84% of snaps (44% over the last two games) with a 24.0% target share (23.0% last two), 8.8 targets per game. Week by week lately: Wk3 21.0, Wk4 11.7, Wk5 20.3. His opportunity (yards and TDs expected from his targets and carries) is worth 14.9 points a game; he has scored 15.7, right in line (+0.8). Touchdowns: 2 scored on 2.0 expected.",
+       "What you give up: David Montgomery (RB, HOU) projects 94.3 rest-of-season points. Montgomery has played 55% of snaps (28% over the last two games) with a 4.0% target share (0.0% last two), a 43.9% carry share (35.6% the last two games) at 10.4 carries a game, 1.4 targets per game. The last three box scores in this league's scoring were Wk3 6.8, Wk4 4.3, Wk5 1.1. That is down 6.4 points a game against his season average of 9.1. His opportunity (yards and TDs expected from his targets and carries) is worth 8.8 points a game; he has scored 9.1, right in line (+0.2). Touchdowns: 3 scored on 2.0 expected.",
+       "The risk on this call: his snap rate dipped from 100% to 50% over the last two games. On the other side, Golden has his own flags: his snap rate dipped from 84% to 44% over the last two games."
+      ],
+      "metrics": {
+       "give": 1698,
+       "get": 1818,
+       "lineupGain": 6.4,
+       "accept": 54,
+       "edge": 68,
+       "risk": 24
+      },
+      "players": [
+       "9758",
+       "12501",
+       "5892"
+      ],
+      "priority": 4.69,
+      "rank": 3
+     },
+     {
+      "section": "trades",
+      "call": "Trade Bucky Irving + David Montgomery to Cigosaurus Rex  for Dak Prescott",
+      "conf": 73,
+      "confLabel": "Medium",
+      "headline": "+3.9 ppg",
+      "narrative": [
+       "Offer Cigosaurus Rex  Bucky Irving + David Montgomery for Dak Prescott. QB is a need for you (need score 100/100: your starters average 15.8 ppg there vs a league average of 34.0). Cigosaurus Rex  is thin where you are deep (RB need score 100/100).",
+       "The numbers: on our blended value scale you send 2,924 and receive 3,065 (+141). Your optimal lineup improves by 3.9 points a week and theirs changes by +4.7, which is why it is pitchable: both sides start better players. Estimated acceptance: 56%.",
+       "Prescott is adding 2.4 rushes a game. Week by week lately: Wk3 18.9, Wk4 18.1, Wk5 12.6. That is down 3.4 points a game against his season average of 18.8.",
+       "Prescott carries no injury tag, and the news check found nothing new.",
+       "The projection is 17.2 points for Week 6, with an 80% range of roughly 10.1 to 24.3 based on his week-to-week spread (6.0 pt standard deviation). Rest of season: 202.8 projected points through Week 17. Sports Labs Edge Score 81, Risk Score 38 (1-99, ranked against every QB in this league's scoring).",
+       "What you give up: Bucky Irving (RB, TB) projects 163.5 rest-of-season points. Usage: 61% snap rate, 56% in the last two, and 12.3% of team targets (6.0% recently), a 57.0% carry share (52.7% the last two games) at 15.4 carries a game, 3.6 targets per game. Week by week lately: Wk3 7.8, Wk4 6.1, Wk5 31.5. That is up 3.1 points a game against his season average of 15.7. His opportunity (yards and TDs expected from his targets and carries) is worth 15.7 points a game; he has scored 15.7, right in line (+0.1). Touchdowns: 3 scored on 3.3 expected.",
+       "What you give up: David Montgomery (RB, HOU) projects 94.3 rest-of-season points. Usage: 55% snap rate, 28% in the last two, and 4.0% of team targets (0.0% recently), a 43.9% carry share (35.6% the last two games) at 10.4 carries a game, 1.4 targets per game. The last three box scores in this league's scoring were Wk3 6.8, Wk4 4.3, Wk5 1.1. That is down 6.4 points a game against his season average of 9.1. His opportunity (yards and TDs expected from his targets and carries) is worth 8.8 points a game; he has scored 9.1, right in line (+0.2). Touchdowns: 3 scored on 2.0 expected.",
+       "What could go wrong: the GB defense is a tough draw for QBs; at 33 he is past the typical QB peak. On the other side, Irving has his own flags: his weekly scoring is volatile (standard deviation 9.3 on a 14.7 ppg base)."
+      ],
+      "metrics": {
+       "give": 2924,
+       "get": 3065,
+       "lineupGain": 3.9,
+       "accept": 56,
+       "edge": 81,
+       "risk": 38
+      },
+      "players": [
+       "3294",
+       "11584",
+       "5892"
+      ],
+      "priority": 3.45,
+      "rank": 6
+     }
+    ],
+    "sellhold": [
+     {
+      "section": "sellhold",
+      "call": "Sell high on Jaxon Smith-Njigba",
+      "conf": 85,
+      "confLabel": "High",
+      "headline": "Sell high",
+      "narrative": [
+       "Shop Jaxon Smith-Njigba while the box scores look great. He is scoring 27.9 points a game, but his opportunity is worth 16.9 a game (+10.9).",
+       "Smith-Njigba has played 83% of snaps (44% over the last two games) with a 35.8% target share (29.8% last two), 10.0 targets per game. The last three box scores in this league's scoring were Wk3 35.4, Wk4 12.6, Wk5 22.8. That is down 10.2 points a game against his season average of 27.9. His opportunity (yards and TDs expected from his targets and carries) is worth 16.9 points a game; he has scored 27.9, running hot (+10.9). Touchdowns: 7 scored on 2.3 expected.",
+       "Smith-Njigba carries no injury tag, and the news check found nothing new.",
+       "The projection is 22.6 points for Week 6, with an 80% range of roughly 10.3 to 34.9 based on his week-to-week spread (10.3 pt standard deviation). Rest of season: 263.9 projected points through Week 17. Sports Labs Edge Score 99, Risk Score 28 (1-99, ranked against every WR in this league's scoring).",
+       "Market check: Jaxon Smith-Njigba is valued at 10,009 in the public trade market (position rank 1).",
+       "The counter-case: talent can sustain efficiency for a while, and if he is your only reliable starter at the position, selling creates a hole. Only sell for a starter you need.",
+       "What you give up by selling: 263.9 projected rest-of-season points."
+      ],
+      "metrics": {
+       "ppg": 27.89,
+       "xfp": 16.9,
+       "edge": 99,
+       "risk": 28
+      },
+      "players": [
+       "9488"
+      ],
+      "priority": 3.74,
+      "rank": 5
+     }
+    ]
+   },
+   "actions": [
+    {
+     "rank": 1,
+     "section": "startsit",
+     "call": "Start Josh Jacobs, bench Ollie Gordon",
+     "conf": 95,
+     "confLabel": "High"
+    },
+    {
+     "rank": 2,
+     "section": "waivers",
+     "call": "Add Wan'Dale Robinson, drop Adonai Mitchell",
+     "conf": 79,
+     "confLabel": "High"
+    },
+    {
+     "rank": 3,
+     "section": "trades",
+     "call": "Trade Matthew Golden + David Montgomery to Cigosaurus Rex  for C.J. Stroud",
+     "conf": 87,
+     "confLabel": "High"
+    },
+    {
+     "rank": 4,
+     "section": "waivers",
+     "call": "Add Keenan Allen, drop Ollie Gordon",
+     "conf": 68,
+     "confLabel": "Medium"
+    },
+    {
+     "rank": 5,
+     "section": "sellhold",
+     "call": "Sell high on Jaxon Smith-Njigba",
+     "conf": 85,
+     "confLabel": "High"
+    },
+    {
+     "rank": 6,
+     "section": "trades",
+     "call": "Trade Bucky Irving + David Montgomery to Cigosaurus Rex  for Dak Prescott",
+     "conf": 73,
+     "confLabel": "Medium"
+    },
+    {
+     "rank": 7,
+     "section": "waivers",
+     "call": "Add Dalton Schultz, drop Marvin Harrison",
+     "conf": 63,
+     "confLabel": "Medium"
+    }
+   ]
+  },
+  "lomo": {
+   "name": "LOMOFAGS",
+   "short": "Redraft",
+   "scoring": "Full PPR + 0.2 per completion",
+   "team": "Jack Goff my Diggs",
+   "record": "2-2",
+   "week": 6,
+   "sections": {
+    "startsit": [
+     {
+      "section": "startsit",
+      "call": "Start Jordan Love, bench Jared Goff",
+      "conf": 95,
+      "confLabel": "High",
+      "headline": "+22.2 pts",
+      "narrative": [
+       "The call is Jordan Love in, Jared Goff out. Jared Goff is on bye; Love is at 22.2, so the swap is worth about 22.2 projected points. Across the whole lineup, your saved lineup projects 62.3 and the optimal one projects 92.8 (+30.6).",
+       "The matchup is at home against DAL: DAL has allowed the 6th-most fantasy points to QBs of 32 defenses, which our schedule model scores at 1.21x average (one of the softest matchups).",
+       "Love is adding 1.4 rushes a game. The last three box scores in this league's scoring were Wk3 24.1, Wk4 17.5, Wk5 30.3.",
+       "No injury designation and no flagged news on Love in this refresh.",
+       "The projection is 22.2 points for Week 6, with an 80% range of roughly 15.5 to 28.9 based on his week-to-week spread (4.9 pt standard deviation). Rest of season: 233.4 projected points through Week 17. Sports Labs Edge Score 81, Risk Score 27 (1-99, ranked against every QB in this league's scoring).",
+       "Jared Goff has no game in Week 6 on the schedule we pull (bye), so the Week 6 projection is zero.",
+       "The risk on this call: his snap rate dipped from 100% to 50% over the last two games. On the other side, Goff has his own flags: his snap rate dipped from 100% to 50% over the last two games.",
+       "What you give up: nothing this week, because Goff cannot score for you in Week 6."
+      ],
+      "metrics": {
+       "gain": 22.2,
+       "lineupNow": 62.3,
+       "lineupBest": 92.8,
+       "proj": 22.2,
+       "lo": 15.5,
+       "hi": 28.9,
+       "edge": 81,
+       "risk": 27
+      },
+      "players": [
+       "6804",
+       "3163"
+      ],
+      "priority": 10.4,
+      "rank": 1
+     },
+     {
+      "section": "startsit",
+      "call": "Start Brian Thomas, bench Jameson Williams",
+      "conf": 95,
+      "confLabel": "High",
+      "headline": "+8.4 pts",
+      "narrative": [
+       "Start Brian Thomas (WR, JAX) over Jameson Williams. Jameson Williams is on bye, while Thomas projects for 8.4, a gain of 8.4 points for this one swap. Across the whole lineup, your saved lineup projects 62.3 and the optimal one projects 92.8 (+30.6).",
+       "The matchup is at home against HOU: HOU has allowed the 2nd-most fantasy points to WRs of 32 defenses, which our schedule model scores at 1.27x average (one of the softest matchups).",
+       "Thomas has played 47% of snaps (31% over the last two games) with a 12.6% target share (8.3% last two), 3.4 targets per game. Week by week lately: Wk3 1.8, Wk4 9.7, Wk5 0.0. His opportunity (yards and TDs expected from his targets and carries) is worth 5.8 points a game; he has scored 5.1, right in line (-0.7). Touchdowns: 1 scored on 0.8 expected.",
+       "No injury designation and no flagged news on Thomas in this refresh.",
+       "We project 8.4 points (80% band 3.4-13.4), built from a 7.7 ppg blend of this year and last year adjusted for the matchup. Rest of season: 87.4 projected points through Week 17. Sports Labs Edge Score 74, Risk Score 48 (1-99, ranked against every WR in this league's scoring).",
+       "Jameson Williams has no game in Week 6 on the schedule we pull (bye), so the Week 6 projection is zero.",
+       "The counter-case: his snap rate dipped from 47% to 31% over the last two games. On the other side, Williams has his own flags: his snap rate dipped from 90% to 50% over the last two games.",
+       "What you give up: nothing this week, because Williams cannot score for you in Week 6."
+      ],
+      "metrics": {
+       "gain": 8.4,
+       "lineupNow": 62.3,
+       "lineupBest": 92.8,
+       "proj": 8.4,
+       "lo": 3.4,
+       "hi": 13.4,
+       "edge": 74,
+       "risk": 48
+      },
+      "players": [
+       "11631",
+       "8148"
+      ],
+      "priority": 5.79,
+      "rank": 3
+     }
+    ],
+    "waivers": [
+     {
+      "section": "waivers",
+      "call": "Add Jalon Daniels, drop Dameon Pierce",
+      "conf": 90,
+      "confLabel": "High",
+      "headline": "Opportunity spike",
+      "narrative": [
+       "Opportunity spike add: Jalon Daniels (QB, TB) is unrostered in LOMOFAGS, and his usage jumped over the last two games (snaps 69% to 100%, targets 0.0% to 0.0%, carries 16.2% to 21.9%). You have $100 of FAAB left.",
+       "Daniels is adding 5.3 rushes a game. Recent scoring: Wk3 -1.1, Wk4 15.2, Wk5 17.7. That is up 5.9 points a game against his season average of 10.6.",
+       "The matchup is at home against PIT: PIT has allowed the 30th-most fantasy points to QBs of 32 defenses, which our schedule model scores at 0.77x average (one of the toughest matchups).",
+       "Daniels carries no injury tag, and the news check found nothing new.",
+       "We project 9.9 points (80% band 0.0-19.8), built from a 10.6 ppg blend of this year and last year adjusted for the matchup. Rest of season: 117.8 projected points through Week 17. Sports Labs Edge Score 29, Risk Score 89 (1-99, ranked against every QB in this league's scoring).",
+       "Drop Dameon Pierce: he is not in your optimal lineup and projects 12.0 rest-of-season points against 117.8 for Daniels, a net +105.9.",
+       "The risk on this call: his weekly scoring is volatile (standard deviation 8.3 on a 10.6 ppg base); the PIT defense is a tough draw for QBs.",
+       "What you give up: Dameon Pierce's 12.0 projected rest-of-season points and his roster spot."
+      ],
+      "metrics": {
+       "kind": "Opportunity spike",
+       "ros": 117.8,
+       "proj": 9.9,
+       "net": 105.9,
+       "edge": 29,
+       "risk": 89
+      },
+      "players": [
+       "13425",
+       "8129"
+      ],
+      "priority": 7.29,
+      "rank": 2
+     },
+     {
+      "section": "waivers",
+      "call": "Add Dalton Schultz, drop Braelon Allen",
+      "conf": 68,
+      "confLabel": "Medium",
+      "headline": "Best available",
+      "narrative": [
+       "Best available add: Dalton Schultz (TE, HOU) is unrostered in LOMOFAGS, and he is the type of producer rarely left on waivers: 9.7 ppg and positive value over replacement (0.2). You have $100 of FAAB left.",
+       "Usage: 63% snap rate, 32% in the last two, and 16.3% of team targets (9.9% recently), 6.2 targets per game. The last three box scores in this league's scoring were Wk3 6.0, Wk4 2.9, Wk5 6.0. That is down 5.2 points a game against his season average of 9.7. His opportunity (yards and TDs expected from his targets and carries) is worth 10.4 points a game; he has scored 9.7, right in line (-0.8). Touchdowns: 0 scored on 1.4 expected.",
+       "Week 6 puts Schultz on the road at JAX. JAX ranks 23rd of 32 in fantasy points allowed to TEs (one of the toughest matchups), a 0.69x multiplier against league average.",
+       "Schultz carries no injury tag, and the news check found nothing new.",
+       "We project 9.2 points (80% band 0.0-18.8), built from a 10.1 ppg blend of this year and last year adjusted for the matchup. Rest of season: 108.8 projected points through Week 17. Sports Labs Edge Score 85, Risk Score 60 (1-99, ranked against every TE in this league's scoring).",
+       "Drop Braelon Allen: he is not in your optimal lineup and projects 68.5 rest-of-season points against 108.8 for Schultz, a net +40.4.",
+       "What could go wrong: his weekly scoring is volatile (standard deviation 8.3 on a 10.1 ppg base); the JAX defense is a tough draw for TEs; his snap rate dipped from 63% to 32% over the last two games; at 30 he is past the typical TE peak.",
+       "What you give up: Braelon Allen's 68.5 projected rest-of-season points and his roster spot."
+      ],
+      "metrics": {
+       "kind": "Best available",
+       "ros": 108.8,
+       "proj": 9.2,
+       "net": 40.4,
+       "edge": 85,
+       "risk": 60
+      },
+      "players": [
+       "5001",
+       "11576"
+      ],
+      "priority": 4.02,
+      "rank": 4
+     },
+     {
+      "section": "waivers",
+      "call": "Add Brenton Strange, drop Brian Thomas",
+      "conf": 61,
+      "confLabel": "Medium",
+      "headline": "Best available",
+      "narrative": [
+       "Best available add: Brenton Strange (TE, JAX) is unrostered in LOMOFAGS, and he is the type of producer rarely left on waivers: 10.1 ppg and positive value over replacement (0.1). You have $100 of FAAB left.",
+       "Usage: 79% snap rate, 44% in the last two, and 19.2% of team targets (27.9% recently), 5.2 targets per game. The last three box scores in this league's scoring were Wk3 6.2, Wk4 16.5, Wk5 13.8. That is up 5.1 points a game against his season average of 10.1. His opportunity (yards and TDs expected from his targets and carries) is worth 8.8 points a game; he has scored 10.1, right in line (+1.3). Touchdowns: 1 scored on 1.2 expected.",
+       "Strange draws HOU in Week 6 (home). Against TEs that defense ranks 27th of 32 in points allowed, a 0.61x matchup factor, one of the toughest matchups.",
+       "Strange carries no injury tag, and the news check found nothing new.",
+       "We project 8.8 points (80% band 3.5-14.1), built from a 9.9 ppg blend of this year and last year adjusted for the matchup. Rest of season: 106.0 projected points through Week 17. Sports Labs Edge Score 82, Risk Score 31 (1-99, ranked against every TE in this league's scoring).",
+       "Drop Brian Thomas: he is not in your optimal lineup and projects 87.4 rest-of-season points against 106.0 for Strange, a net +18.6.",
+       "What could go wrong: the HOU defense is a tough draw for TEs; his snap rate dipped from 79% to 44% over the last two games.",
+       "What you give up: Brian Thomas's 87.4 projected rest-of-season points and his roster spot."
+      ],
+      "metrics": {
+       "kind": "Best available",
+       "ros": 106.0,
+       "proj": 8.8,
+       "net": 18.6,
+       "edge": 82,
+       "risk": 31
+      },
+      "players": [
+       "9480",
+       "11631"
+      ],
+      "priority": 2.93,
+      "rank": 7
+     }
+    ],
+    "trades": [
+     {
+      "section": "trades",
+      "call": "Trade Drake Maye + Garrett Wilson to Blue Square Massage Academy for Kyren Williams",
+      "conf": 75,
+      "confLabel": "High",
+      "headline": "+3.9 ppg",
+      "narrative": [
+       "Propose this to Blue Square Massage Academy: you send Drake Maye + Garrett Wilson, you get Kyren Williams. RB is a need for you (need score 100/100: your starters average 22.7 ppg there vs a league average of 32.0). Blue Square Massage Academy is thin where you are deep (QB need score 95/100, WR need score 52/100).",
+       "The numbers: on our blended value scale you send 4,453 and receive 4,394 (-59). Your optimal lineup improves by 3.9 points a week and theirs changes by +2.6, which is why it is pitchable: both sides start better players. Estimated acceptance: 64%.",
+       "Williams has played 68% of snaps (77% over the last two games) with a 14.5% target share (20.1% last two), a 52.5% carry share (64.6% the last two games) at 13.5 carries a game, 6.2 targets per game. The last three box scores in this league's scoring were Wk2 15.7, Wk3 21.8, Wk4 36.7. That is up 6.8 points a game against his season average of 22.4. His opportunity (yards and TDs expected from his targets and carries) is worth 19.0 points a game; he has scored 22.4, running hot (+3.5). Touchdowns: 4 scored on 2.9 expected.",
+       "Bet Lab injury cascade: BUF front seven: 1 starter out \u2014 Ed Oliver (Out, knee); its read is that this helps LAR run game & protection.",
+       "The projection is 0.0 points for Week 6, with an 80% range of roughly 0.0 to 0.0 based on his week-to-week spread (8.6 pt standard deviation). Rest of season: 0.0 projected points through Week 17. Sports Labs Edge Score 11, Risk Score 31 (1-99, ranked against every RB in this league's scoring).",
+       "What you give up: Drake Maye (QB, NE) projects 252.6 rest-of-season points. Maye is adding 6.0 rushes a game. The last three box scores in this league's scoring were Wk3 6.6, Wk4 30.6, Wk5 44.7. That is up 16.2 points a game against his season average of 21.4.",
+       "What you give up: Garrett Wilson (WR, NYJ) projects 167.6 rest-of-season points. Usage: 89% snap rate, 50% in the last two, and 30.1% of team targets (32.3% recently), 8.4 targets per game. The last three box scores in this league's scoring were Wk3 26.7, Wk4 5.7, Wk5 23.4. That is down 2.7 points a game against his season average of 17.3. His opportunity (yards and TDs expected from his targets and carries) is worth 14.1 points a game; he has scored 17.3, running hot (+3.2). Touchdowns: 3 scored on 1.9 expected.",
+       "The risk on this call: at 26 he is past the typical RB peak. On the other side, Maye has his own flags: his weekly scoring is volatile (standard deviation 14.2 on a 23.3 ppg base); the NYJ defense is a tough draw for QBs; his snap rate dipped from 95% to 50% over the last two games."
+      ],
+      "metrics": {
+       "give": 4453,
+       "get": 4394,
+       "lineupGain": 3.9,
+       "accept": 64,
+       "edge": 11,
+       "risk": 31
+      },
+      "players": [
+       "8150",
+       "11564",
+       "8146"
+      ],
+      "priority": 3.47,
+      "rank": 6
+     },
+     {
+      "section": "trades",
+      "call": "Trade Drake Maye + Jameson Williams to Blue Square Massage Academy for Chase Brown",
+      "conf": 69,
+      "confLabel": "Medium",
+      "headline": "+4.0 ppg",
+      "narrative": [
+       "Offer Blue Square Massage Academy Drake Maye + Jameson Williams for Chase Brown. RB is a need for you (need score 100/100: your starters average 22.7 ppg there vs a league average of 32.0). Blue Square Massage Academy is thin where you are deep (QB need score 95/100, WR need score 52/100).",
+       "The numbers: on our blended value scale you send 2,748 and receive 3,397 (+649). Your optimal lineup improves by 4.0 points a week and theirs changes by +2.6, which is why it is pitchable: both sides start better players. Estimated acceptance: 39%.",
+       "Brown has played 73% of snaps (40% over the last two games) with a 14.6% target share (16.8% last two), a 64.1% carry share (51.0% the last two games) at 14.2 carries a game, 5.6 targets per game. The last three box scores in this league's scoring were Wk3 8.9, Wk4 19.1, Wk5 7.0. His opportunity (yards and TDs expected from his targets and carries) is worth 18.2 points a game; he has scored 13.0, leaving points on the table (-5.2). Touchdowns: 1 scored on 3.5 expected.",
+       "In the news: Week 5 winners and losers: Maye, Warren, Gibbs dominate; Taylor, Brown struggle.",
+       "We project 0.0 points (80% band 0.0-0.0), built from a 15.0 ppg blend of this year and last year adjusted for the matchup. Rest of season: 165.5 projected points through Week 17. Sports Labs Edge Score 45, Risk Score 27 (1-99, ranked against every RB in this league's scoring).",
+       "What you give up: Drake Maye (QB, NE) projects 252.6 rest-of-season points. Maye is adding 6.0 rushes a game. Week by week lately: Wk3 6.6, Wk4 30.6, Wk5 44.7. That is up 16.2 points a game against his season average of 21.4.",
+       "What you give up: Jameson Williams (WR, DET) projects 132.9 rest-of-season points. Usage: 90% snap rate, 50% in the last two, and 15.2% of team targets (14.7% recently), 5.8 targets per game. Week by week lately: Wk3 8.9, Wk4 16.2, Wk5 18.7. That is up 5.9 points a game against his season average of 11.5. His opportunity (yards and TDs expected from his targets and carries) is worth 9.7 points a game; he has scored 11.5, running hot (+1.8). Touchdowns: 2 scored on 1.3 expected.",
+       "The risk on this call: his snap rate dipped from 73% to 40% over the last two games; at 26 he is past the typical RB peak. On the other side, Maye has his own flags: his weekly scoring is volatile (standard deviation 14.2 on a 23.3 ppg base); the NYJ defense is a tough draw for QBs; his snap rate dipped from 95% to 50% over the last two games."
+      ],
+      "metrics": {
+       "give": 2748,
+       "get": 3397,
+       "lineupGain": 4.0,
+       "accept": 39,
+       "edge": 45,
+       "risk": 27
+      },
+      "players": [
+       "9224",
+       "11564",
+       "8148"
+      ],
+      "priority": 3.49,
+      "rank": 5
+     }
+    ],
+    "sellhold": [
+     {
+      "section": "sellhold",
+      "call": "Sell high on CeeDee Lamb",
+      "conf": 83,
+      "confLabel": "High",
+      "headline": "Sell high",
+      "narrative": [
+       "CeeDee Lamb is a sell-high candidate. He is scoring 23.0 points a game, but his opportunity is worth 17.4 a game (+5.6).",
+       "Lamb has played 76% of snaps (72% over the last two games) with a 27.3% target share (30.4% last two), 10.2 targets per game. Recent scoring: Wk3 20.2, Wk4 41.3, Wk5 2.9. His opportunity (yards and TDs expected from his targets and carries) is worth 17.4 points a game; he has scored 23.0, running hot (+5.6). Touchdowns: 4 scored on 2.4 expected.",
+       "Injury status: Questionable (Quadriceps).",
+       "We project 18.3 points (80% band 1.2-35.4), built from a 18.9 ppg blend of this year and last year adjusted for the matchup. Rest of season: 209.6 projected points through Week 17. Sports Labs Edge Score 98, Risk Score 61 (1-99, ranked against every WR in this league's scoring).",
+       "Market check: CeeDee Lamb is valued at 8,124 in the public trade market (position rank 3).",
+       "The counter-case: talent can sustain efficiency for a while, and if he is your only reliable starter at the position, selling creates a hole. Only sell for a starter you need.",
+       "What you give up by selling: 209.6 projected rest-of-season points."
+      ],
+      "metrics": {
+       "ppg": 23.02,
+       "xfp": 17.4,
+       "edge": 98,
+       "risk": 61
+      },
+      "players": [
+       "6786"
+      ],
+      "priority": 2.4,
+      "rank": 8
+     },
+     {
+      "section": "sellhold",
+      "call": "Sell high on Garrett Wilson",
+      "conf": 71,
+      "confLabel": "Medium",
+      "headline": "Sell high",
+      "narrative": [
+       "Shop Garrett Wilson while the box scores look great. He is scoring 17.3 points a game, but his opportunity is worth 14.1 a game (+3.2).",
+       "Wilson has played 89% of snaps (50% over the last two games) with a 30.1% target share (32.3% last two), 8.4 targets per game. The last three box scores in this league's scoring were Wk3 26.7, Wk4 5.7, Wk5 23.4. That is down 2.7 points a game against his season average of 17.3. His opportunity (yards and TDs expected from his targets and carries) is worth 14.1 points a game; he has scored 17.3, running hot (+3.2). Touchdowns: 3 scored on 1.9 expected.",
+       "Wilson carries no injury tag, and the news check found nothing new.",
+       "The projection is 15.5 points for Week 6, with an 80% range of roughly 6.1 to 24.9 based on his week-to-week spread (7.4 pt standard deviation). Rest of season: 167.6 projected points through Week 17. Sports Labs Edge Score 93, Risk Score 36 (1-99, ranked against every WR in this league's scoring).",
+       "Market check: Garrett Wilson is valued at 4,302 in the public trade market (position rank 11).",
+       "The counter-case: talent can sustain efficiency for a while, and if he is your only reliable starter at the position, selling creates a hole. Only sell for a starter you need.",
+       "What you give up by selling: 167.6 projected rest-of-season points."
+      ],
+      "metrics": {
+       "ppg": 17.28,
+       "xfp": 14.1,
+       "edge": 93,
+       "risk": 36
+      },
+      "players": [
+       "8146"
+      ],
+      "priority": 1.79,
+      "rank": 9
+     },
+     {
+      "section": "sellhold",
+      "call": "Hold Saquon Barkley (do not sell low)",
+      "conf": 69,
+      "confLabel": "Medium",
+      "headline": "Buy low",
+      "narrative": [
+       "Keep Saquon Barkley; this is the wrong time to sell. He is scoring 5.8 a game on opportunity worth 8.6 (-2.8).",
+       "Usage: 42% snap rate, 40% in the last two, and 6.7% of team targets (6.0% recently), a 39.7% carry share (43.2% the last two games) at 9.0 carries a game, 1.8 targets per game. Week by week lately: Wk2 3.0, Wk3 9.0, Wk4 2.0. His opportunity (yards and TDs expected from his targets and carries) is worth 8.6 points a game; he has scored 5.8, leaving points on the table (-2.8). Touchdowns: 0 scored on 1.5 expected.",
+       "Injury status: Out (Hamstring). Cascade: Will Shipley (Out) is ahead of Barkley on the PHI depth chart and is not available, which moves Barkley up to the top of the RB room. In the news: Saquon Barkley (RB, PHI) Out for Week 5: Hamstring.",
+       "The projection is 0.0 points for Week 6, with an 80% range of roughly 0.0 to 0.0 based on his week-to-week spread (3.3 pt standard deviation). Rest of season: 111.2 projected points through Week 17. Sports Labs Edge Score 40, Risk Score 33 (1-99, ranked against every RB in this league's scoring).",
+       "Market check: Saquon Barkley is valued at 3,436 in the public trade market (position rank 17).",
+       "What could go wrong: at 29 he is past the typical RB peak.",
+       "What you give up by holding: the chance to cash in his current 5.8 ppg reputation."
+      ],
+      "metrics": {
+       "ppg": 5.75,
+       "xfp": 8.6,
+       "edge": 40,
+       "risk": 33
+      },
+      "players": [
+       "4866"
+      ],
+      "priority": 1.71,
+      "rank": 10
+     }
+    ]
+   },
+   "actions": [
+    {
+     "rank": 1,
+     "section": "startsit",
+     "call": "Start Jordan Love, bench Jared Goff",
+     "conf": 95,
+     "confLabel": "High"
+    },
+    {
+     "rank": 2,
+     "section": "waivers",
+     "call": "Add Jalon Daniels, drop Dameon Pierce",
+     "conf": 90,
+     "confLabel": "High"
+    },
+    {
+     "rank": 3,
+     "section": "startsit",
+     "call": "Start Brian Thomas, bench Jameson Williams",
+     "conf": 95,
+     "confLabel": "High"
+    },
+    {
+     "rank": 4,
+     "section": "waivers",
+     "call": "Add Dalton Schultz, drop Braelon Allen",
+     "conf": 68,
+     "confLabel": "Medium"
+    },
+    {
+     "rank": 5,
+     "section": "trades",
+     "call": "Trade Drake Maye + Jameson Williams to Blue Square Massage Academy for Chase Brown",
+     "conf": 69,
+     "confLabel": "Medium"
+    },
+    {
+     "rank": 6,
+     "section": "trades",
+     "call": "Trade Drake Maye + Garrett Wilson to Blue Square Massage Academy for Kyren Williams",
+     "conf": 75,
+     "confLabel": "High"
+    },
+    {
+     "rank": 7,
+     "section": "waivers",
+     "call": "Add Brenton Strange, drop Brian Thomas",
+     "conf": 61,
+     "confLabel": "Medium"
+    },
+    {
+     "rank": 8,
+     "section": "sellhold",
+     "call": "Sell high on CeeDee Lamb",
+     "conf": 83,
+     "confLabel": "High"
+    },
+    {
+     "rank": 9,
+     "section": "sellhold",
+     "call": "Sell high on Garrett Wilson",
+     "conf": 71,
+     "confLabel": "Medium"
+    },
+    {
+     "rank": 10,
+     "section": "sellhold",
+     "call": "Hold Saquon Barkley (do not sell low)",
+     "conf": 69,
+     "confLabel": "Medium"
+    }
+   ]
+  },
+  "dynasty": {
+   "name": "Show Us Your TDs",
+   "short": "Sleeper dynasty",
+   "scoring": "0.5 PPR, 4-pt pass TD",
+   "team": "Her Tiddies R Pierce\u2019d",
+   "record": "2-2",
+   "week": 6,
+   "sections": {
+    "startsit": [
+     {
+      "section": "startsit",
+      "call": "Start Aaron Rodgers, bench Sam Darnold",
+      "conf": 53,
+      "confLabel": "Low",
+      "headline": "+1.0 pts",
+      "narrative": [
+       "The call is Aaron Rodgers in, Sam Darnold out. Sam Darnold projects for 14.1; Rodgers is at 15.1, so the swap is worth about 1.0 projected points. Across the whole lineup, your saved lineup projects 72.3 and the optimal one projects 86.4 (+14.1).",
+       "The matchup is on the road at TB: TB has allowed the 25th-most fantasy points to QBs of 32 defenses, which our schedule model scores at 0.84x average (one of the toughest matchups).",
+       "Rodgers is adding 1.6 rushes a game. Recent scoring: Wk3 23.7, Wk4 24.0, Wk5 22.0. That is up 5.6 points a game against his season average of 17.4.",
+       "Latest news: Why Aaron Rodgers is a viable fantasy option in Week 6 vs. the Bucs. Latest news: Aaron Rodgers' 2026 NFL season: Tracking records, milestones.",
+       "The projection is 15.1 points for Week 6, with an 80% range of roughly 6.0 to 24.3 based on his week-to-week spread (7.5 pt standard deviation). Rest of season: 173.2 projected points through Week 17. Sports Labs Edge Score 59, Risk Score 64 (1-99, ranked against every QB in this league's scoring).",
+       "Week 6 puts Darnold on the road at DEN. DEN ranks 16th of 32 in fantasy points allowed to QBs (a middle-of-the-pack matchup), a 0.96x multiplier against league average. Darnold carries no injury tag, and the news check found nothing new.",
+       "The counter-case: the TB defense is a tough draw for QBs; his snap rate dipped from 99% to 50% over the last two games; at 42 he is past the typical QB peak. On the other side, Darnold has his own flags: his weekly scoring is volatile (standard deviation 10.5 on a 14.3 ppg base); his snap rate dipped from 70% to 50% over the last two games.",
+       "What you give up: Darnold's ceiling this week is about 27.4 points against 24.3 for Rodgers."
+      ],
+      "metrics": {
+       "gain": 1.0,
+       "lineupNow": 72.3,
+       "lineupBest": 86.4,
+       "proj": 15.1,
+       "lo": 6.0,
+       "hi": 24.3,
+       "edge": 59,
+       "risk": 64
+      },
+      "players": [
+       "96",
+       "4943"
+      ],
+      "priority": 3.34,
+      "rank": 4
+     },
+     {
+      "section": "startsit",
+      "call": "Start Darren Waller, bench Aaron Jones",
+      "conf": 95,
+      "confLabel": "High",
+      "headline": "+7.6 pts",
+      "narrative": [
+       "The call is Darren Waller in, Aaron Jones out. Aaron Jones is on bye; Waller is at 7.6, so the swap is worth about 7.6 projected points. Across the whole lineup, your saved lineup projects 72.3 and the optimal one projects 86.4 (+14.1).",
+       "The matchup is on the road at PHI: PHI has allowed the 26th-most fantasy points to TEs of 32 defenses, which our schedule model scores at 0.66x average (one of the toughest matchups).",
+       "Usage: 46% snap rate, 52% in the last two, and 12.4% of team targets (17.2% recently), 4.8 targets per game. The last three box scores in this league's scoring were Wk2 16.8, Wk3 7.6, Wk4 5.1. His opportunity (yards and TDs expected from his targets and carries) is worth 6.5 points a game; he has scored 8.3, running hot (+1.8). Touchdowns: 2 scored on 0.9 expected.",
+       "No injury designation and no flagged news on Waller in this refresh.",
+       "The projection is 7.6 points for Week 6, with an 80% range of roughly 1.7 to 13.4 based on his week-to-week spread (5.1 pt standard deviation). Rest of season: 99.6 projected points through Week 17. Sports Labs Edge Score 87, Risk Score 39 (1-99, ranked against every TE in this league's scoring).",
+       "Aaron Jones has no game in Week 6 on the schedule we pull (bye), so the Week 6 projection is zero. Injury status: Questionable (Leg).",
+       "The risk on this call: his weekly scoring is volatile (standard deviation 5.1 on a 8.4 ppg base); the PHI defense is a tough draw for TEs; at 34 he is past the typical TE peak. On the other side, Jones has his own flags: his snap rate dipped from 70% to 36% over the last two games; he is listed Questionable, so check the inactive list before kickoff; at 31 he is past the typical RB peak.",
+       "What you give up: nothing this week, because Jones cannot score for you in Week 6."
+      ],
+      "metrics": {
+       "gain": 7.6,
+       "lineupNow": 72.3,
+       "lineupBest": 86.4,
+       "proj": 7.6,
+       "lo": 1.7,
+       "hi": 13.4,
+       "edge": 87,
+       "risk": 39
+      },
+      "players": [
+       "2505",
+       "4199"
+      ],
+      "priority": 5.53,
+      "rank": 1
+     },
+     {
+      "section": "startsit",
+      "call": "Start Zach Ertz, bench Dameon Pierce",
+      "conf": 95,
+      "confLabel": "High",
+      "headline": "+5.0 pts",
+      "narrative": [
+       "The call is Zach Ertz in, Dameon Pierce out. Dameon Pierce projects for 1.0; Ertz is at 6.0, so the swap is worth about 5.0 projected points. Across the whole lineup, your saved lineup projects 72.3 and the optimal one projects 86.4 (+14.1).",
+       "Ertz draws CAR in Week 6 (home). Against TEs that defense ranks 7th of 32 in points allowed, a 1.25x matchup factor, one of the softest matchups.",
+       "Usage: 30% snap rate, 10% in the last two, and 9.8% of team targets (10.7% recently), 2.7 targets per game. Week by week lately: Wk3 1.4, Wk4 2.3, Wk5 0.0. His opportunity (yards and TDs expected from his targets and carries) is worth 3.7 points a game; he has scored 1.2, leaving points on the table (-2.5). Touchdowns: 0 scored on 0.4 expected.",
+       "Ertz carries no injury tag, and the news check found nothing new.",
+       "The projection is 6.0 points for Week 6, with an 80% range of roughly 4.7 to 7.3 based on his week-to-week spread (0.9 pt standard deviation). Rest of season: 62.3 projected points through Week 17. Sports Labs Edge Score 72, Risk Score 27 (1-99, ranked against every TE in this league's scoring).",
+       "Week 6 puts Pierce at home against CAR. CAR ranks 3rd of 32 in fantasy points allowed to RBs (one of the softest matchups), a 1.32x multiplier against league average. Cascade: Will Shipley (Out) is ahead of Pierce on the PHI depth chart and is not available, which moves Pierce up to the top of the RB room.",
+       "What could go wrong: his snap rate dipped from 30% to 10% over the last two games; at 35 he is past the typical TE peak. On the other side, Pierce has his own flags: at 26 he is past the typical RB peak.",
+       "What you give up: Pierce's ceiling this week is about 1.0 points against 7.3 for Ertz."
+      ],
+      "metrics": {
+       "gain": 5.0,
+       "lineupNow": 72.3,
+       "lineupBest": 86.4,
+       "proj": 6.0,
+       "lo": 4.7,
+       "hi": 7.3,
+       "edge": 72,
+       "risk": 27
+      },
+      "players": [
+       "1339",
+       "8129"
+      ],
+      "priority": 4.67,
+      "rank": 3
+     },
+     {
+      "section": "startsit",
+      "call": "Start Ty Johnson, bench Darius Cooper",
+      "conf": 53,
+      "confLabel": "Low",
+      "headline": "+0.5 pts",
+      "narrative": [
+       "Start Ty Johnson (RB, BUF) over Darius Cooper. Darius Cooper projects for 4.7, while Johnson projects for 5.2, a gain of 0.5 points for this one swap. Across the whole lineup, your saved lineup projects 72.3 and the optimal one projects 86.4 (+14.1).",
+       "Week 6 puts Johnson on the road at LV. LV ranks 10th of 32 in fantasy points allowed to RBs (one of the softest matchups), a 1.09x multiplier against league average.",
+       "Usage: 28% snap rate, 28% in the last two, and 11.0% of team targets (11.0% recently), a 2.5% carry share (2.5% the last two games) at 0.5 carries a game, 3.0 targets per game. Recent scoring: Wk3 7.0, Wk4 2.2. His opportunity (yards and TDs expected from his targets and carries) is worth 4.4 points a game; he has scored 4.6, right in line (+0.2). Touchdowns: 0 scored on 0.3 expected.",
+       "Bet Lab injury cascade: LAR front seven: 1 starter out \u2014 Myles Garrett (Injured Reserve, knee); its read is that this helps BUF run game & protection.",
+       "The projection is 5.2 points for Week 6, with an 80% range of roughly 2.0 to 8.3 based on his week-to-week spread (2.4 pt standard deviation). Rest of season: 56.4 projected points through Week 17. Sports Labs Edge Score 59, Risk Score 39 (1-99, ranked against every RB in this league's scoring).",
+       "The matchup is at home against CAR: CAR has allowed the 26th-most fantasy points to WRs of 32 defenses, which our schedule model scores at 0.86x average (one of the toughest matchups). Cooper carries no injury tag, and the news check found nothing new.",
+       "What could go wrong: at 29 he is past the typical RB peak. On the other side, Cooper has his own flags: his weekly scoring is volatile (standard deviation 7.0 on a 4.9 ppg base); the CAR defense is a tough draw for WRs; he has scored 4 TDs on 0.6 expected, so some touchdown regression is likely.",
+       "What you give up: Cooper's ceiling this week is about 13.3 points against 8.3 for Johnson."
+      ],
+      "metrics": {
+       "gain": 0.5,
+       "lineupNow": 72.3,
+       "lineupBest": 86.4,
+       "proj": 5.2,
+       "lo": 2.0,
+       "hi": 8.3,
+       "edge": 59,
+       "risk": 39
+      },
+      "players": [
+       "6039",
+       "13150"
+      ],
+      "priority": 3.16,
+      "rank": 5
+     }
+    ],
+    "waivers": [
+     {
+      "section": "waivers",
+      "call": "Add Gavin Bartholomew, drop Joe Mixon",
+      "conf": 80,
+      "confLabel": "High",
+      "headline": "Their shot",
+      "narrative": [
+       "Add Gavin Bartholomew (TE, MIN). Their shot: T.J. Hockenson is Out (Concussion), and Gavin Bartholomew is next on the MIN TE depth chart. You have $90 of FAAB left.",
+       "Bartholomew has played 22% of snaps (11% over the last two games) with a 11.9% target share (11.9% last two), 3.5 targets per game. Recent scoring: Wk4 0.9, Wk5 5.8. His opportunity (yards and TDs expected from his targets and carries) is worth 4.7 points a game; he has scored 3.4, right in line (-1.3). Touchdowns: 0 scored on 0.3 expected.",
+       "Gavin Bartholomew has no game in Week 6 on the schedule we pull (bye), so the Week 6 projection is zero.",
+       "Cascade: T.J. Hockenson (Out) is ahead of Bartholomew on the MIN depth chart and is not available, which moves Bartholomew up to the top of the TE room.",
+       "We project 0.0 points (80% band 0.0-0.0), built from a 3.4 ppg blend of this year and last year adjusted for the matchup. Rest of season: 39.2 projected points through Week 17. Sports Labs Edge Score 26, Risk Score 52 (1-99, ranked against every TE in this league's scoring).",
+       "Drop Joe Mixon: he is not in your optimal lineup and projects 0.0 rest-of-season points against 39.2 for Bartholomew, a net +39.2. In dynasty terms his value is 93 on our blended scale, so check that you are not cutting a long-term asset.",
+       "What could go wrong: his weekly scoring is volatile (standard deviation 2.5 on a 3.4 ppg base); his snap rate dipped from 22% to 11% over the last two games.",
+       "What you give up: Joe Mixon's 0.0 projected rest-of-season points and his roster spot."
+      ],
+      "metrics": {
+       "kind": "Their shot",
+       "ros": 39.2,
+       "proj": 0.0,
+       "net": 39.2,
+       "edge": 26,
+       "risk": 52
+      },
+      "players": [
+       "12700",
+       "4018"
+      ],
+      "priority": 4.96,
+      "rank": 2
+     },
+     {
+      "section": "waivers",
+      "call": "Add KhaDarel Hodge, drop Zavion Thomas",
+      "conf": 58,
+      "confLabel": "Low",
+      "headline": "Opportunity spike",
+      "narrative": [
+       "Add KhaDarel Hodge (WR, FA). Opportunity spike: his usage jumped over the last two games (snaps 32% to 47%, targets 1.6% to 2.4%, carries 0.0% to 0.0%). You have $90 of FAAB left.",
+       "Hodge has played 32% of snaps (47% over the last two games) with a 1.6% target share (2.4% last two), 0.3 targets per game. Week by week lately: Wk1 0.0, Wk2 2.3, Wk3 0.0. His opportunity (yards and TDs expected from his targets and carries) is worth 0.4 points a game; he has scored 0.8, right in line (+0.4). Touchdowns: 0 scored on 0.0 expected.",
+       "KhaDarel Hodge has no game in Week 6 on the schedule we pull (bye), so the Week 6 projection is zero.",
+       "Injury status: Questionable (Knee).",
+       "The projection is 0.0 points for Week 6, with an 80% range of roughly 0.0 to 0.0 based on his week-to-week spread (1.1 pt standard deviation). Rest of season: 0.0 projected points through Week 17. Sports Labs Edge Score 11, Risk Score 78 (1-99, ranked against every WR in this league's scoring).",
+       "Drop Zavion Thomas: he is not in your optimal lineup and projects 9.2 rest-of-season points against 0.0 for Hodge, a net -9.2. In dynasty terms his value is 150 on our blended scale, so check that you are not cutting a long-term asset.",
+       "The counter-case: his weekly scoring is volatile (standard deviation 1.1 on a 0.6 ppg base); he is listed Questionable, so check the inactive list before kickoff; at 31 he is past the typical WR peak.",
+       "What you give up: Zavion Thomas's 9.2 projected rest-of-season points and his roster spot."
+      ],
+      "metrics": {
+       "kind": "Opportunity spike",
+       "ros": 0.0,
+       "proj": 0.0,
+       "net": -9.2,
+       "edge": 11,
+       "risk": 78
+      },
+      "players": [
+       "5773",
+       "13411"
+      ],
+      "priority": 1.54,
+      "rank": 11
+     }
+    ],
+    "trades": [
+     {
+      "section": "trades",
+      "call": "Trade David Njoku + Sam Darnold to CB319 for J.K. Dobbins",
+      "conf": 58,
+      "confLabel": "Low",
+      "headline": "+2.4 ppg",
+      "narrative": [
+       "Offer CB319 David Njoku + Sam Darnold for J.K. Dobbins. RB is a need for you (need score 100/100: your starters average 19.6 ppg there vs a league average of 36.5). CB319 is thin where you are deep (TE need score 80/100, QB need score 58/100).",
+       "The numbers: on our blended value scale you send 1,006 and receive 1,081 (+75). Your optimal lineup improves by 2.4 points a week and theirs changes by -0.4, which is why it is pitchable: both sides start better players. Estimated acceptance: 34%.",
+       "Dobbins has played 40% of snaps (16% over the last two games) with a 4.2% target share (7.2% last two), a 53.8% carry share (56.0% the last two games) at 12.8 carries a game, 1.2 targets per game. Recent scoring: Wk3 5.8, Wk4 6.2, Wk5 14.4. That is up 3.6 points a game against his season average of 6.7. His opportunity (yards and TDs expected from his targets and carries) is worth 9.6 points a game; he has scored 6.7, leaving points on the table (-2.9). Touchdowns: 1 scored on 2.3 expected.",
+       "No injury designation and no flagged news on Dobbins in this refresh.",
+       "We project 8.9 points (80% band 3.9-13.9), built from a 9.1 ppg blend of this year and last year adjusted for the matchup. Rest of season: 102.6 projected points through Week 17. Sports Labs Edge Score 79, Risk Score 36 (1-99, ranked against every RB in this league's scoring).",
+       "What you give up: David Njoku (TE, LAC) projects 58.7 rest-of-season points. Njoku has played 36% of snaps (36% over the last two games) with a 15.0% target share (15.0% last two), 4.0 targets per game. Week by week lately: Wk1 8.3, Wk2 1.4. His opportunity (yards and TDs expected from his targets and carries) is worth 5.5 points a game; he has scored 4.8, right in line (-0.7). Touchdowns: 0 scored on 0.4 expected.",
+       "What you give up: Sam Darnold (QB, SEA) projects 159.0 rest-of-season points. Darnold is adding 1.2 rushes a game. Week by week lately: Wk3 29.7, Wk4 14.3, Wk5 10.3.",
+       "The counter-case: his snap rate dipped from 40% to 16% over the last two games; at 27 he is past the typical RB peak. On the other side, Njoku has his own flags: at 30 he is past the typical TE peak."
+      ],
+      "metrics": {
+       "give": 1006,
+       "get": 1081,
+       "lineupGain": 2.4,
+       "accept": 34,
+       "edge": 79,
+       "risk": 36
+      },
+      "players": [
+       "6806",
+       "4033",
+       "4943"
+      ],
+      "priority": 2.7,
+      "rank": 6
+     },
+     {
+      "section": "trades",
+      "call": "Trade Darius Cooper + Alec Pierce to Morgan & Morgan  for Jalen Hurts",
+      "conf": 59,
+      "confLabel": "Low",
+      "headline": "+2.1 ppg",
+      "narrative": [
+       "Offer Morgan & Morgan  Darius Cooper + Alec Pierce for Jalen Hurts. QB is a need for you (need score 88/100: your starters average 15.9 ppg there vs a league average of 19.7). Morgan & Morgan  is thin where you are deep (WR need score 82/100).",
+       "The numbers: on our blended value scale you send 2,094 and receive 2,067 (-27). Your optimal lineup improves by 2.1 points a week and theirs changes by +0.0, which is why it is pitchable: both sides start better players. Estimated acceptance: 44%.",
+       "Hurts is adding 4.6 rushes a game. Week by week lately: Wk3 13.6, Wk4 13.5, Wk5 13.0. That is down 3.3 points a game against his season average of 16.6.",
+       "Hurts carries no injury tag, and the news check found nothing new.",
+       "The projection is 18.9 points for Week 6, with an 80% range of roughly 12.9 to 24.9 based on his week-to-week spread (4.5 pt standard deviation). Rest of season: 203.0 projected points through Week 17. Sports Labs Edge Score 83, Risk Score 31 (1-99, ranked against every QB in this league's scoring).",
+       "What you give up: Darius Cooper (WR, PHI) projects 54.7 rest-of-season points. Cooper has played 39% of snaps (45% over the last two games) with a 9.0% target share (18.1% last two), 2.6 targets per game. The last three box scores in this league's scoring were Wk3 0.0, Wk4 16.8, Wk5 14.1. That is up 7.3 points a game against his season average of 8.1. His opportunity (yards and TDs expected from his targets and carries) is worth 3.5 points a game; he has scored 8.1, running hot (+4.6). Touchdowns: 4 scored on 0.6 expected.",
+       "What you give up: Alec Pierce (WR, IND) projects 93.2 rest-of-season points. Usage: 42% snap rate, 42% in the last two, and 12.0% of team targets (12.0% recently), 3.5 targets per game. Week by week lately: Wk1 8.1, Wk2 1.6. His opportunity (yards and TDs expected from his targets and carries) is worth 4.7 points a game; he has scored 4.8, right in line (+0.2). Touchdowns: 0 scored on 0.3 expected.",
+       "The counter-case: his snap rate dipped from 98% to 50% over the last two games. On the other side, Cooper has his own flags: his weekly scoring is volatile (standard deviation 7.0 on a 4.9 ppg base); the CAR defense is a tough draw for WRs; he has scored 4 TDs on 0.6 expected, so some touchdown regression is likely."
+      ],
+      "metrics": {
+       "give": 2094,
+       "get": 2067,
+       "lineupGain": 2.1,
+       "accept": 44,
+       "edge": 83,
+       "risk": 31
+      },
+      "players": [
+       "6904",
+       "13150",
+       "8142"
+      ],
+      "priority": 2.56,
+      "rank": 7
+     }
+    ],
+    "sellhold": [
+     {
+      "section": "sellhold",
+      "call": "Sell high on George Kittle",
+      "conf": 78,
+      "confLabel": "High",
+      "headline": "Sell high",
+      "narrative": [
+       "George Kittle is a sell-high candidate. He is scoring 12.3 points a game, but his opportunity is worth 7.6 a game (+4.6).",
+       "Kittle has played 68% of snaps (46% over the last two games) with a 20.7% target share (21.5% last two), 5.6 targets per game. Week by week lately: Wk3 23.2, Wk4 15.0, Wk5 4.9. That is down 2.3 points a game against his season average of 12.3. His opportunity (yards and TDs expected from his targets and carries) is worth 7.6 points a game; he has scored 12.3, running hot (+4.6). Touchdowns: 4 scored on 1.3 expected.",
+       "No injury designation and no flagged news on Kittle in this refresh.",
+       "The projection is 14.8 points for Week 6, with an 80% range of roughly 2.8 to 26.7 based on his week-to-week spread (7.7 pt standard deviation). Rest of season: 133.7 projected points through Week 17. Sports Labs Edge Score 98, Risk Score 49 (1-99, ranked against every TE in this league's scoring).",
+       "Market check: George Kittle is valued at 2,242 in the public trade market (position rank 9).",
+       "The counter-case: talent can sustain efficiency for a while, and if he is your only reliable starter at the position, selling creates a hole. Only sell for a starter you need.",
+       "What you give up by selling: 133.7 projected rest-of-season points."
+      ],
+      "metrics": {
+       "ppg": 12.26,
+       "xfp": 7.6,
+       "edge": 98,
+       "risk": 49
+      },
+      "players": [
+       "4217"
+      ],
+      "priority": 2.15,
+      "rank": 8
+     },
+     {
+      "section": "sellhold",
+      "call": "Sell high on Darius Cooper",
+      "conf": 78,
+      "confLabel": "High",
+      "headline": "Sell high",
+      "narrative": [
+       "Darius Cooper is a sell-high candidate. He is scoring 8.1 points a game, but his opportunity is worth 3.5 a game (+4.6).",
+       "Usage: 39% snap rate, 45% in the last two, and 9.0% of team targets (18.1% recently), 2.6 targets per game. Week by week lately: Wk3 0.0, Wk4 16.8, Wk5 14.1. That is up 7.3 points a game against his season average of 8.1. His opportunity (yards and TDs expected from his targets and carries) is worth 3.5 points a game; he has scored 8.1, running hot (+4.6). Touchdowns: 4 scored on 0.6 expected.",
+       "No injury designation and no flagged news on Cooper in this refresh.",
+       "We project 4.7 points (80% band 0.0-13.3), built from a 4.9 ppg blend of this year and last year adjusted for the matchup. Rest of season: 54.7 projected points through Week 17. Sports Labs Edge Score 60, Risk Score 86 (1-99, ranked against every WR in this league's scoring).",
+       "Market check: Darius Cooper is valued at 654 in the public trade market (position rank 91).",
+       "The counter-case: talent can sustain efficiency for a while, and if he is your only reliable starter at the position, selling creates a hole. Only sell for a starter you need.",
+       "What you give up by selling: 54.7 projected rest-of-season points."
+      ],
+      "metrics": {
+       "ppg": 8.1,
+       "xfp": 3.5,
+       "edge": 60,
+       "risk": 86
+      },
+      "players": [
+       "13150"
+      ],
+      "priority": 2.14,
+      "rank": 9
+     },
+     {
+      "section": "sellhold",
+      "call": "Sell high on Noah Fant",
+      "conf": 70,
+      "confLabel": "Medium",
+      "headline": "Sell high",
+      "narrative": [
+       "Noah Fant is a sell-high candidate. He is scoring 7.5 points a game, but his opportunity is worth 4.4 a game (+3.0).",
+       "Usage: 47% snap rate, 28% in the last two, and 7.4% of team targets (7.1% recently), 3.2 targets per game. The last three box scores in this league's scoring were Wk2 0.0, Wk3 17.3, Wk5 1.2. His opportunity (yards and TDs expected from his targets and carries) is worth 4.4 points a game; he has scored 7.5, running hot (+3.0). Touchdowns: 3 scored on 0.6 expected.",
+       "Fant carries no injury tag, and the news check found nothing new.",
+       "The projection is 5.6 points for Week 6, with an 80% range of roughly 0.0 to 14.7 based on his week-to-week spread (7.2 pt standard deviation). Rest of season: 63.1 projected points through Week 17. Sports Labs Edge Score 71, Risk Score 86 (1-99, ranked against every TE in this league's scoring).",
+       "Market check: Noah Fant is valued at 178 in the public trade market (position rank 44).",
+       "The counter-case: talent can sustain efficiency for a while, and if he is your only reliable starter at the position, selling creates a hole. Only sell for a starter you need.",
+       "What you give up by selling: 63.1 projected rest-of-season points."
+      ],
+      "metrics": {
+       "ppg": 7.45,
+       "xfp": 4.4,
+       "edge": 71,
+       "risk": 86
+      },
+      "players": [
+       "5857"
+      ],
+      "priority": 1.75,
+      "rank": 10
+     }
+    ],
+    "rookie": [
+     {
+      "section": "rookie",
+      "call": "Target Jadan Baugh (RB) with your top 2027 pick",
+      "conf": 60,
+      "confLabel": "Medium",
+      "headline": "RB need",
+      "narrative": [
+       "Rookie draft plan: you own these 2027 picks: R1, R3, R4, R5. Your biggest positional need is RB (need score 100/100; your starters average 19.6 ppg there vs 36.5 league-wide), so the board points to Jadan Baugh (Florida, RB1), projected to go 1.02-1.04 in 12-team leagues.",
+       "2026 production: 5 G: 95 car, 613 yds (6.45), 11 TD; 5 rec, 35 yds, 0 TD. Scouting note: Consensus RB1 (StickToTheModel). Big bell cow; 11 TD already, but only 13 yds vs Missouri on 10/3. Age at the draft: unverified.",
+       "Our prospect model scores him 83/100 (tier 1): peak dominator 33.7% (elite vs. class); broke out ~age 20.6 (2025); 5.45 YPC; 2026: 119.7 yds/g; 6' 1\", 225 lb.",
+       "Other fits at the position: Kewan Lacy (Ole Miss, 1.03-1.06); Ahmad Hardy (Missouri, early-mid 1st (injury discount)).",
+       "Your window reads as Rebuild: lineup strength ranks 10th and total roster value ranks 11th of 12. Contenders can trade a future pick for a proven starter; rebuilders should collect more 2027 firsts.",
+       "The counter-case: college production in October is a small sample, and NFL draft capital in April will move these rankings more than anything else. Treat the board as a starting point."
+      ],
+      "metrics": {
+       "picks": 4,
+       "window": "Rebuild"
+      },
+      "players": [],
+      "priority": 1.3,
+      "rank": 12
+     }
+    ]
+   },
+   "actions": [
+    {
+     "rank": 1,
+     "section": "startsit",
+     "call": "Start Darren Waller, bench Aaron Jones",
+     "conf": 95,
+     "confLabel": "High"
+    },
+    {
+     "rank": 2,
+     "section": "waivers",
+     "call": "Add Gavin Bartholomew, drop Joe Mixon",
+     "conf": 80,
+     "confLabel": "High"
+    },
+    {
+     "rank": 3,
+     "section": "startsit",
+     "call": "Start Zach Ertz, bench Dameon Pierce",
+     "conf": 95,
+     "confLabel": "High"
+    },
+    {
+     "rank": 4,
+     "section": "startsit",
+     "call": "Start Aaron Rodgers, bench Sam Darnold",
+     "conf": 53,
+     "confLabel": "Low"
+    },
+    {
+     "rank": 5,
+     "section": "startsit",
+     "call": "Start Ty Johnson, bench Darius Cooper",
+     "conf": 53,
+     "confLabel": "Low"
+    },
+    {
+     "rank": 6,
+     "section": "trades",
+     "call": "Trade David Njoku + Sam Darnold to CB319 for J.K. Dobbins",
+     "conf": 58,
+     "confLabel": "Low"
+    },
+    {
+     "rank": 7,
+     "section": "trades",
+     "call": "Trade Darius Cooper + Alec Pierce to Morgan & Morgan  for Jalen Hurts",
+     "conf": 59,
+     "confLabel": "Low"
+    },
+    {
+     "rank": 8,
+     "section": "sellhold",
+     "call": "Sell high on George Kittle",
+     "conf": 78,
+     "confLabel": "High"
+    },
+    {
+     "rank": 9,
+     "section": "sellhold",
+     "call": "Sell high on Darius Cooper",
+     "conf": 78,
+     "confLabel": "High"
+    },
+    {
+     "rank": 10,
+     "section": "sellhold",
+     "call": "Sell high on Noah Fant",
+     "conf": 70,
+     "confLabel": "Medium"
+    },
+    {
+     "rank": 11,
+     "section": "waivers",
+     "call": "Add KhaDarel Hodge, drop Zavion Thomas",
+     "conf": 58,
+     "confLabel": "Low"
+    },
+    {
+     "rank": 12,
+     "section": "rookie",
+     "call": "Target Jadan Baugh (RB) with your top 2027 pick",
+     "conf": 60,
+     "confLabel": "Medium"
+    }
+   ]
+  }
+ }
+}
