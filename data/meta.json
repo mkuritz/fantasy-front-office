@@ -1,33 +1,39 @@
 {
  "espnConnected": true,
- "lastRun": "2026-10-11T20:25:43-04:00",
+ "lastRun": "2026-10-11T20:44:32-04:00",
  "sources": {
   "espn_dcigs.json": {
-   "error": "UnicodeEncodeError: 'latin-1' codec can't encode character '\\u0417' in position 336: ordinal not in range(256)",
+   "error": null,
    "label": "ESPN D CIGS (private; needs secrets)",
    "lastAttempt": "2026-10-11T20:25:41-04:00",
-   "ok": false,
-   "pending": true
+   "lastChange": "2026-10-11T20:44:29-04:00",
+   "lastSuccess": "2026-10-11T20:44:29-04:00",
+   "ok": true,
+   "pending": false
   },
   "espn_kal.json": {
-   "error": "UnicodeEncodeError: 'latin-1' codec can't encode character '\\u0417' in position 336: ordinal not in range(256)",
+   "error": null,
    "label": "ESPN KAL (private; needs secrets)",
    "lastAttempt": "2026-10-11T20:25:41-04:00",
-   "ok": false,
-   "pending": true
+   "lastChange": "2026-10-11T20:44:29-04:00",
+   "lastSuccess": "2026-10-11T20:44:29-04:00",
+   "ok": true,
+   "pending": false
   },
   "espn_lomo.json": {
-   "error": "UnicodeEncodeError: 'latin-1' codec can't encode character '\\u0417' in position 336: ordinal not in range(256)",
+   "error": null,
    "label": "ESPN LOMOFAGS (private; needs secrets)",
    "lastAttempt": "2026-10-11T20:25:41-04:00",
-   "ok": false,
-   "pending": true
+   "lastChange": "2026-10-11T20:44:30-04:00",
+   "lastSuccess": "2026-10-11T20:44:30-04:00",
+   "ok": true,
+   "pending": false
   },
   "news.json": {
    "error": null,
    "label": "ESPN NFL news (public)",
-   "lastChange": "2026-10-11T20:25:41-04:00",
-   "lastSuccess": "2026-10-11T20:25:41-04:00",
+   "lastChange": "2026-10-11T20:44:27-04:00",
+   "lastSuccess": "2026-10-11T20:44:27-04:00",
    "ok": true,
    "pending": false
   },
@@ -35,7 +41,7 @@
    "error": null,
    "label": "nflverse weekly stats \u2192 league-scored Performance Score",
    "lastChange": "2026-10-11T20:22:38-04:00",
-   "lastSuccess": "2026-10-11T20:25:43-04:00",
+   "lastSuccess": "2026-10-11T20:44:32-04:00",
    "ok": true,
    "pending": false
   },
@@ -43,27 +49,27 @@
    "error": null,
    "label": "Sleeper player DB (rostered + relevant FAs)",
    "lastChange": "2026-10-11T20:22:38-04:00",
-   "lastSuccess": "2026-10-11T20:25:43-04:00",
+   "lastSuccess": "2026-10-11T20:44:32-04:00",
    "ok": true,
    "pending": false
   },
   "sleeper_dynasty.json": {
    "error": null,
    "label": "Sleeper league (public API)",
-   "lastChange": "2026-10-11T19:48:19-04:00",
-   "lastSuccess": "2026-10-11T20:25:40-04:00",
+   "lastChange": "2026-10-11T20:44:27-04:00",
+   "lastSuccess": "2026-10-11T20:44:27-04:00",
    "ok": true,
    "pending": false
   },
   "values_market.json": {
    "error": null,
    "label": "FantasyCalc market values (public)",
-   "lastChange": "2026-10-11T19:48:22-04:00",
-   "lastSuccess": "2026-10-11T20:25:41-04:00",
+   "lastChange": "2026-10-11T20:44:28-04:00",
+   "lastSuccess": "2026-10-11T20:44:28-04:00",
    "ok": true,
    "pending": false
   }
  },
  "timezone": "America/New_York",
- "updated": "2026-10-11T20:25:41-04:00"
+ "updated": "2026-10-11T20:44:30-04:00"
 }
