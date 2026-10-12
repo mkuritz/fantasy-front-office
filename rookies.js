@@ -61,7 +61,7 @@
   window.RDprofile = (i) => profileModal(RD.data.prospects.find((p) => p.id === i));
   document.addEventListener('click', (e) => { const b = e.target.closest('[data-rdp]'); if (b) window.RDprofile(b.dataset.rdp); const l = e.target.closest('[data-rdlive]'); if (l) toggleLive(); const fp = e.target.closest('[data-rdpos]'); if (fp) { RD.pos = fp.dataset.rdpos; render(); } });
 
-  const row = (p, extra = '') => `<tr><td class="num">${p.rank}</td><td><button class="linkish" data-rdp="${p.id}"><b>${U.esc(p.name)}</b></button><div class="small muted">${U.esc(p.school || '')} · ${U.esc(p.cls || '')}</div></td><td>${p.pos}</td><td>${tierTag(p.tier)}</td><td class="num"><b>${p.score}</b></td><td class="num">${f(p.m.peakDom, '%')}</td><td class="num">${f(p.m.breakoutAge)}</td><td class="num">${p.pos === 'RB' ? f(p.m.ypc) : p.pos === 'QB' ? f(p.m.ypa) : f(p.m.ypr)}</td><td class="small">${lineOf(p)}</td><td class="small">${p.capitalEst}</td>${extra}</tr>`;
+  const row = (p, extra = '') => `<tr><td class="num">${p.rank}</td><td><button class="linkish" data-rdp="${p.id}"><b>${U.esc(p.name)}</b></button><div class="small muted">${U.esc(p.school || '')} · ${U.esc(p.cls || '')}</div></td><td>${p.pos}</td><td>${tierTag(p.tier)}</td><td class="num"><b>${p.score}</b></td><td class="num">${p.pos === 'QB' ? '—' : f(p.m.peakDom, '%')}</td><td class="num">${f(p.m.breakoutAge)}</td><td class="num">${p.pos === 'RB' ? f(p.m.ypc) : p.pos === 'QB' ? f(p.m.ypa) : f(p.m.ypr)}</td><td class="small">${lineOf(p)}</td><td class="small">${p.capitalEst}</td>${extra}</tr>`;
 
   V.rookieboard = (lg, m) => {
     if (!isDyn(lg)) return onlyDyn; if (!RD.data) return loading;
