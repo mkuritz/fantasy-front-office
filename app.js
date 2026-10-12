@@ -180,17 +180,19 @@ function md(t) { const inl = (s) => s.replace(/\*\*(.+?)\*\*/g, '<b>$1</b>').rep
 
 /* ---------------- modules ---------------- */
 const COMMON = [
-  { id: 'hub', label: 'Front Office', title: 'Front Office' }, { id: 'roster', label: 'My Roster', title: 'My Roster · performance-based values' },
-  { id: 'league', label: 'League Rosters', title: 'All Teams · rosters & needs' }, { id: 'standings', label: 'Standings & Matchups', title: 'Standings & Matchups' },
-  { id: 'activity', label: 'League Activity', title: 'Recent Transactions & Trades' }, { id: 'news', label: 'News & Injuries', title: 'Fantasy News & Injuries' },
+  { id: 'hub', label: 'Front Office', title: 'Front Office' }, { id: 'roster', label: 'My Team', title: 'My Team · performance-based values' },
+  { id: 'league', label: 'League Rosters', title: 'All Teams · rosters & needs' }, { id: 'standings', label: 'Standings', title: 'Standings' },
+  { id: 'matchups', label: 'Matchups', title: 'Matchups' }, { id: 'activity', label: 'Activity', title: 'Recent Transactions & Trades' },
+  { id: 'trade', label: 'Trade Simulator', title: 'Trade Simulator' }, { id: 'news', label: 'News', title: 'Fantasy News & Injuries' },
 ];
 const MODE = {
-  dynasty: [{ id: 'window', label: 'Contend / Rebuild', title: 'Contention Window & Age Curves' }, { id: 'picks', label: 'Rookie Picks', title: 'Rookie Picks & 2027–28 Classes' }, { id: 'plan', label: 'Rebuild Plan', title: 'Rebuild Plan' }, { id: 'startsit', label: 'Start / Sit', title: 'Start / Sit' }, { id: 'waivers', label: 'Waivers / FAAB', title: 'Waivers & FAAB' }],
-  keeper: [{ id: 'keepers', label: 'Keeper Board', title: 'Keeper Decision Board' }, { id: 'cap', label: 'Cap Planning', title: 'Auction Cap Planning' }, { id: 'startsit', label: 'Start / Sit', title: 'Start / Sit' }, { id: 'waivers', label: 'Waivers / FAAB', title: 'Waivers & FAAB' }],
-  redraft: [{ id: 'startsit', label: 'Start / Sit', title: 'Start / Sit' }, { id: 'waivers', label: 'Waivers / FAAB', title: 'Waivers & FAAB Bids' }, { id: 'playoffs', label: 'Playoff Odds', title: 'Playoff Odds' }],
+  dynasty: [{ id: 'values', label: 'Dynasty Values', title: 'Dynasty Values' }, { id: 'ages', label: 'Age Curves', title: 'Age Curves' }, { id: 'picks', label: 'Rookie Picks', title: 'Rookie Picks & 2027–28 Classes' }, { id: 'window', label: 'Contend / Rebuild', title: 'Contention Window' }, { id: 'plan', label: 'Rebuild Plan', title: 'Rebuild Plan' }, { id: 'startsit', label: 'Start / Sit', title: 'Start / Sit' }, { id: 'waivers', label: 'Waivers', title: 'Waivers & FAAB' }],
+  keeper: [{ id: 'keepers', label: 'Keeper Board', title: 'Keeper Decision Board' }, { id: 'cap', label: 'Cap Planning', title: 'Auction Cap Planning' }, { id: 'startsit', label: 'Start / Sit', title: 'Start / Sit' }, { id: 'waivers', label: 'Waivers', title: 'Waivers & FAAB' }],
+  redraft: [{ id: 'startsit', label: 'Start / Sit', title: 'Start / Sit' }, { id: 'waivers', label: 'Waivers / FAAB', title: 'Waivers & FAAB Bids' }, { id: 'playoffs', label: 'Playoff Odds', title: 'Playoff Odds' }, { id: 'analyzer', label: 'Trade Analyzer', title: 'Trade Analyzer' }],
 };
-const TOOLS = [{ id: 'trade', label: 'Trade Machine', title: 'Trade Machine & Analyzer' }, { id: 'montecarlo', label: 'Monte Carlo', title: 'Monte Carlo Season Simulator' }, { id: 'scenarios', label: 'Scenarios', title: 'Scenario Manager' }, { id: 'method', label: 'Data & Method', title: 'Data Sources & Methodology' }];
-const modules = (lg) => [...COMMON.map((x) => ({ ...x, group: 'Front office' })), ...MODE[lg.mode].map((x) => ({ ...x, group: lg.short + ' mode' })), ...TOOLS.map((x) => ({ ...x, group: 'Tools' }))];
+const TOOLS = [{ id: 'montecarlo', label: 'Monte Carlo', title: 'Monte Carlo Season Simulator' }, { id: 'scenarios', label: 'Scenarios', title: 'Scenario Manager' }, { id: 'method', label: 'Data & Method', title: 'Data Sources & Methodology' }];
+const DETAIL = { team: { title: 'Team Detail' } };
+const modules = (lg) => [...COMMON.map((x) => ({ ...x, group: 'My league' })), ...MODE[lg.mode].map((x) => ({ ...x, group: lg.short + ' tools' })), ...TOOLS.map((x) => ({ ...x, group: 'More' }))];
 const ICO = '<svg class="ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="10" cy="10" r="5.5"/></svg>';
 
 const V = {
@@ -231,14 +233,14 @@ const V = {
   },
   league(lg, m) {
     if (!m.teams.length) return pendingCard(lg);
-    return `<div class="depth-grid">${[...m.teams].sort((a, b) => b.value - a.value).map((t) => { const ns = needs(lg, m, t).slice(0, 2); return `<div class="card depth-col"><div class="depth-head"><div><div class="depth-pos" style="font-size:19px">${U.esc(t.name)}${t.me ? ' ★' : ''}</div><div class="small muted">${U.esc(t.owner)} · ${t.w}-${t.l} · value ${t.value.toLocaleString()} · ${U.fmt(t.strength)} ppg</div></div>${t.me ? '' : `<button class="btn sm" data-action="tmPartner" data-id="${t.id}">Trade</button>`}</div>
+    return `<div class="depth-grid">${[...m.teams].sort((a, b) => b.value - a.value).map((t) => { const ns = needs(lg, m, t).slice(0, 2); return `<div class="card depth-col"><div class="depth-head"><div><div class="depth-pos" style="font-size:19px"><button class="link-btn" data-action="team" data-id="${t.id}" style="font:inherit;color:inherit">${U.esc(t.name)}</button>${t.me ? ' ★' : ''}</div><div class="small muted">${U.esc(t.owner)} · ${t.w}-${t.l} · value ${t.value.toLocaleString()} · ${U.fmt(t.strength)} ppg</div></div>${t.me ? '' : `<button class="btn sm" data-action="tmPartner" data-id="${t.id}">Trade</button>`}</div>
       <div class="small" style="margin:6px 0">Needs: ${ns.map((n) => `<span class="tag ${urg(n.urgency)}">${n.pos} ${n.score}</span>`).join(' ')}</div><div class="depth-label">Optimal lineup</div>${t.lineup.filter((x) => x.id).map((x) => pcard(lg, x.id, { compact: true })).join('')}</div>`; }).join('')}</div>`;
   },
   standings(lg, m) {
     if (!m.teams.length) return pendingCard(lg);
     const st = [...m.teams].sort((a, b) => b.w - a.w || b.pf - a.pf); const sim = simulate(lg, m, 2000); const T = (id) => m.teams.find((t) => t.id === id);
     const wk = m.schedule.filter((s) => s.week === m.week);
-    return `<div class="grid sidebar-right"><div class="card"><div class="card-head"><h2>Standings</h2><span class="sub">Top ${m.playoffTeams} make the playoffs · odds from 2,000 sims</span></div><div class="table-wrap"><table><thead><tr><th>#</th><th>Team</th><th class="num">W-L</th><th class="num">PF</th><th class="num">PA</th><th class="num">Strength</th><th class="num">Playoffs</th></tr></thead><tbody>${st.map((t, i) => `<tr ${t.me ? 'style="background:rgba(44,193,176,.08)"' : ''}><td>${i + 1}</td><td><b>${U.esc(t.name)}</b> <span class="muted small">${U.esc(t.owner)}</span></td><td class="num">${t.w}-${t.l}</td><td class="num">${U.fmt(t.pf)}</td><td class="num">${U.fmt(t.pa)}</td><td class="num">${U.fmt(t.strength)}</td><td class="num">${Math.round(sim[t.id].playoffs * 100)}%</td></tr>`).join('')}</tbody></table></div></div>
+    return `<div class="grid sidebar-right"><div class="card"><div class="card-head"><h2>Standings</h2><span class="sub">Top ${m.playoffTeams} make the playoffs · odds from 2,000 sims</span></div><div class="table-wrap"><table><thead><tr><th>#</th><th>Team</th><th class="num">W-L</th><th class="num">PF</th><th class="num">PA</th><th class="num">Strength</th><th class="num">Playoffs</th></tr></thead><tbody>${st.map((t, i) => `<tr ${t.me ? 'style="background:rgba(44,193,176,.08)"' : ''}><td>${i + 1}</td><td><button class="link-btn" data-action="team" data-id="${t.id}"><b>${U.esc(t.name)}</b></button> <span class="muted small">${U.esc(t.owner)}</span></td><td class="num">${t.w}-${t.l}</td><td class="num">${U.fmt(t.pf)}</td><td class="num">${U.fmt(t.pa)}</td><td class="num">${U.fmt(t.strength)}</td><td class="num">${Math.round(sim[t.id].playoffs * 100)}%</td></tr>`).join('')}</tbody></table></div></div>
       <div class="card"><div class="card-head"><h2>Week ${m.week} matchups</h2><span class="sub">Live score · projection from blended ppg</span></div>${wk.map((s) => { const A = T(s.a), B = T(s.b); const pa = winProb(A, B); return `<div class="wire-row"><span style="flex:1"><b>${U.esc(A.name)}</b> <span class="num">${U.fmt(s.pa)}</span><div class="small muted">proj ${U.fmt(A.strength)} · ${Math.round(pa * 100)}%</div></span><span class="muted">vs</span><span style="flex:1;text-align:right"><b>${U.esc(B.name)}</b> <span class="num">${U.fmt(s.pb)}</span><div class="small muted">proj ${U.fmt(B.strength)} · ${Math.round((1 - pa) * 100)}%</div></span></div>`; }).join('') || '<div class="small muted">No matchups.</div>'}</div></div>`;
   },
   activity(lg, m) { return m.pending ? pendingCard(lg) : `<div class="card"><div class="card-head"><h2>League activity</h2><span class="sub">${m.tx.length} recent completed moves (last 5 weeks)</span></div><div class="wire">${m.tx.map(txRow).join('') || '<div class="small muted">None.</div>'}</div></div>`; },
@@ -248,6 +250,23 @@ const V = {
     return `<div class="grid sidebar-right"><div class="card"><div class="card-head"><h2>ESPN NFL news</h2><span class="sub">pipeline pulls ESPN every 30 min on game days; page re-checks every 5 min</span></div>${D.news.map((n) => newsRow(n, mine)).join('')}</div>
       <div class="stack"><div class="card"><div class="card-head"><h2>My injury report</h2></div>${inj.map((p) => `<div class="wire-row">${injTag(p.id)}<span><b>${U.esc(p.n)}</b> <span class="muted small">${p.p} · ${p.t || 'FA'}</span><div class="small muted">${U.esc(p.in || '')}</div></span></div>`).join('') || '<div class="small muted">No injuries on your roster (or roster pending).</div>'}</div>
       <div class="card"><div class="card-head"><h2>Notable injuries league-wide</h2><span class="sub">Sleeper injury status</span></div>${leagueInj.map((p) => `<div class="wire-row">${injTag(p.id)}<span>${U.esc(p.n)} <span class="muted small">${p.p} · ${p.t} ${p.in ? '· ' + U.esc(p.in) : ''}</span></span></div>`).join('')}</div></div></div>`;
+  },
+  matchups(lg, m) {
+    if (!m.teams.length) return pendingCard(lg); const weeks = [...new Set(m.schedule.map((s) => s.week))].sort((a, b) => a - b); const wk = state.mweek && weeks.includes(state.mweek) ? state.mweek : m.week; const T = (id) => m.teams.find((t) => t.id === id);
+    return `<div class="seg" style="margin-bottom:14px;flex-wrap:wrap">${weeks.map((w) => `<button data-action="mweek" data-id="${w}" aria-pressed="${w === wk}">W${w}</button>`).join('')}</div><div class="depth-grid">${m.schedule.filter((s) => s.week === wk).map((s) => { const A = T(s.a), B = T(s.b); if (!A || !B) return ''; const pa = winProb(A, B); return `<div class="card"><div class="row between"><button class="link-btn" data-action="team" data-id="${A.id}"><b>${U.esc(A.name)}</b></button><span class="num">${U.fmt(s.pa)}</span></div><div class="row between" style="margin-top:6px"><button class="link-btn" data-action="team" data-id="${B.id}"><b>${U.esc(B.name)}</b></button><span class="num">${U.fmt(s.pb)}</span></div><div class="meter" style="margin-top:10px"><div class="meter-fill ok" style="width:${Math.round(pa * 100)}%"></div><span class="meter-txt">${s.done ? 'Final' : 'Proj'} · ${Math.round(pa * 100)}% / ${Math.round((1 - pa) * 100)}%</span></div><div class="small muted" style="margin-top:6px">Lineup strength ${U.fmt(A.strength)} vs ${U.fmt(B.strength)} ppg${A.me || B.me ? ' · <b>your matchup</b>' : ''}</div></div>`; }).join('')}</div>`;
+  },
+  values(lg, m) {
+    const rostered = Object.fromEntries(m.teams.flatMap((t) => t.players.map((p) => [p, t]))); const ids = Object.keys(D.perf[lg.perf] || {}).filter((id) => D.players[id]).map((id) => ({ id, v: valueOf(lg, id) })).sort((a, b) => b.v.v - a.v.v).slice(0, 150);
+    return `<div class="card"><div class="card-head"><h2>Top 150 dynasty values</h2><span class="sub">50% FantasyCalc market + 50% stat value × age curve (estimate)</span></div><div class="table-wrap"><table><thead><tr><th>#</th><th>Player</th><th>Pos</th><th class="num">Age</th><th class="num">Score</th><th class="num">Market</th><th class="num">Stat</th><th class="num">Value</th><th>Owner</th></tr></thead><tbody>${ids.map((x, i) => { const p = D.players[x.id]; const t = rostered[x.id]; return `<tr ${t && t.me ? 'style="background:rgba(44,193,176,.08)"' : ''}><td>${i + 1}</td><td><button class="link-btn" data-action="player" data-id="${x.id}"><b>${U.esc(p.n)}</b></button> ${injTag(x.id)}</td><td>${p.p}</td><td class="num">${p.a || '–'}</td><td class="num">${(perfOf(lg, x.id) || {}).score != null ? Math.round(perfOf(lg, x.id).score) : '—'}</td><td class="num">${x.v.mkt ? x.v.mkt.toLocaleString() : '—'}</td><td class="num">${x.v.stat.toLocaleString()}</td><td class="num"><b>${x.v.v.toLocaleString()}</b></td><td>${t ? `<button class="link-btn" data-action="team" data-id="${t.id}">${U.esc(t.name)}</button>` : '<span class="tag">FA</span>'}</td></tr>`; }).join('')}</tbody></table></div></div>`;
+  },
+  ages(lg, m) { const h = V.window(lg, m); const i = h.indexOf('<div class="tier-grid">'); return i < 0 ? h : h.slice(i); },
+  analyzer(lg, m) { return V.trade(lg, m); },
+  team(lg, m) {
+    const t = m.teams.find((x) => String(x.id) === String(state.detail)); if (!t) return '<div class="card">Team not found.</div>'; const ns = needs(lg, m, t); const sim = m.teams.length ? simulate(lg, m, 2000)[t.id] : null;
+    const rows = t.players.map((id) => ({ id, v: valueOf(lg, id), start: t.lineup.some((x) => x.id === id) })).sort((a, b) => b.v.v - a.v.v);
+    return `<div class="stats" style="margin-bottom:14px"><div class="stat"><div class="stat-label">${U.esc(t.owner || 'Owner')}</div><div class="stat-value">${t.w}-${t.l}</div><div class="stat-sub">PF ${U.fmt(t.pf)} · PA ${U.fmt(t.pa)}</div></div><div class="stat"><div class="stat-label">Lineup strength</div><div class="stat-value">${U.fmt(t.strength)}</div><div class="stat-sub">ppg</div></div><div class="stat"><div class="stat-label">Roster value</div><div class="stat-value">${t.value.toLocaleString()}</div></div><div class="stat"><div class="stat-label">Playoff odds</div><div class="stat-value">${sim ? Math.round(sim.playoffs * 100) + '%' : '—'}</div></div></div>
+      <div class="grid sidebar-right"><div class="card"><div class="card-head"><h2>${U.esc(t.name)}${t.me ? ' ★' : ''}</h2>${t.me ? '' : `<button class="btn sm primary" data-action="tmPartner" data-id="${t.id}">Trade with them</button>`}</div>${rows.map((r) => pcard(lg, r.id, { compact: true, extra: r.start ? '<span class="tag hi">Start</span>' : '' })).join('')}</div>
+      <div class="card"><div class="card-head"><h2>Needs</h2></div><div class="needs">${ns.map(needBar).join('')}</div></div></div>`;
   },
   window(lg, m) {
     const me = m.me; if (!me) return pendingCard(lg); const w = windowOf(lg, m, me);
@@ -325,7 +344,7 @@ const V = {
 /* ---------------- player modal ---------------- */
 function playerModal(id) {
   const lg = LEAGUES[state.league]; const p = D.players[id] || { n: pname(id) }; const v = valueOf(lg, id); const pf = perfOf(lg, id); const wk = pf ? pf.weeks : [];
-  modal(`<div class="row between"><h3 style="margin:0">${U.esc(p.n)} <span class="muted" style="font-weight:400">${p.p || ''} · ${p.t || 'FA'} · age ${p.a || '–'}</span></h3>${scoreBadge(lg, id)}</div>
+  modal(`<button class="btn sm ghost" data-action="closeModal" style="margin-bottom:8px">← Back</button><div class="row between"><h3 style="margin:0">${U.esc(p.n)} <span class="muted" style="font-weight:400">${p.p || ''} · ${p.t || 'FA'} · age ${p.a || '–'}</span></h3>${scoreBadge(lg, id)}</div>
     <div class="small muted" style="margin:4px 0 12px">${injTag(id)} ${U.esc(p.in || '')}</div>
     <div class="stats"><div class="stat"><div class="stat-label">Value (${lg.short})</div><div class="stat-value">${v.v.toLocaleString()}</div><div class="stat-sub">stat ${v.stat.toLocaleString()} · market ${v.mkt ? v.mkt.toLocaleString() : '—'}</div></div><div class="stat"><div class="stat-label">2026 ppg</div><div class="stat-value">${pf ? U.fmt(pf.ppg) : '—'}</div><div class="stat-sub">${pf ? pf.g + ' games · σ ' + U.fmt(pf.sd) : ''}</div></div><div class="stat"><div class="stat-label">2025 ppg</div><div class="stat-value">${pf ? U.fmt(pf.ppg25) : '—'}</div><div class="stat-sub">${pf ? pf.g25 + ' games' : ''}</div></div><div class="stat"><div class="stat-label">Age curve</div><div class="stat-value">${U.fmt(ageFactor(p.p, p.a), 2)}</div><div class="stat-sub">1.00 = peak</div></div></div>
     <div class="table-wrap" style="margin-top:12px"><table class="tight"><thead><tr><th>League</th><th class="num">Score</th><th class="num">Rank</th><th class="num">Blended ppg</th><th class="num">Value</th></tr></thead><tbody>${Object.values(LEAGUES).map((l) => { const x = perfOf(l, id); return `<tr><td>${l.name} <span class="muted small">${l.scoring.split('·')[0]}</span></td><td class="num">${x ? Math.round(x.score) : '—'}</td><td class="num">${x ? x.pos + x.rank : '—'}</td><td class="num">${x ? U.fmt(x.blend) : '—'}</td><td class="num">${valueOf(l, id).v.toLocaleString()}</td></tr>`; }).join('')}</tbody></table></div>
@@ -339,29 +358,33 @@ function mount() {
     <div style="padding:0 14px 10px"><label class="small muted" for="lgSel">League</label><select id="lgSel" data-action="leagueSel" style="width:100%;margin-top:4px">${Object.values(LEAGUES).map((l) => `<option value="${l.id}">${l.short} · ${l.name}${connected(l) ? '' : ' (pending)'}</option>`).join('')}</select></div>
     <nav class="nav" id="nav"></nav><div class="sidebar-foot">Sleeper · ESPN · nflverse · FantasyCalc<br>Values are estimates. Nothing is ever sent to your leagues.<br>${SL_MARK}</div></aside>
     <div class="scrim" data-action="closeSidebar"></div>
-    <header class="header"><button class="btn ghost menu-btn" data-action="toggleSidebar" aria-label="Open navigation"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 5h14M3 10h14M3 15h14"/></svg></button><div><h1 id="pageTitle"></h1><div class="crumb" id="crumb"></div></div>
+    <header class="header"><button class="btn ghost menu-btn" data-action="toggleSidebar" aria-label="Open navigation" aria-controls="sidebar"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 5h14M3 10h14M3 15h14"/></svg></button><button class="btn sm ghost" id="backBtn" data-action="back" aria-label="Back" title="Back (Alt+←)" hidden>← Back</button><div><h1 id="pageTitle"></h1><div class="crumb" id="crumb"></div></div>
       <div class="header-actions"><div class="seg" id="lgSeg" role="group" aria-label="League"></div><span class="save-state" id="saveState"></span><button class="btn sm hide-m" data-action="exportJson">Export</button><button class="btn sm hide-m" data-action="importJson">Import</button><button class="btn sm primary" data-action="save">Save</button></div></header>
     <main class="main" id="main" tabindex="-1"></main><div class="toasts" id="toasts" aria-live="polite"></div><div class="modal-bg" id="modal" role="dialog" aria-modal="true"><div class="modal" id="modalBox"></div></div><input type="file" id="fileInput" accept=".json,application/json" class="hidden">`;
 }
 function render() {
-  const lg = LEAGUES[state.league] || LEAGUES.dynasty; state.league = lg.id; const mods = modules(lg); if (!mods.some((x) => x.id === state.module)) state.module = 'hub'; const mod = mods.find((x) => x.id === state.module);
-  document.getElementById('nav').innerHTML = [...new Set(mods.map((x) => x.group))].map((g) => `<div class="nav-label">${g}</div>` + mods.filter((x) => x.group === g).map((x) => `<button class="nav-btn" data-action="module" data-id="${x.id}" ${x.id === state.module ? 'aria-current="page"' : ''}>${ICO}<span>${x.label}</span></button>`).join('')).join('');
+  const lg = LEAGUES[state.league] || LEAGUES.dynasty; state.league = lg.id; const mods = modules(lg); if (!mods.some((x) => x.id === state.module) && state.module !== 'team') state.module = 'hub'; const mod = state.module === 'team' ? { id: 'team', title: 'Team · ' + (((model(lg).teams.find((x) => String(x.id) === String(state.detail))) || {}).name || '') } : mods.find((x) => x.id === state.module);
+  document.getElementById('nav').innerHTML = [...new Set(mods.map((x) => x.group))].map((g) => `<div class="nav-label">${g}</div>` + mods.filter((x) => x.group === g).map((x) => `<button class="nav-btn" data-action="module" data-id="${x.id}" ${x.id === (state.module === 'team' ? 'league' : state.module) ? 'aria-current="page"' : ''}>${ICO}<span>${x.label}</span></button>`).join('')).join('');
   document.getElementById('lgSeg').innerHTML = Object.values(LEAGUES).map((l) => `<button data-action="league" data-id="${l.id}" aria-pressed="${l.id === lg.id}" title="${U.esc(l.name)}${connected(l) ? '' : ' · connect pending'}">${l.short}${connected(l) ? '' : ' ◌'}</button>`).join('');
   document.getElementById('lgSel').value = lg.id;
   document.getElementById('pageTitle').textContent = mod.title; document.getElementById('crumb').textContent = `${lg.name} · ${lg.platform} · ${lg.scoring}${D.meta ? ' · data ' + U.ago(D.meta.lastRun) : ''}`;
   document.getElementById('saveState').textContent = dirty ? '● Unsaved changes' : '● Saved locally';
   const m = model(lg); let html; try { html = V[state.module](lg, m); } catch (e) { console.error(e); html = `<div class="card">This view failed to render: ${U.esc(e.message)}</div>`; }
-  document.getElementById('main').innerHTML = html; if (location.hash.slice(1) !== state.module) history.replaceState(null, '', '#' + state.module);
+  document.getElementById('main').innerHTML = html; document.getElementById('backBtn').hidden = !(navDepth > 0 || state.module !== 'hub');
 }
 const actions = {
-  module: (id) => { state.module = id; document.body.classList.remove('nav-open'); render(); window.scrollTo(0, 0); },
-  league: (id) => { state.league = id; state.tm = { partner: null, give: [], get: [] }; persist(); render(); },
-  player: (id) => playerModal(id), closeModal,
-  toggleSidebar: () => document.body.classList.toggle('nav-open'), closeSidebar: () => document.body.classList.remove('nav-open'),
+  module: (id) => go({ module: id }),
+  league: (id) => { state.tm = { partner: null, give: [], get: [] }; go({ league: id, module: modules(LEAGUES[id]).some((x) => x.id === state.module) ? state.module : 'hub' }); },
+  team: (id) => go({ module: 'team', detail: id }),
+  player: (id) => go({ player: id }),
+  mweek: (id) => { state.mweek = +id; render(); },
+  back: () => { if (navDepth > 0) history.back(); else go({ module: 'hub' }, true); },
+  closeModal: () => { if (parseRoute().player) history.back(); else closeModal(); },
+  toggleSidebar: () => document.body.classList.toggle('sidebar-open'), closeSidebar: () => document.body.classList.remove('sidebar-open'),
   tmPartner: (id) => { state.tm = { partner: isNaN(+id) ? id : +id, give: [], get: [] }; actions.module('trade'); },
   tmAdd: (id, el) => { state.tm[el.dataset.side].push(id); render(); }, tmRemove: (id, el) => { state.tm[el.dataset.side] = state.tm[el.dataset.side].filter((x) => x !== id); render(); },
   tmClear: () => { state.tm.give = []; state.tm.get = []; render(); },
-  tmShop: (id) => { closeModal(); const m = model(LEAGUES[state.league]); if (m.me && m.me.players.includes(id)) state.tm.give = [id]; else { const t = m.teams.find((x) => x.players.includes(id)); if (t) state.tm = { partner: t.id, give: state.tm.give, get: [id] }; } actions.module('trade'); },
+  tmShop: (id) => { if (parseRoute().player) history.replaceState({ d: navDepth }, '', routeHash({ league: state.league, module: state.module, detail: state.detail })); closeModal(); const m = model(LEAGUES[state.league]); if (m.me && m.me.players.includes(id)) state.tm.give = [id]; else { const t = m.teams.find((x) => x.players.includes(id)); if (t) state.tm = { partner: t.id, give: state.tm.give, get: [id] }; } actions.module('trade'); },
   tmExecute: () => { const lg = LEAGUES[state.league]; const m = model(lg); const partner = m.teams.find((t) => t.id === state.tm.partner && !t.me) || m.teams.find((t) => !t.me); set((s) => { (s.trades[lg.id] = s.trades[lg.id] || []).push({ partner: partner.id, give: s.tm.give.slice(), get: s.tm.get.slice() }); s.tm.give = []; s.tm.get = []; }); toast('Trade executed in scenario', 'ok'); },
   tmUndo: (i) => set((s) => { s.trades[s.league].splice(+i, 1); }),
   save: () => save(),
@@ -371,7 +394,7 @@ const actions = {
   delScen: (i) => { state.saved.splice(+i, 1); persist(); render(); },
   resetScen: () => set((s) => { s.trades = {}; s.keepers = {}; s.bids = {}; }),
 };
-document.addEventListener('click', (e) => { if (e.target.id === 'modal') return closeModal(); const el = e.target.closest('[data-action]'); if (!el || el.tagName === 'SELECT') return; const a = actions[el.dataset.action]; if (a) { e.preventDefault(); a(el.dataset.id, el); } });
+document.addEventListener('click', (e) => { if (e.target.id === 'modal') return actions.closeModal(); const el = e.target.closest('[data-action]'); if (!el || el.tagName === 'SELECT') return; const a = actions[el.dataset.action]; if (a) { e.preventDefault(); a(el.dataset.id, el); } });
 document.addEventListener('change', (e) => {
   const t = e.target; if (t.dataset.action === 'leagueSel') actions.league(t.value);
   if (t.dataset.action === 'tmPartnerSel') { state.tm = { partner: isNaN(+t.value) ? t.value : +t.value, give: state.tm.give, get: [] }; render(); }
@@ -379,13 +402,23 @@ document.addEventListener('change', (e) => {
   if (t.dataset.bid) { const lg = LEAGUES[state.league]; state.bids[lg.id] = state.bids[lg.id] || {}; state.bids[lg.id][t.dataset.bid] = +t.value; dirty = true; }
   if (t.id === 'fileInput' && t.files[0]) { t.files[0].text().then((x) => { const j = JSON.parse(x); if (j.app !== 'fantasy-front-office') throw new Error('Not a Fantasy Front Office file'); set((s) => { s.trades = j.trades || {}; s.keepers = j.keepers || {}; s.bids = j.bids || {}; s.saved = j.saved || s.saved; }); toast('Imported', 'ok'); }).catch((err) => toast(err.message, 'error')); t.value = ''; }
 });
-document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); if ((e.metaKey || e.ctrlKey) && e.key === 's') { e.preventDefault(); save(); } });
-window.addEventListener('hashchange', () => { const h = location.hash.slice(1); if (h && h !== state.module && V[h]) actions.module(h); });
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && document.getElementById('modal').classList.contains('open')) actions.closeModal(); if ((e.metaKey || e.ctrlKey) && e.key === 's') { e.preventDefault(); save(); } });
+/* Hash routing: #/<league>/<module>[/<detail>][?p=<playerId>] — every drill-in is a history entry, so browser Back works. */
+let navDepth = 0;
+function routeHash(r) { return `#/${r.league}/${r.module}${r.detail != null && r.detail !== '' ? '/' + encodeURIComponent(r.detail) : ''}${r.player ? '?p=' + encodeURIComponent(r.player) : ''}`; }
+function parseRoute() { const h = location.hash.replace(/^#\/?/, ''); const [path, q] = h.split('?'); const [league, module, detail] = path.split('/').map((x) => x && decodeURIComponent(x)); const player = q ? new URLSearchParams(q).get('p') : null; if (!path.includes('/') && V[path]) return { league: state.league, module: path, player }; return { league, module, detail, player }; }
+function go(r, replace) { const cur = { league: state.league, module: state.module, detail: state.detail }; const nr = { ...cur, ...(r.module && r.module !== 'team' ? { detail: null } : {}), ...r }; if (!r.player) nr.player = null; const h = routeHash(nr); if (h === location.hash) return applyRoute(); if (replace) { history.replaceState({ d: navDepth }, '', h); applyRoute(); } else { navDepth++; history.pushState({ d: navDepth }, '', h); applyRoute(); } }
+function applyRoute() {
+  const r = parseRoute(); if (r.league && LEAGUES[r.league]) state.league = r.league; if (r.module && (V[r.module])) state.module = r.module; state.detail = r.detail || null;
+  document.body.classList.remove('sidebar-open'); const prevMod = document.getElementById('main').dataset.mod; render(); document.getElementById('main').dataset.mod = state.module + state.detail;
+  if (r.player) playerModal(r.player); else closeModal(); if (prevMod !== state.module + state.detail) window.scrollTo(0, 0);
+}
+window.addEventListener('popstate', (e) => { navDepth = (e.state && e.state.d) || 0; applyRoute(); });
+document.addEventListener('keydown', (e) => { if (e.altKey && e.key === 'ArrowLeft') actions.back(); });
 async function refreshNews() { try { const j = await getJson('news.json'); if (!j.data || !j.data.length) return; D.news = j.data; if (['news', 'hub'].includes(state.module) && !document.getElementById('modal').classList.contains('open')) render(); } catch (e) { /* keep current */ } }
 (async () => {
   mount(); try { await loadData(); } catch (e) { console.warn(e); }
   const q = new URLSearchParams(location.search).get('league'); if (q && LEAGUES[q]) state.league = q;
-  const h = location.hash.slice(1); if (h && V[h]) state.module = h;
-  mount(); render(); refreshNews(); setInterval(refreshNews, 5 * 60 * 1000);
+  mount(); if (!location.hash || !parseRoute().module) history.replaceState({ d: 0 }, '', routeHash({ league: state.league, module: state.module || 'hub' })); else history.replaceState({ d: 0 }, '', location.hash); applyRoute(); refreshNews(); setInterval(refreshNews, 5 * 60 * 1000);
   window.FFO = { D, state, LEAGUES, model, valueOf, simulate };
 })();
