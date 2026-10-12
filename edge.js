@@ -3,7 +3,8 @@
 const recW = (lg) => lg.id === 'dynasty' ? 0.5 : 1;
 const usageOf = (id) => (D.adv.usage || {})[id] || null;
 const nextWeek = (m) => Math.max(m.week || 0, (D.adv.lastWeek || 0) + 1);
-const oppOf = (team, w) => ((D.adv.schedule || {})[team] || {})[w] || null;
+const TEAM_ALIAS = { LAR: 'LA', JAC: 'JAX', WSH: 'WAS', LVR: 'LV' };
+const oppOf = (team, w) => ((D.adv.schedule || {})[TEAM_ALIAS[team] || team] || {})[w] || null;
 const sosOf = (opp, pos) => { if (!opp) return 1; const t = opp.replace('@', ''); return ((D.adv.sos || {})[t] || {})[pos] || 1; };
 function xfpg(lg, id) { const u = usageOf(id); if (!u || !u.g) return null; return (u.xyds * 0.1 + u.xtd * 6 + u.tgt * 0.65 * recW(lg)) / u.g; }
 function projWeek(lg, id, w) { const p = D.players[id] || {}; const pf = perfOf(lg, id); if (!pf) return 0; const opp = oppOf(p.t, w); if (!opp) return 0; if (['Out', 'IR', 'PUP', 'Sus'].includes(p.i) && w === nextWeek(model(lg))) return 0; return pf.blend * (0.7 + 0.3 * sosOf(opp, p.p)); }

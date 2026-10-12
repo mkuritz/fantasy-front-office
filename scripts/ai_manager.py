@@ -143,8 +143,25 @@ def def_rank(opp, p):
     return None
 
 
+TEAM_ALIAS = {"LAR": "LA", "JAC": "JAX", "WSH": "WAS", "LVR": "LV"}
+
+
 def opp_of(team, w):
-    return (SCHED.get(team) or {}).get(str(w))
+    return (SCHED.get(TEAM_ALIAS.get(team, team)) or {}).get(str(w))
+
+
+# Expected weeks missed by status (estimate). Week multipliers apply from next week on.
+MISS = {"IR": 4, "PUP": 4, "Out": 1, "Sus": 2, "DNR": 1}
+PARTIAL = {"Doubtful": 0.25, "Questionable": 0.85}
+
+
+def avail(pid, w, nw):
+    i = (P.get(pid) or {}).get("i")
+    if i in MISS:
+        return 0.0 if w < nw + MISS[i] else 1.0
+    if i in PARTIAL and w == nw:
+        return PARTIAL[i]
+    return 1.0
 
 
 LAST = ADV.get("lastWeek") or 0
@@ -162,9 +179,7 @@ def proj_week(lg, pid, w, nw):
     o = opp_of(p.get("t"), w)
     if not o:
         return 0.0
-    if p.get("i") in ("Out", "IR", "PUP", "Sus") and w == nw:
-        return 0.0
-    return pf["blend"] * (0.7 + 0.3 * sos_of(o, p.get("p")))
+    return pf["blend"] * (0.7 + 0.3 * sos_of(o, p.get("p"))) * avail(pid, w, nw)
 
 
 def proj_ros(lg, pid, nw):
@@ -383,6 +398,11 @@ def depth_context(pid):
     return None
 
 
+def has_data(lg, pid):
+    pf = perf(lg, pid)
+    return bool(pf and pf.get("blend") and pf.get("g", 0) >= 1 and opp_of((P.get(pid) or {}).get("t"), LAST + 1) is not None or (pf and pf.get("blend") and any(opp_of((P.get(pid) or {}).get("t"), w) for w in range(LAST + 1, 18))))
+
+
 def facts(lg, m, pid):
     p = P.get(pid) or {}
     pf = perf(lg, pid) or {}
@@ -398,6 +418,8 @@ def facts(lg, m, pid):
              lo=max(0, wk - 1.28 * sd * ratio), hi=wk + 1.28 * sd * ratio, sd=sd * ratio, news=news_for(pid), vegas=vegas_for(p.get("t"), opp),
              casc=cascades_for(p.get("t"), p.get("p")), depth=depth_context(pid), sig=signal_of(lg, pid), xf=xfpg(lg, pid), val=value_of(lg, pid, m["week"]),
              mk=market(lg, pid), er=edge_risk(lg, pid, nw) if EDGE_ON else None, nw=nw)
+    f["nodata"] = not has_data(lg, pid)
+    f["miss"] = MISS.get(inj) if inj else None
     if lg["mode"] == "keeper" and KEEP:
         for own, lst in KEEP["owners"].items():
             for k in lst:
@@ -466,7 +488,7 @@ def s_usage(f, seed):
 def s_health(f, seed):
     out = []
     if f["inj"]:
-        out.append(f"Injury status: {f['inj']}" + (f" ({f['injd']})." if f["injd"] else "."))
+        out.append(f"Injury status: {f['inj']}" + (f" ({f['injd']})" if f["injd"] else "") + (f"; the rest-of-season projection assumes he misses about {f['miss']} week{'s' if f['miss'] > 1 else ''} (an estimate for this status)." if f.get("miss") else "; next week's projection is discounted for the risk he sits." if f['inj'] in PARTIAL else "."))
     d = f["depth"]
     if d and d["ahead_out"]:
         out.append(f"Cascade: {', '.join(name(x) + ' (' + (P.get(x) or {}).get('i', '') + ')' for x in d['ahead_out'])} is ahead of {f['last']} on the {f['team']} depth chart and is not available, which moves {f['last']} up to the top of the {f['pos']} room.")
@@ -554,6 +576,7 @@ def start_sit(lg, m):
         if b:
             left.remove(b)
             pairs.append((a, b))
+    m["ss_ids"] = {x for ab in pairs for x in ab} | set(opt_ids)
     for a, b in pairs:
         fa, fb = facts(lg, m, a), facts(lg, m, b)
         gap = fa["wk"] - fb["wk"]
@@ -604,13 +627,19 @@ def waivers(lg, m):
             cands[i] = ("Best available", f"he is the type of producer rarely left on waivers: {f1(pf['ppg'])} ppg and positive value over replacement ({f1(pf['vorp'])})")
     eligible = [i for i in cands if (P.get(i) or {}).get('i') not in OUT and pos(i) in [s for s in lg["slots"]] + sum((FLEXOK.get(s, []) for s in lg["slots"]), []) and pos(i) != "K"]
     ranked = sorted(eligible, key=lambda i: -(proj_ros(lg, i, nw) + (25 if cands[i][0] == "Their shot" else 12 if cands[i][0] == "Opportunity spike" else 0)))[:3]
-    starters_opt = {x["id"] for x in me["lineup"]}
-    droppable = sorted([p for p in me["players"] if p not in starters_opt and pos(p) not in ("K", "DST") and (P.get(p) or {}).get("i") not in ("IR",)], key=lambda p: proj_ros(lg, p, nw) + value_of(lg, p, m["week"]) / (300 if lg["mode"] == "dynasty" else 1000))
+    protect = {x["id"] for x in me["lineup"]} | m.get("ss_ids", set())
+    # Lowest-value bench players first; never drop a player we have no data on, or one in a start/sit call.
+    dval = lambda p: proj_ros(lg, p, nw) + (value_of(lg, p, m["week"]) / 300 if lg["mode"] == "dynasty" else 0)
+    droppable = sorted([p for p in me["players"] if p not in protect and pos(p) not in ("K", "DST", "") and (P.get(p) or {}).get("i") != "IR" and has_data(lg, p)], key=dval)
+    m["drops"] = set()
+    m["bench_vals"] = [(name(p), round(dval(p), 1)) for p in droppable]
     res = []
     for n_, a in enumerate(ranked):
         kind, why = cands[a]
         fa = facts(lg, m, a)
         drop = droppable[n_] if n_ < len(droppable) else None
+        if drop:
+            m["drops"].add(drop)
         fd = facts(lg, m, drop) if drop else None
         seed = lg["id"] + a + "w"
         gain = fa["ros"] - (fd["ros"] if fd else 0)
@@ -636,7 +665,7 @@ def trades(lg, m):
     needP = [n["pos"] for n in myN if n["score"] >= 50]
     surP = [n["pos"] for n in myN if n["score"] < 45]
     myStart = {x["id"] for x in me["lineup"]}
-    give_pool = [p for p in me["players"] if val(p) > 150 and (pos(p) in surP or p not in myStart)]
+    give_pool = [p for p in me["players"] if val(p) > 150 and p not in m.get("drops", set()) and p not in m.get("ss_ids", set()) and (pos(p) in surP or p not in myStart)]
     base_me = strength(me["players"])
     out = []
     for t in m["teams"]:
@@ -786,9 +815,16 @@ def main():
         top = sorted(allr, key=lambda r: -r["priority"])
         for i, r in enumerate(top):
             r["rank"] = i + 1
+        print(k, "bench drop order:", m.get("bench_vals"))
         out["leagues"][k] = dict(name=lg["name"], short=lg["short"], scoring=lg["scoring"], **summarize(lg, m, allr), sections=secs, actions=[dict(rank=r["rank"], section=r["section"], call=r["call"], conf=r["conf"], confLabel=r["confLabel"]) for r in top])
-    with open(os.path.join(DATA, "ai_manager.json"), "w") as f:
-        json.dump(out, f, indent=1)
+    path = os.path.join(DATA, "ai_manager.json")
+    old = load("ai_manager.json") or {}
+    strip = lambda d: {k: v for k, v in d.items() if k not in ("updated", "trigger")}
+    if strip(old) == strip(json.loads(json.dumps(out))):
+        print("AI manager content unchanged; leaving file as is")
+    else:
+        with open(path, "w") as f:
+            json.dump(out, f, indent=1)
     for k, v in out["leagues"].items():
         print(k, (v.get("actions") or [{}])[0].get("call"))
 
