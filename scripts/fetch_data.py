@@ -223,6 +223,19 @@ def news():
 # ---------- ESPN private leagues ----------
 def espn_league(cfg):
     s2, swid = os.environ.get("ESPN_S2"), os.environ.get("ESPN_SWID")
+    # Clean pasted cookie values: strip whitespace and map look-alike (homoglyph) chars to ASCII.
+    _hg = str.maketrans({"\u0417": "3", "\u0437": "3", "\u041e": "O", "\u043e": "o", "\u0410": "A", "\u0430": "a",
+                         "\u0415": "E", "\u0435": "e", "\u0421": "C", "\u0441": "c", "\u0420": "P", "\u0440": "p",
+                         "\u041d": "H", "\u041a": "K", "\u041c": "M", "\u0422": "T", "\u0425": "X", "\u0445": "x",
+                         "\u0412": "B", "\u0443": "y", "\u0456": "i", "\u0406": "I", "\u0105": "a"})
+    def _clean(v):
+        if not v: return v
+        v = "".join(v.split()).translate(_hg)
+        bad = [c for c in v if ord(c) > 127]
+        if bad: print("WARN cookie still has non-ASCII chars:", len(bad))
+        return v
+    s2, swid = _clean(s2), _clean(swid)
+    if swid and not swid.startswith("{"): swid = "{" + swid.strip("{}") + "}"
     if not (s2 and swid):
         return None
     url = (f"https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/{SEASON}/segments/0/leagues/{cfg['leagueId']}"
