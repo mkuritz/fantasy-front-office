@@ -209,8 +209,8 @@ def players_slim(ids):
     # Current team must match today's live ESPN roster for the current season; Sleeper can lag (retired/cut players).
     for v in out.values():
         if v["t"] and v["p"] in ("QB", "RB", "WR", "TE", "K"):
-            r = season_guard.roster("nfl", v["t"])
-            if r and not ((v["e"] and str(v["e"]) in r["ids"]) or season_guard.norm(v["n"]) in r["names"]):
+            ok, _ = season_guard.on_team("nfl", v["n"], v["t"], v["e"], bool(v["e"]))  # ESPN id first, then aliases, IR/PS lists
+            if ok is False:
                 v["t_unverified"] = v["t"]; v["t"] = None
     return out
 
