@@ -1,0 +1,397 @@
+[
+ {
+  "detected": "2026-10-11T21:08:53-04:00",
+  "t": "2026-10-11T23:49:19Z",
+  "kind": "Trade",
+  "src": "ESPN news",
+  "text": "Fantasy football buzz: What's the impact of MHJ trade on Texans and Cardinals?",
+  "players": [
+   "Jalen Hurts",
+   "Saquon Barkley",
+   "Lane Johnson",
+   "DeVonta Smith"
+  ],
+  "url": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis"
+ },
+ {
+  "detected": "2026-10-11T21:08:53-04:00",
+  "t": "2026-10-11T23:11:28Z",
+  "kind": "Injury",
+  "src": "ESPN news",
+  "text": "49ers lose WR Deebo Samuel to hamstring injury vs. Seahawks",
+  "players": [
+   "Deebo Samuel Sr"
+  ],
+  "url": "https://www.espn.com/nfl/story/_/id/50161984/49ers-lose-wr-deebo-samuel-hamstring-injury-vs-seahawks"
+ },
+ {
+  "detected": "2026-10-11T21:08:53-04:00",
+  "t": "2026-10-11T23:51:25Z",
+  "kind": "Trade",
+  "src": "ESPN news",
+  "text": "NFL trade deadline grades: Marvin Harrison Jr. to Texans; Cam Jurgens to Ravens",
+  "players": [
+   "JJ McCarthy",
+   "Joey Porter Jr",
+   "Cam Jurgens",
+   "Marvin Harrison Jr"
+  ],
+  "url": "https://www.espn.com/nfl/story/_/id/50043542/2026-trade-deadline-grades-latest-best-worst-deals"
+ },
+ {
+  "detected": "2026-10-11T21:08:53-04:00",
+  "t": "2026-10-11T21:52:06Z",
+  "kind": "Depth",
+  "src": "ESPN news",
+  "text": "Should Isaiah Likely be a regular starter in fantasy?",
+  "players": [
+   "Isaiah Likely"
+  ],
+  "url": "https://www.espn.com/video/clip/_/id/50161332/should-isaiah-likely-regular-starter-fantasy"
+ },
+ {
+  "detected": "2026-10-11T21:08:53-04:00",
+  "t": "2026-10-11T21:46:43Z",
+  "kind": "Depth",
+  "src": "ESPN news",
+  "text": "Is Drake Maye back as a fantasy starter?",
+  "players": [
+   "Drake Maye"
+  ],
+  "url": "https://www.espn.com/video/clip/_/id/50161268/is-drake-maye-back-fantasy-starter"
+ },
+ {
+  "detected": "2026-10-11T21:08:53-04:00",
+  "t": "2026-10-11T21:45:23Z",
+  "kind": "Depth",
+  "src": "ESPN news",
+  "text": "Why Jayden Daniels is a consistent fantasy starter",
+  "players": [
+   "Jayden Daniels"
+  ],
+  "url": "https://www.espn.com/video/clip/_/id/50161266/why-jayden-daniels-consistent-fantasy-starter"
+ },
+ {
+  "detected": "2026-10-11T21:08:53-04:00",
+  "t": "2026-10-11T22:32:13Z",
+  "kind": "Depth",
+  "src": "ESPN news",
+  "text": "Titans' Robert Saleh after loss: Cam Ward is our QB1",
+  "players": [
+   "Cam Ward"
+  ],
+  "url": "https://www.espn.com/nfl/story/_/id/50161024/titans-robert-saleh-loss-cam-ward-our-qb1"
+ },
+ {
+  "detected": "2026-10-11T21:08:53-04:00",
+  "t": "2026-10-12T00:17:34Z",
+  "kind": "Trade",
+  "src": "ESPN news",
+  "text": "2026 NFL trade deadline updates: Marvin Harrison Jr., Cam Jurgens on the move",
+  "players": [
+   "Marvin Harrison Jr"
+  ],
+  "url": "https://www.espn.com/nfl/story/_/id/50043471/2026-trade-deadline-updates-latest-news-deals-terms"
+ },
+ {
+  "detected": "2026-10-11T21:08:53-04:00",
+  "t": "2026-10-11T23:15:14Z",
+  "kind": "Trade",
+  "src": "ESPN news",
+  "text": "Texans complete trade with Cardinals for WR Marvin Harrison Jr.",
+  "players": [
+   "Marvin Harrison Jr"
+  ],
+  "url": "https://www.espn.com/nfl/story/_/id/50160631/texans-complete-trade-cardinals-wr-marvin-harrison-jr"
+ },
+ {
+  "detected": "2026-10-11T21:08:53-04:00",
+  "t": "2026-10-11T21:08:53-04:00",
+  "kind": "Injury",
+  "src": "Official injury report",
+  "text": "Lamar Jackson (QB, BAL) Out for Week 5: Ankle",
+  "players": [
+   "Lamar Jackson"
+  ]
+ },
+ {
+  "detected": "2026-10-11T21:08:53-04:00",
+  "t": "2026-10-11T21:08:53-04:00",
+  "kind": "Injury",
+  "src": "Official injury report",
+  "text": "Josh Palmer (WR, BUF) Out for Week 5: Shoulder",
+  "players": [
+   "Josh Palmer"
+  ]
+ },
+ {
+  "detected": "2026-10-11T21:08:53-04:00",
+  "t": "2026-10-11T21:08:53-04:00",
+  "kind": "Injury",
+  "src": "Official injury report",
+  "text": "Kyle Monangai (RB, CHI) Out for Week 5: Thumb",
+  "players": [
+   "Kyle Monangai"
+  ]
+ },
+ {
+  "detected": "2026-10-11T21:08:53-04:00",
+  "t": "2026-10-11T21:08:53-04:00",
+  "kind": "Injury",
+  "src": "Official injury report",
+  "text": "Tylan Wallace (WR, CLE) Out for Week 5: Knee",
+  "players": [
+   "Tylan Wallace"
+  ]
+ },
+ {
+  "detected": "2026-10-11T21:08:53-04:00",
+  "t": "2026-10-11T21:08:53-04:00",
+  "kind": "Injury",
+  "src": "Official injury report",
+  "text": "Dillon Gabriel (QB, CLE) Out for Week 5: Back",
+  "players": [
+   "Dillon Gabriel"
+  ]
+ },
+ {
+  "detected": "2026-10-11T21:08:53-04:00",
+  "t": "2026-10-11T21:08:53-04:00",
+  "kind": "Injury",
+  "src": "Official injury report",
+  "text": "Carsen Ryan (TE, CLE) Out for Week 5: Calf",
+  "players": [
+   "Carsen Ryan"
+  ]
+ },
+ {
+  "detected": "2026-10-11T21:08:53-04:00",
+  "t": "2026-10-11T21:08:53-04:00",
+  "kind": "Injury",
+  "src": "Official injury report",
+  "text": "Chris Brooks (RB, GB) Out for Week 5: Ankle",
+  "players": [
+   "Chris Brooks"
+  ]
+ },
+ {
+  "detected": "2026-10-11T21:08:53-04:00",
+  "t": "2026-10-11T21:08:53-04:00",
+  "kind": "Injury",
+  "src": "Official injury report",
+  "text": "Savion Williams (WR, GB) Out for Week 5: Ankle",
+  "players": [
+   "Savion Williams"
+  ]
+ },
+ {
+  "detected": "2026-10-11T21:08:53-04:00",
+  "t": "2026-10-11T21:08:53-04:00",
+  "kind": "Injury",
+  "src": "Official injury report",
+  "text": "Tank Dell (WR, HOU) Out for Week 5: Knee",
+  "players": [
+   "Tank Dell"
+  ]
+ },
+ {
+  "detected": "2026-10-11T21:08:53-04:00",
+  "t": "2026-10-11T21:08:53-04:00",
+  "kind": "Injury",
+  "src": "Official injury report",
+  "text": "Ashton Dulin (WR, IND) Out for Week 5: Hamstring",
+  "players": [
+   "Ashton Dulin"
+  ]
+ },
+ {
+  "detected": "2026-10-11T21:08:53-04:00",
+  "t": "2026-10-11T21:08:53-04:00",
+  "kind": "Injury",
+  "src": "Official injury report",
+  "text": "Will Mallory (TE, IND) Out for Week 5: Thumb",
+  "players": [
+   "Will Mallory"
+  ]
+ },
+ {
+  "detected": "2026-10-11T21:08:53-04:00",
+  "t": "2026-10-11T21:08:53-04:00",
+  "kind": "Injury",
+  "src": "Official injury report",
+  "text": "Trey Lance (QB, LAC) Doubtful for Week 5: Groin",
+  "players": [
+   "Trey Lance"
+  ]
+ },
+ {
+  "detected": "2026-10-11T21:08:53-04:00",
+  "t": "2026-10-11T21:08:53-04:00",
+  "kind": "Injury",
+  "src": "Official injury report",
+  "text": "Quentin Johnston (WR, LAC) Out for Week 5: Chest",
+  "players": [
+   "Quentin Johnston"
+  ]
+ },
+ {
+  "detected": "2026-10-11T21:08:53-04:00",
+  "t": "2026-10-11T21:08:53-04:00",
+  "kind": "Injury",
+  "src": "Official injury report",
+  "text": "Brenen Thompson (WR, LAC) Out for Week 5: Quadricep",
+  "players": [
+   "Brenen Thompson"
+  ]
+ },
+ {
+  "detected": "2026-10-11T21:08:53-04:00",
+  "t": "2026-10-11T21:08:53-04:00",
+  "kind": "Injury",
+  "src": "Official injury report",
+  "text": "Jalen Nailor (WR, LV) Out for Week 5: Concussion",
+  "players": [
+   "Jalen Nailor"
+  ]
+ },
+ {
+  "detected": "2026-10-11T21:08:53-04:00",
+  "t": "2026-10-11T21:08:53-04:00",
+  "kind": "Injury",
+  "src": "Official injury report",
+  "text": "Dont'e Thornton Jr. (WR, LV) Out for Week 5: Hamstring",
+  "players": [
+   "Dont'e Thornton Jr."
+  ]
+ },
+ {
+  "detected": "2026-10-11T21:08:53-04:00",
+  "t": "2026-10-11T21:08:53-04:00",
+  "kind": "Injury",
+  "src": "Official injury report",
+  "text": "Justin Joly (TE, MIA) Out for Week 5: Concussion",
+  "players": [
+   "Justin Joly"
+  ]
+ },
+ {
+  "detected": "2026-10-11T21:08:53-04:00",
+  "t": "2026-10-11T21:08:53-04:00",
+  "kind": "Injury",
+  "src": "Official injury report",
+  "text": "Caleb Douglas (WR, MIA) Out for Week 5: Ankle",
+  "players": [
+   "Caleb Douglas"
+  ]
+ },
+ {
+  "detected": "2026-10-11T21:08:53-04:00",
+  "t": "2026-10-11T21:08:53-04:00",
+  "kind": "Injury",
+  "src": "Official injury report",
+  "text": "Mack Hollins (WR, NE) Out for Week 5: Calf",
+  "players": [
+   "Mack Hollins"
+  ]
+ },
+ {
+  "detected": "2026-10-11T21:08:53-04:00",
+  "t": "2026-10-11T21:08:53-04:00",
+  "kind": "Injury",
+  "src": "Official injury report",
+  "text": "Breece Hall (RB, NYJ) Out for Week 5: Quadricep",
+  "players": [
+   "Breece Hall"
+  ]
+ },
+ {
+  "detected": "2026-10-11T21:08:53-04:00",
+  "t": "2026-10-11T21:08:53-04:00",
+  "kind": "Injury",
+  "src": "Official injury report",
+  "text": "Adonai Mitchell (WR, NYJ) Out for Week 5: Finger",
+  "players": [
+   "Adonai Mitchell"
+  ]
+ },
+ {
+  "detected": "2026-10-11T21:08:53-04:00",
+  "t": "2026-10-11T21:08:53-04:00",
+  "kind": "Injury",
+  "src": "Official injury report",
+  "text": "Saquon Barkley (RB, PHI) Out for Week 5: Hamstring",
+  "players": [
+   "Saquon Barkley"
+  ]
+ },
+ {
+  "detected": "2026-10-11T21:08:53-04:00",
+  "t": "2026-10-11T21:08:53-04:00",
+  "kind": "Injury",
+  "src": "Official injury report",
+  "text": "Marquise Brown (WR, PHI) Out for Week 5: Ankle",
+  "players": [
+   "Marquise Brown"
+  ]
+ },
+ {
+  "detected": "2026-10-11T21:08:53-04:00",
+  "t": "2026-10-11T21:08:53-04:00",
+  "kind": "Injury",
+  "src": "Official injury report",
+  "text": "DeVonta Smith (WR, PHI) Out for Week 5: Hamstring",
+  "players": [
+   "DeVonta Smith"
+  ]
+ },
+ {
+  "detected": "2026-10-11T21:08:53-04:00",
+  "t": "2026-10-11T21:08:53-04:00",
+  "kind": "Injury",
+  "src": "Official injury report",
+  "text": "Michael Pittman (WR, PIT) Out for Week 5: Foot",
+  "players": [
+   "Michael Pittman"
+  ]
+ },
+ {
+  "detected": "2026-10-11T21:08:53-04:00",
+  "t": "2026-10-11T21:08:53-04:00",
+  "kind": "Injury",
+  "src": "Official injury report",
+  "text": "Zach Charbonnet (RB, SEA) Out for Week 5: Knee",
+  "players": [
+   "Zach Charbonnet"
+  ]
+ },
+ {
+  "detected": "2026-10-11T21:08:53-04:00",
+  "t": "2026-10-11T21:08:53-04:00",
+  "kind": "Injury",
+  "src": "Official injury report",
+  "text": "Baker Mayfield (QB, TB) Out for Week 5: Thumb",
+  "players": [
+   "Baker Mayfield"
+  ]
+ },
+ {
+  "detected": "2026-10-11T21:08:53-04:00",
+  "t": "2026-10-11T21:08:53-04:00",
+  "kind": "Injury",
+  "src": "Official injury report",
+  "text": "Stefon Diggs (WR, WAS) Out for Week 5: Hamstring",
+  "players": [
+   "Stefon Diggs"
+  ]
+ },
+ {
+  "detected": "2026-10-11T21:08:53-04:00",
+  "t": "2026-10-11T21:08:53-04:00",
+  "kind": "Injury",
+  "src": "Official injury report",
+  "text": "Marcus Mariota (QB, WAS) Out for Week 5: Knee",
+  "players": [
+   "Marcus Mariota"
+  ]
+ }
+]

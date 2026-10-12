@@ -3,6 +3,7 @@
 Sleeper (public), nflverse weekly stats (public), FantasyCalc market values (public), ESPN news (public),
 ESPN private leagues ONLY if env ESPN_S2 and ESPN_SWID are set (GitHub Actions secrets; never written to disk)."""
 import csv, io, json, os, re, sys, urllib.request, statistics
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from collections import defaultdict
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
@@ -262,6 +263,21 @@ def espn_league(cfg):
             "acqBudget": (st.get("acquisitionSettings") or {}).get("acquisitionBudget")}
 
 
+def advanced_data():
+    import advanced
+    P = sleeper_players()
+    byname = defaultdict(list)
+    for pid, p in P.items():
+        if p.get("position") in ("QB", "RB", "WR", "TE") and p.get("full_name"):
+            byname[(norm(p["full_name"]), p["position"])].append(pid)
+    def sid(r):
+        c = byname.get((norm(r["player_display_name"]), r["position"])) or []
+        if len(c) > 1:
+            c = [x for x in c if P[x].get("team") == r.get("team")] or c[:1]
+        return c[0] if c else None
+    return advanced.build(P, sid, norm)
+
+
 def main():
     os.makedirs(DATA, exist_ok=True)
     mp = os.path.join(DATA, "meta.json")
@@ -294,6 +310,8 @@ def main():
         return v
     run("performance.json", "nflverse weekly stats → league-scored Performance Score", pv)
     run("players.json", "Sleeper player DB (rostered + relevant FAs)", lambda: players_slim(ids))
+    run("advanced.json", "nflverse usage / snaps / schedule + Sleeper depth (derived)", advanced_data)
+    meta["lastFull"] = now_et(); meta["trigger"] = os.environ.get("TRIGGER", "manual")
     meta["lastRun"] = now_et(); meta["timezone"] = "America/New_York"
     meta["updated"] = max([v.get("lastChange") or "" for v in meta["sources"].values()] or [""])
     meta["espnConnected"] = bool(os.environ.get("ESPN_S2") and os.environ.get("ESPN_SWID"))

@@ -23,10 +23,10 @@ const D = { meta: null, players: {}, perf: {}, market: {}, news: [], keeper: nul
 async function getJson(n) { const r = await fetch(`data/${n}?v=${Date.now()}`, { cache: 'no-store' }); if (!r.ok) throw new Error(n + ' ' + r.status); return r.json(); }
 async function getText(n) { const r = await fetch(`data/${n}?v=${Date.now()}`); if (!r.ok) throw new Error(n); return r.text(); }
 async function loadData() {
-  const names = ['meta.json', 'players.json', 'performance.json', 'values_market.json', 'news.json', 'keeper_salaries.json', 'sleeper_dynasty.json', 'espn_kal.json', 'espn_dcigs.json', 'espn_lomo.json'];
+  const names = ['meta.json', 'players.json', 'performance.json', 'values_market.json', 'news.json', 'keeper_salaries.json', 'sleeper_dynasty.json', 'espn_kal.json', 'espn_dcigs.json', 'espn_lomo.json', 'advanced.json', 'changes.json'];
   const res = await Promise.allSettled(names.map(getJson)); const g = {}; res.forEach((r, i) => { if (r.status === 'fulfilled') g[names[i]] = r.value; });
   D.meta = g['meta.json'] || null; D.players = (g['players.json'] || {}).data || {}; D.perf = (g['performance.json'] || {}).data || {};
-  D.news = (g['news.json'] || {}).data || []; D.keeper = g['keeper_salaries.json'] || null; D.sleeper = (g['sleeper_dynasty.json'] || {}).data || null;
+  D.news = (g['news.json'] || {}).data || []; D.keeper = g['keeper_salaries.json'] || null; D.sleeper = (g['sleeper_dynasty.json'] || {}).data || null; D.adv = (g['advanced.json'] || {}).data || { usage: {}, sos: {}, schedule: {}, byes: {}, depth: {} }; D.changes = Array.isArray(g['changes.json']) ? g['changes.json'] : [];
   ['kal', 'dcigs', 'lomo'].forEach((k) => { if (g[`espn_${k}.json`]) D.espn[k] = g[`espn_${k}.json`].data; });
   const mk = (g['values_market.json'] || {}).data || {}; Object.entries(mk).forEach(([k, rows]) => { const m = {}; rows.forEach((r) => { if (r.s) m[r.s] = r; m['n:' + U.norm(r.n)] = r; }); D.market[k] = m; });
   D.byName = {}; Object.entries(D.players).forEach(([id, p]) => { const k = U.norm(p.n); if (!D.byName[k] || (p.r || 9999) < (D.players[D.byName[k]].r || 9999)) D.byName[k] = id; });
@@ -80,8 +80,8 @@ function rookiePicks(S, m) {
   S.tradedPicks.forEach((tp) => { const p = own.find((o) => o.season === +tp.season && o.round === tp.round && o.orig === tp.roster_id); if (p) p.owner = tp.owner_id; });
   return own;
 }
-function optimalLineup(lg, ids) {
-  const pool = ids.map((id) => ({ id, pos: (D.players[id] || {}).p || String(id).split(':')[3], blend: (perfOf(lg, id) || {}).blend || 0, inj: (D.players[id] || {}).i })).filter((x) => !['Out', 'IR', 'PUP', 'Sus', 'Doubtful'].includes(x.inj)).sort((a, b) => b.blend - a.blend);
+function optimalLineup(lg, ids, ros) {
+  const pool = ids.map((id) => ({ id, pos: (D.players[id] || {}).p || String(id).split(':')[3], blend: (perfOf(lg, id) || {}).blend || 0, inj: (D.players[id] || {}).i })).filter((x) => !(ros ? ['IR', 'PUP', 'Sus'] : ['Out', 'IR', 'PUP', 'Sus', 'Doubtful']).includes(x.inj)).sort((a, b) => b.blend - a.blend);
   const used = new Set(); const out = []; const order = [...lg.slots].sort((a, b) => (FLEXOK[a] ? 1 : 0) - (FLEXOK[b] ? 1 : 0));
   order.forEach((slot) => { const ok = FLEXOK[slot] || [slot]; const p = pool.find((x) => !used.has(x.id) && ok.includes(x.pos)); if (p) { used.add(p.id); out.push({ slot, ...p }); } else out.push({ slot, id: null, blend: 0 }); });
   return out;
@@ -138,10 +138,10 @@ function simulate(lg, m, n, tag = '') {
 }
 function evalTrade(lg, m, partner, give, get) {
   const giveV = give.reduce((s, p) => s + valueOf(lg, p).v, 0), getV = get.reduce((s, p) => s + valueOf(lg, p).v, 0);
-  const meAfter = optimalLineup(lg, m.me.players.filter((p) => !give.includes(p)).concat(get)).reduce((s, x) => s + x.blend, 0);
-  const themAfter = optimalLineup(lg, partner.players.filter((p) => !get.includes(p)).concat(give)).reduce((s, x) => s + x.blend, 0);
-  const fitMe = meAfter - m.me.strength, fitThem = themAfter - partner.strength; const before = simulate(lg, m, 1000)[m.me.id].playoffs; let after = before;
-  if (give.length || get.length) { const mm = { ...m, teams: m.teams.map((t) => t.me ? { ...t, strength: meAfter } : t.id === partner.id ? { ...t, strength: themAfter } : t) }; after = simulate(lg, mm, 1000, 'x' + give.join() + '|' + get.join())[m.me.id].playoffs; }
+  const rs = (ids) => optimalLineup(lg, ids, true).reduce((s, x) => s + x.blend, 0); const meBase = rs(m.me.players), themBase = rs(partner.players); const meAfter = rs(m.me.players.filter((p) => !give.includes(p)).concat(get));
+  const themAfter = rs(partner.players.filter((p) => !get.includes(p)).concat(give));
+  const fitMe = meAfter - meBase, fitThem = themAfter - themBase; const before = simulate(lg, m, 1000)[m.me.id].playoffs; let after = before;
+  if (give.length || get.length) { const mm = { ...m, teams: m.teams.map((t) => t.me ? { ...t, strength: t.strength + fitMe } : t.id === partner.id ? { ...t, strength: t.strength + fitThem } : t) }; after = simulate(lg, mm, 1000, 'x' + give.join() + '|' + get.join())[m.me.id].playoffs; }
   const avg = m.teams.reduce((s, t) => s + t.strength, 0) / m.teams.length; const contend = partner.strength >= avg;
   const balance = Math.max(giveV, getV) ? (giveV - getV) / Math.max(giveV, getV) : 0;
   let accept = 50 + balance * 120 + (fitThem > 0 ? 12 : -8); if (!give.length || !get.length) accept = 0; accept = Math.max(0, Math.min(99, Math.round(accept)));
@@ -190,9 +190,10 @@ const MODE = {
   keeper: [{ id: 'keepers', label: 'Keeper Board', title: 'Keeper Decision Board' }, { id: 'cap', label: 'Cap Planning', title: 'Auction Cap Planning' }, { id: 'startsit', label: 'Start / Sit', title: 'Start / Sit' }, { id: 'waivers', label: 'Waivers', title: 'Waivers & FAAB' }],
   redraft: [{ id: 'startsit', label: 'Start / Sit', title: 'Start / Sit' }, { id: 'waivers', label: 'Waivers / FAAB', title: 'Waivers & FAAB Bids' }, { id: 'playoffs', label: 'Playoff Odds', title: 'Playoff Odds' }, { id: 'analyzer', label: 'Trade Analyzer', title: 'Trade Analyzer' }],
 };
+const EDGE = [{ id: 'edges', label: 'Edges Feed', title: 'Edges · actionable alerts' }, { id: 'finder', label: 'Trade Finder', title: 'Trade Recommendations' }, { id: 'usage', label: 'Usage & Opportunity', title: 'Opportunity / Usage Dashboard' }, { id: 'proj', label: 'Projections & SOS', title: 'Weekly & Rest-of-Season Projections' }, { id: 'signals', label: 'Buy Low / Sell High', title: 'Buy-Low / Sell-High Signals' }, { id: 'handcuffs', label: 'Handcuffs', title: 'Handcuff & Backup Value Map' }, { id: 'byes', label: 'Bye & Playoff Planner', title: 'Bye-Week & Playoff Schedule Planner' }, { id: 'power', label: 'Power Index', title: 'League Power Index' }, { id: 'changes', label: 'What Changed', title: 'What Changed · news-driven refreshes' }];
 const TOOLS = [{ id: 'montecarlo', label: 'Monte Carlo', title: 'Monte Carlo Season Simulator' }, { id: 'scenarios', label: 'Scenarios', title: 'Scenario Manager' }, { id: 'method', label: 'Data & Method', title: 'Data Sources & Methodology' }];
 const DETAIL = { team: { title: 'Team Detail' } };
-const modules = (lg) => [...COMMON.map((x) => ({ ...x, group: 'My league' })), ...MODE[lg.mode].map((x) => ({ ...x, group: lg.short + ' tools' })), ...TOOLS.map((x) => ({ ...x, group: 'More' }))];
+const modules = (lg) => [...COMMON.map((x) => ({ ...x, group: 'My league' })), ...MODE[lg.mode].map((x) => ({ ...x, group: lg.short + ' tools' })), ...EDGE.map((x) => ({ ...x, group: 'Edge tools' })), ...TOOLS.map((x) => ({ ...x, group: 'More' }))];
 const ICO = '<svg class="ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="10" cy="10" r="5.5"/></svg>';
 
 const V = {
@@ -221,7 +222,7 @@ const V = {
       <div class="card"><div class="card-head"><h2>League wire</h2><button class="btn sm" data-action="module" data-id="activity">All</button></div><div class="wire">${m.tx.slice(0, 8).map(txRow).join('') || '<div class="small muted">No activity loaded.</div>'}</div></div>
     </div><div class="stack">
       <div class="card"><div class="card-head"><h2>GM inbox</h2><span class="sub">${alerts.length} alerts</span></div><div class="alerts">${alerts.map((a) => `<div class="alert ${a.level}"><div class="bar"></div><div><b>${U.esc(a.title)}</b><span>${U.esc(a.msg)}</span></div></div>`).join('') || '<div class="small muted">All quiet.</div>'}</div></div>
-      <div class="card"><div class="card-head"><h2>Latest news</h2><button class="btn sm" data-action="module" data-id="news">Open</button></div>${D.news.slice(0, 5).map((n) => newsRow(n)).join('')}</div>
+      ${typeof edges === 'function' ? `<div class="card"><div class="card-head"><h2>Top edges</h2><button class="btn sm" data-action="module" data-id="edges">All</button></div><div class="alerts">${edges(lg, m).slice(0, 4).map((e) => `<div class="alert ${e.cls === 'crit' ? 'critical' : e.cls === 'hi' ? 'info' : 'warning'}"><div class="bar"></div><div><b>${U.esc(e.title)}</b><span>${U.esc(e.msg)}</span></div></div>`).join('') || '<div class="small muted">None right now.</div>'}</div></div>` : ''}<div class="card"><div class="card-head"><h2>Latest news</h2><button class="btn sm" data-action="module" data-id="news">Open</button></div>${D.news.slice(0, 5).map((n) => newsRow(n)).join('')}</div>
     </div></div>`;
   },
   roster(lg, m) {

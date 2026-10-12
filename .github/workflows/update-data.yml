@@ -1,8 +1,12 @@
 name: Update fantasy data
+# Free-tier friendly: a tiny change check runs often (~20 s); the full recompute runs only when
+# significant NFL news is detected, on a twice-daily baseline, or manually.
 on:
   schedule:
-    - cron: "7,37 * * * 0,1"      # every 30 min Sun/Mon (UTC) game days
-    - cron: "17 */2 * * 2-6"      # every 2h other days
+    - cron: "23 12-23/2 * * *"   # check every 2h, 8 AM-8 PM ET
+    - cron: "23 0-4/2 * * *"     # check 8 PM-midnight ET
+    - cron: "53 16-23 * * 0"     # extra hourly checks Sunday 12:53-7:53 PM ET
+    - cron: "7 11,23 * * *"      # full baseline refresh ~7 AM / 7 PM ET
   workflow_dispatch:
 permissions:
   contents: write
@@ -15,20 +19,32 @@ jobs:
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Light news / injury check
+        id: check
+        run: python scripts/check_news.py
+      - name: Decide
+        id: decide
+        run: |
+          if [ "${{ steps.check.outputs.changed }}" = "true" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ "${{ github.event.schedule }}" = "7 11,23 * * *" ]; then
+            echo "full=true" >> "$GITHUB_OUTPUT"; else echo "full=false" >> "$GITHUB_OUTPUT"; fi
       - uses: actions/setup-python@v5
+        if: steps.decide.outputs.full == 'true'
         with:
           python-version: "3.12"
-      - name: Fetch data
+      - name: Full recompute
+        if: steps.decide.outputs.full == 'true'
         env:
-          # Private ESPN leagues: set with `gh secret set ESPN_S2` / `gh secret set ESPN_SWID`. Never committed.
           ESPN_S2: ${{ secrets.ESPN_S2 }}
           ESPN_SWID: ${{ secrets.ESPN_SWID }}
+          TRIGGER: ${{ steps.check.outputs.changed == 'true' && 'news' || github.event_name }}
         run: python scripts/fetch_data.py
-      - name: Commit if data changed
+      - name: Commit if anything changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898475+github-actions[bot]@users.noreply.github.com"
           git add data/
-          if git diff --cached --quiet -- data/ ':!data/meta.json'; then echo "No data changes"; exit 0; fi
+          if git diff --cached --quiet -- data/ ':!data/meta.json' ':!data/check_state.json'; then echo "No data changes"; exit 0; fi
           git commit -m "Update fantasy data $(TZ=America/New_York date '+%Y-%m-%d %H:%M %Z')"
           git pull --rebase -q && git push
