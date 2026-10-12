@@ -277,7 +277,24 @@ def edge_risk(lg, pid, nw):
 
 
 # ---------------- league models ----------------
+ESPN_SLOT = {0: "QB", 2: "RB", 4: "WR", 6: "TE", 23: "FLEX", 7: "SFLEX", 17: "K"}
+SLP_SLOT = {"QB": "QB", "RB": "RB", "WR": "WR", "TE": "TE", "FLEX": "FLEX", "SUPER_FLEX": "SFLEX", "K": "K"}
+
+
+def real_slots(lg):
+    """Starting slots from the league API (ESPN lineupSlotCounts / Sleeper roster_positions); D/ST is left out (no projection)."""
+    if lg["platform"] == "Sleeper":
+        rp = ((SLEEPER or {}).get("league") or {}).get("roster_positions") or []
+        return [SLP_SLOT[x] for x in rp if x in SLP_SLOT] or lg["slots"]
+    rs = (ESPN.get(lg["id"]) or {}).get("rosterSlots") or {}
+    out = []
+    for sid in (0, 2, 4, 6, 23, 7, 17):
+        out += [ESPN_SLOT[sid]] * int(rs.get(str(sid), 0) or 0)
+    return out or lg["slots"]
+
+
 def build(lg):
+    lg["slots"] = real_slots(lg)
     m = dict(teams=[], week=5)
     if lg["platform"] == "Sleeper":
         S = SLEEPER

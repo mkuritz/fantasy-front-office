@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12T10:10:32-04:00",
+ "updated": "2026-10-12T10:20:38-04:00",
  "trigger": "manual",
  "edgeScore": true,
  "betlab": {
@@ -421,7 +421,7 @@
       "confLabel": "High",
       "headline": "+15.2 pts",
       "narrative": [
-       "The call is Josh Jacobs in, Ollie Gordon out. Ollie Gordon is on bye; Jacobs is at 15.2, so the swap is worth about 15.2 projected points. Across the whole lineup, your saved lineup projects 98.7 and the optimal one projects 123.4 (+24.7).",
+       "The call is Josh Jacobs in, Ollie Gordon out. Ollie Gordon is on bye; Jacobs is at 15.2, so the swap is worth about 15.2 projected points. Across the whole lineup, your saved lineup projects 98.7 and the optimal one projects 114.0 (+15.2).",
        "Week 6 puts Jacobs at home against DAL. DAL ranks 6th of 32 in fantasy points allowed to RBs (one of the softest matchups), a 1.24x multiplier against league average.",
        "No injury designation and no flagged news on Jacobs in this refresh.",
        "We project 15.2 points for Week 6 from a 14.2 ppg blend adjusted for the matchup (not enough weekly games for a range). Rest of season: 158.4 projected points through Week 17.",
@@ -432,7 +432,7 @@
       "metrics": {
        "gain": 15.2,
        "lineupNow": 98.7,
-       "lineupBest": 123.4,
+       "lineupBest": 114.0,
        "proj": 15.2,
        "lo": 15.2,
        "hi": 15.2
@@ -506,7 +506,7 @@
        "11628"
       ],
       "priority": 3.51,
-      "rank": 6
+      "rank": 5
      },
      {
       "section": "waivers",
@@ -543,65 +543,65 @@
     "trades": [
      {
       "section": "trades",
-      "call": "Trade David Montgomery + Kyle Pitts to Howie Feltersnatch for Kirk Cousins",
-      "conf": 76,
-      "confLabel": "High",
-      "headline": "+4.5 ppg",
+      "call": "Trade J.K. Dobbins to Wassup My Nacua for Baker Mayfield",
+      "conf": 70,
+      "confLabel": "Medium",
+      "headline": "+4.7 ppg",
       "narrative": [
-       "Offer Howie Feltersnatch David Montgomery + Kyle Pitts for Kirk Cousins. QB is a need for you (need score 100/100: your starters average 15.8 ppg there vs a league average of 34.0). Howie Feltersnatch is thin where you are deep (TE need score 100/100, RB need score 60/100).",
-       "The numbers: on our blended value scale you send 1,139 and receive 1,197 (+58). Your optimal lineup improves by 4.5 points a week and theirs changes by +1.0, which is why it is pitchable: both sides start better players. Estimated acceptance: 56%.",
-       "Cousins is adding 2.4 rushes a game. Week by week lately: Wk3 22.2, Wk4 22.6, Wk5 13.7.",
-       "Cousins carries no injury tag, and the news check found nothing new.",
-       "We project 15.2 points (80% band 9.7-20.7), built from a 14.1 ppg blend of this year and last year adjusted for the matchup. Rest of season: 152.5 projected points through Week 17. Sports Labs Edge Score 55, Risk Score 25 (1-99, ranked against every QB in this league's scoring).",
-       "What you give up: David Montgomery (RB, HOU) projects 94.3 rest-of-season points. Montgomery has played 47% of snaps (35% over the last two games) with a 4.0% target share (0.0% last two), a 43.9% carry share (35.6% the last two games) at 10.4 carries a game, 1.4 targets per game. Recent scoring: Wk3 6.8, Wk4 4.3, Wk5 1.1. That is down 6.4 points a game against his season average of 9.1. His opportunity (yards and TDs expected from his targets and carries) is worth 8.8 points a game; he has scored 9.1, right in line (+0.2). Touchdowns: 3 scored on 2.0 expected.",
-       "What you give up: Kyle Pitts (TE, ATL) projects 107.0 rest-of-season points. Pitts has played 56% of snaps (59% over the last two games) with a 11.3% target share (16.3% last two), 3.0 targets per game. Week by week lately: Wk3 1.5, Wk4 7.7, Wk5 15.2. That is up 6.1 points a game against his season average of 5.4. His opportunity (yards and TDs expected from his targets and carries) is worth 5.1 points a game; he has scored 5.4, right in line (+0.3). Touchdowns: 1 scored on 0.7 expected.",
-       "What could go wrong: at 38 he is past the typical QB peak. On the other side, Montgomery has his own flags: his weekly scoring is volatile (standard deviation 10.1 on a 9.5 ppg base); the JAX defense is a tough draw for RBs; his snap rate dipped from 47% to 35% over the last two games; at 29 he is past the typical RB peak."
-      ],
-      "metrics": {
-       "give": 1139,
-       "get": 1197,
-       "lineupGain": 4.5,
-       "accept": 56,
-       "edge": 55,
-       "risk": 25
-      },
-      "players": [
-       "1166",
-       "5892",
-       "7553"
-      ],
-      "priority": 3.73,
-      "rank": 5
-     },
-     {
-      "section": "trades",
-      "call": "Trade David Montgomery to Wassup My Nacua for Baker Mayfield",
-      "conf": 82,
-      "confLabel": "High",
-      "headline": "+5.0 ppg",
-      "narrative": [
-       "Offer Wassup My Nacua David Montgomery for Baker Mayfield. QB is a need for you (need score 100/100: your starters average 15.8 ppg there vs a league average of 34.0). Wassup My Nacua is thin where you are deep (RB need score 74/100).",
-       "The numbers: on our blended value scale you send 739 and receive 577 (-162). Your optimal lineup improves by 5.0 points a week and theirs changes by +0.0, which is why it is pitchable: both sides start better players. Estimated acceptance: 68%.",
+       "Offer Wassup My Nacua J.K. Dobbins for Baker Mayfield. QB is a need for you (need score 100/100: your starters average 15.8 ppg there vs a league average of 32.9). Wassup My Nacua is thin where you are deep (RB need score 60/100).",
+       "The numbers: on our blended value scale you send 496 and receive 577 (+81). Your optimal lineup improves by 4.7 points a week and theirs changes by +0.0, which is why it is pitchable: both sides start better players. Estimated acceptance: 25%.",
        "Mayfield is adding 3.7 rushes a game. Recent scoring: Wk1 11.6, Wk2 12.2, Wk3 11.3.",
        "Injury status: Out (Thumb); the rest-of-season projection assumes he misses about 1 week (an estimate for this status). From the wire: Baker Mayfield (QB, TB) Out for Week 5: Thumb.",
        "We project 0.0 points (80% band 0.0-0.0), built from a 14.6 ppg blend of this year and last year adjusted for the matchup. Rest of season: 148.5 projected points through Week 17. Sports Labs Edge Score 23, Risk Score 8 (1-99, ranked against every QB in this league's scoring).",
-       "What you give up: David Montgomery (RB, HOU) projects 94.3 rest-of-season points. Montgomery has played 47% of snaps (35% over the last two games) with a 4.0% target share (0.0% last two), a 43.9% carry share (35.6% the last two games) at 10.4 carries a game, 1.4 targets per game. Recent scoring: Wk3 6.8, Wk4 4.3, Wk5 1.1. That is down 6.4 points a game against his season average of 9.1. His opportunity (yards and TDs expected from his targets and carries) is worth 8.8 points a game; he has scored 9.1, right in line (+0.2). Touchdowns: 3 scored on 2.0 expected.",
-       "The counter-case: the PIT defense is a tough draw for QBs. On the other side, Montgomery has his own flags: his weekly scoring is volatile (standard deviation 10.1 on a 9.5 ppg base); the JAX defense is a tough draw for RBs; his snap rate dipped from 47% to 35% over the last two games; at 29 he is past the typical RB peak."
+       "What you give up: J.K. Dobbins (RB, DEN) projects 108.5 rest-of-season points. Dobbins has played 42% of snaps (42% over the last two games) with a 4.2% target share (7.2% last two), a 53.8% carry share (56.0% the last two games) at 12.8 carries a game, 1.2 targets per game. The last three box scores in this league's scoring were Wk3 6.3, Wk4 7.2, Wk5 15.4. That is up 4.1 points a game against his season average of 7.2. His opportunity (yards and TDs expected from his targets and carries) is worth 10.0 points a game; he has scored 7.2, leaving points on the table (-2.7). Touchdowns: 1 scored on 2.3 expected.",
+       "The counter-case: the PIT defense is a tough draw for QBs. On the other side, Dobbins has his own flags: at 27 he is past the typical RB peak."
       ],
       "metrics": {
-       "give": 739,
+       "give": 496,
        "get": 577,
-       "lineupGain": 5.0,
-       "accept": 68,
+       "lineupGain": 4.7,
+       "accept": 25,
        "edge": 23,
        "risk": 8
       },
       "players": [
        "4892",
-       "5892"
+       "6806"
       ],
-      "priority": 3.98,
+      "priority": 3.85,
       "rank": 3
+     },
+     {
+      "section": "trades",
+      "call": "Trade J.K. Dobbins + Kyle Pitts to Extra ChroMahome for Michael Penix",
+      "conf": 74,
+      "confLabel": "Medium",
+      "headline": "+3.6 ppg",
+      "narrative": [
+       "Propose this to Extra ChroMahome: you send J.K. Dobbins + Kyle Pitts, you get Michael Penix. QB is a need for you (need score 100/100: your starters average 15.8 ppg there vs a league average of 32.9). Extra ChroMahome is thin where you are deep (RB need score 61/100, TE need score 57/100).",
+       "The numbers: on our blended value scale you send 896 and receive 873 (-23). Your optimal lineup improves by 3.6 points a week and theirs changes by +0.3, which is why it is pitchable: both sides start better players. Estimated acceptance: 65%.",
+       "Penix is adding 2.0 rushes a game. The last three box scores in this league's scoring were Wk3 14.0, Wk4 12.7, Wk5 14.4.",
+       "Injury status: Questionable (Ribs); next week's projection is discounted for the risk he sits. From the wire: Falcons' Michael Penix Jr. injures rib late in loss to Ravens.",
+       "The projection is 11.3 points for Week 6, with an 80% range of roughly 10.6 to 12.1 based on his week-to-week spread (0.7 pt standard deviation). Rest of season: 145.2 projected points through Week 17. Sports Labs Edge Score 37, Risk Score 5 (1-99, ranked against every QB in this league's scoring).",
+       "What you give up: J.K. Dobbins (RB, DEN) projects 108.5 rest-of-season points. Usage: 42% snap rate, 42% in the last two, and 4.2% of team targets (7.2% recently), a 53.8% carry share (56.0% the last two games) at 12.8 carries a game, 1.2 targets per game. Recent scoring: Wk3 6.3, Wk4 7.2, Wk5 15.4. That is up 4.1 points a game against his season average of 7.2. His opportunity (yards and TDs expected from his targets and carries) is worth 10.0 points a game; he has scored 7.2, leaving points on the table (-2.7). Touchdowns: 1 scored on 2.3 expected.",
+       "What you give up: Kyle Pitts (TE, ATL) projects 107.0 rest-of-season points. Pitts has played 56% of snaps (59% over the last two games) with a 11.3% target share (16.3% last two), 3.0 targets per game. Week by week lately: Wk3 1.5, Wk4 7.7, Wk5 15.2. That is up 6.1 points a game against his season average of 5.4. His opportunity (yards and TDs expected from his targets and carries) is worth 5.1 points a game; he has scored 5.4, right in line (+0.3). Touchdowns: 1 scored on 0.7 expected.",
+       "The risk on this call: he is listed Questionable, so check the inactive list before kickoff. On the other side, Dobbins has his own flags: at 27 he is past the typical RB peak."
+      ],
+      "metrics": {
+       "give": 896,
+       "get": 873,
+       "lineupGain": 3.6,
+       "accept": 65,
+       "edge": 37,
+       "risk": 5
+      },
+      "players": [
+       "11559",
+       "6806",
+       "7553"
+      ],
+      "priority": 3.31,
+      "rank": 6
      }
     ],
     "sellhold": [
@@ -679,9 +679,9 @@
     {
      "rank": 3,
      "section": "trades",
-     "call": "Trade David Montgomery to Wassup My Nacua for Baker Mayfield",
-     "conf": 82,
-     "confLabel": "High"
+     "call": "Trade J.K. Dobbins to Wassup My Nacua for Baker Mayfield",
+     "conf": 70,
+     "confLabel": "Medium"
     },
     {
      "rank": 4,
@@ -692,16 +692,16 @@
     },
     {
      "rank": 5,
-     "section": "trades",
-     "call": "Trade David Montgomery + Kyle Pitts to Howie Feltersnatch for Kirk Cousins",
-     "conf": 76,
-     "confLabel": "High"
-    },
-    {
-     "rank": 6,
      "section": "waivers",
      "call": "Add Keenan Allen, drop Marvin Harrison",
      "conf": 65,
+     "confLabel": "Medium"
+    },
+    {
+     "rank": 6,
+     "section": "trades",
+     "call": "Trade J.K. Dobbins + Kyle Pitts to Extra ChroMahome for Michael Penix",
+     "conf": 74,
      "confLabel": "Medium"
     },
     {

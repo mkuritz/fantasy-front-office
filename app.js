@@ -10,7 +10,8 @@ const U = {
 };
 const SL_MARK = `<a class="sl-mark" href="https://mkuritz.github.io/sports-labs/" title="Sports Labs — all suites"><svg width="16" height="16" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0b1220"/><path d="M9 21c2 2 4.5 3 7 3 3.3 0 6-1.6 6-4.4 0-5.6-12-3.4-12-8.6C10 8.6 12.6 7 15.6 7c2.2 0 4.2.8 5.6 2.2" stroke="#22d3ee" stroke-width="2.6" fill="none" stroke-linecap="round"/></svg>A Sports Labs product</a>`;
 const LOGO = `<svg width="34" height="34" viewBox="0 0 34 34" fill="none" aria-label="Fantasy Front Office" role="img"><rect x="1" y="1" width="32" height="32" rx="8" fill="#0b3a4a"/><path d="M10 24V10h11M10 17h8" stroke="#2cc1b0" stroke-width="2.6" stroke-linecap="round"/><circle cx="24" cy="23" r="2.4" fill="#f5b942"/></svg>`;
-const LEAGUES = {
+const LEAGUES = { // slots below are fallbacks; sim.js replaces them with the league API's real slots
+
   dynasty: { id: 'dynasty', name: 'Show Us Your TDs', short: 'Dynasty', mode: 'dynasty', platform: 'Sleeper', perf: 'dynasty', market: 'dyn', slots: ['QB', 'RB', 'RB', 'WR', 'WR', 'WR', 'TE', 'FLEX', 'FLEX'], color: '#5b3cc4', scoring: '0.5 PPR · 4-pt pass TD · −1 INT', faab: 100 },
   kal: { id: 'kal', name: 'KAL', short: 'Keeper', mode: 'keeper', platform: 'ESPN', perf: 'kal', market: 'red1', slots: ['QB', 'RB', 'RB', 'WR', 'WR', 'TE', 'FLEX', 'K'], color: '#9a6d0b', scoring: 'Full PPR · $200 auction · 18 keepers · $100 FAAB', faab: 100, cap: 200, keepers: 18, teamId: 5 },
   dcigs: { id: 'dcigs', name: 'D CIGS', short: 'Redraft SF', mode: 'redraft', platform: 'ESPN', perf: 'dcigs', market: 'red2', slots: ['QB', 'RB', 'RB', 'WR', 'WR', 'TE', 'FLEX', 'SFLEX', 'K'], color: '#a8322a', scoring: 'Full PPR · Superflex', faab: 100, teamId: 16 },
