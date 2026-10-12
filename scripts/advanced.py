@@ -6,7 +6,8 @@ Every derived number is an estimate."""
 import csv, io, os, urllib.request
 from collections import defaultdict
 
-SEASON = 2026
+import season_guard
+SEASON = season_guard.nfl_season()  # derived from date
 B = "https://github.com/nflverse/nflverse-data/releases/download"
 CACHE = os.environ.get("NFLV_CACHE")
 POS = ("QB", "RB", "WR", "TE")

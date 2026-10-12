@@ -5,8 +5,10 @@ FantasyCalc (public): 2027 rookie pick values. All scores are stat-based percent
 import json, os, re, urllib.request
 from concurrent.futures import ThreadPoolExecutor
 B = "https://sports.core.api.espn.com/v2/sports/football/leagues/college-football"
-CLASS, CUR = 2027, 2026
-SEASONS = [2023, 2024, 2025, 2026]
+import datetime as _dt
+CUR = _dt.date.today().year if _dt.date.today().month >= 3 else _dt.date.today().year - 1
+CLASS = CUR + 1
+SEASONS = [CUR - 3, CUR - 2, CUR - 1, CUR]  # HISTORICAL: college career stats for draft prospects (not current NFL roster status)
 
 
 def get(url, hdr=None):

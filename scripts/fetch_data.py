@@ -13,7 +13,8 @@ from zoneinfo import ZoneInfo
 ET = ZoneInfo("America/New_York")
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 DATA = os.path.join(ROOT, "data")
-SEASON = 2026
+import season_guard
+SEASON = season_guard.nfl_season()  # derived from date (NFL league year starts March)
 UA = {"User-Agent": "fantasy-front-office/1.0 (Sports Labs; github.com/mkuritz)"}
 NFLV = "https://github.com/nflverse/nflverse-data/releases/download/stats_player"
 CACHE = os.environ.get("NFLV_CACHE")
@@ -202,9 +203,16 @@ def players_slim(ids):
     for pid, p in P.items():
         if p.get("active") and p.get("team") and p.get("position") in ("QB", "RB", "WR", "TE", "K") and (p.get("search_rank") or 9999) < 600:
             keep.add(pid)
-    return {pid: {"n": P[pid].get("full_name") or f'{P[pid].get("first_name","")} {P[pid].get("last_name","")}'.strip(), "p": P[pid].get("position"), "t": P[pid].get("team"),
+    out = {pid: {"n": P[pid].get("full_name") or f'{P[pid].get("first_name","")} {P[pid].get("last_name","")}'.strip(), "p": P[pid].get("position"), "t": P[pid].get("team"),
                   "a": P[pid].get("age"), "x": P[pid].get("years_exp"), "i": P[pid].get("injury_status"), "in": P[pid].get("injury_body_part"),
                   "e": P[pid].get("espn_id"), "r": P[pid].get("search_rank")} for pid in keep if pid in P}
+    # Current team must match today's live ESPN roster for the current season; Sleeper can lag (retired/cut players).
+    for v in out.values():
+        if v["t"] and v["p"] in ("QB", "RB", "WR", "TE", "K"):
+            r = season_guard.roster("nfl", v["t"])
+            if r and not ((v["e"] and str(v["e"]) in r["ids"]) or season_guard.norm(v["n"]) in r["names"]):
+                v["t_unverified"] = v["t"]; v["t"] = None
+    return out
 
 
 def fantasycalc():

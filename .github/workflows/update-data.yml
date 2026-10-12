@@ -53,6 +53,9 @@ jobs:
         continue-on-error: true
         timeout-minutes: 4
         run: python scripts/ffo_xcheck.py
+      - name: Season guard (current season from date + same-day live roster check)
+        continue-on-error: true
+        run: python scripts/season_guard.py
       - name: Commit if anything changed
         run: |
           git config user.name "github-actions[bot]"
