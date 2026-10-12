@@ -532,7 +532,7 @@ def s_range(f, seed):
     ])
     s += f" Rest of season: {f1(f['ros'])} projected points through Week 17."
     if f["er"]:
-        s += f" SportsLabs Edge Score {f['er']['edge']}, Risk Score {f['er']['risk']} (1-99, ranked against every {f['pos']} in this league's scoring)."
+        s += f" Lab Score {f['er']['edge']} (SportsLabs Edge Score family), SportsLabs Risk Score {f['er']['risk']} (1-99, ranked against every {f['pos']} in this league's scoring)."
     return s
 
 
