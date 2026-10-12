@@ -102,7 +102,7 @@
   // 1-3 year outlook from dynasty value × age curve, plus incoming rookie picks
   function ageMult(pos, age, y) { const c = AGE[pos] || [23, 28, 31]; let m = 1; for (let k = 1; k <= y; k++) { const a = age + k; m *= a <= c[0] ? 1.1 : a <= c[1] ? 1.0 : a <= c[2] ? 0.78 : 0.5; } return m; }
   function outlook(lg, m, team, y) {
-    const by = { QB: 0, RB: 0, WR: 0, TE: 0, Picks: 0 }; team.players.forEach((id) => { const p = D.players[id] || {}; const v = (marketOf(lg, id) || {}).v || 0; if (by[p.p] !== undefined && p.a) by[p.p] += v * ageMult(p.p, p.a, y); });
+    const by = { QB: 0, RB: 0, WR: 0, TE: 0, Picks: 0 }; team.players.forEach((id) => { const p = D.players[id] || {}; const v = valueOf(lg, id).v || 0; if (by[p.p] !== undefined && p.a) by[p.p] += v * ageMult(p.p, p.a, y); });
     const pv = (RD.data || {}).pickValues || {}; (m.picks || []).filter((p) => p.owner === team.id && +p.season <= 2026 + y && +p.season >= 2027).forEach((p) => { const r = p.round; by.Picks += pv[`2027 ${r === 1 ? '1st' : r === 2 ? '2nd' : r === 3 ? '3rd' : r + 'th'}`] || (r === 1 ? 4000 : r === 2 ? 1800 : 700); });
     by.total = Object.values(by).reduce((a, b) => a + b, 0); return by;
   }
@@ -111,8 +111,8 @@
     const yrs = [0, 1, 2, 3]; const all = yrs.map((y) => m.teams.map((t) => ({ t, o: outlook(lg, m, t, y) })).sort((a, b) => b.o.total - a.o.total));
     const mine = yrs.map((y, i) => ({ y, o: all[i].find((x) => x.t.me).o, rank: all[i].findIndex((x) => x.t.me) + 1 })); const mx = Math.max(...mine.map((x) => x.o.total)) || 1;
     const col = { QB: '#7aa2ff', RB: '#4fd1a5', WR: '#f6c453', TE: '#f78fb3', Picks: '#9aa4b2' };
-    const top = (y) => m.me.players.map((id) => ({ id, v: ((marketOf(lg, id) || {}).v || 0) * ageMult((D.players[id] || {}).p, (D.players[id] || {}).a || 25, y) })).sort((a, b) => b.v - a.v).slice(0, 6);
-    const rising = m.me.players.map((id) => { const p = D.players[id] || {}; const v = (marketOf(lg, id) || {}).v || 0; return { id, d: v * ageMult(p.p, p.a || 25, 2) - v }; }).sort((a, b) => a.d - b.d);
+    const top = (y) => m.me.players.map((id) => ({ id, v: (valueOf(lg, id).v || 0) * ageMult((D.players[id] || {}).p, (D.players[id] || {}).a || 25, y) })).sort((a, b) => b.v - a.v).slice(0, 6);
+    const rising = m.me.players.map((id) => { const p = D.players[id] || {}; const v = valueOf(lg, id).v || 0; return { id, d: v * ageMult(p.p, p.a || 25, 2) - v }; }).sort((a, b) => a.d - b.d);
     return `<div class="card" style="margin-bottom:14px"><div class="card-head"><h2>Future of your team · 1–3 year outlook</h2><span class="sub">FantasyCalc dynasty value × positional age curve + 2027+ rookie picks (FantasyCalc pick values) · estimate</span></div>
       ${mine.map((x) => `<div class="need-row"><span class="need-pos" style="width:70px">${x.y === 0 ? 'Now' : '+' + x.y + ' yr'}</span><div class="need-bar" style="display:flex">${Object.keys(col).map((k) => `<div title="${k} ${Math.round(x.o[k])}" style="width:${100 * x.o[k] / mx}%;background:${col[k]}"></div>`).join('')}</div><span class="need-score num">#${x.rank}</span><span class="small muted">of ${m.teams.length}</span></div>`).join('')}
       <div class="small muted" style="margin-top:6px">${Object.entries(col).map(([k, c]) => `<span style="color:${c}">■</span> ${k}`).join(' &nbsp; ')}</div></div>
