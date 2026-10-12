@@ -1,0 +1,21 @@
+{
+ "generated": "2026-10-12T17:40:14-04:00",
+ "seasons": {
+  "nfl": 2026,
+  "mlb": 2026,
+  "nhl": 20262027
+ },
+ "checked": 724,
+ "conflicts": [
+  {
+   "src": "players.json",
+   "sport": "nfl",
+   "player": "Marquise Brown",
+   "team": "PHI",
+   "why": "not on PHI live 2026 roster for 2026-10-12"
+  }
+ ],
+ "unverified": [],
+ "stale": [],
+ "notes": []
+}
