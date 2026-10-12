@@ -38,6 +38,7 @@ jobs:
         env:
           ESPN_S2: ${{ secrets.ESPN_S2 }}
           ESPN_SWID: ${{ secrets.ESPN_SWID }}
+          CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
           TRIGGER: ${{ steps.check.outputs.changed == 'true' && 'news' || github.event_name }}
         run: python scripts/fetch_data.py
       - name: Cross-check free sources (optional)

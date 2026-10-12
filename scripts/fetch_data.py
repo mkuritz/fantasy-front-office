@@ -1,3 +1,5 @@
+import sys
+import time
 #!/usr/bin/env python3
 """Fantasy Front Office data pipeline -> data/*.json (each source independent; failures keep old file).
 Sleeper (public), nflverse weekly stats (public), FantasyCalc market values (public), ESPN news (public),
@@ -354,6 +356,16 @@ def main():
         return v
     run("performance.json", "nflverse weekly stats → league-scored Performance Score", pv)
     run("players.json", "Sleeper player DB (rostered + relevant FAs)", lambda: players_slim(ids))
+    rp = os.path.join(DATA, "prospects_2027.json")
+    if not os.path.exists(rp) or time.time() - os.path.getmtime(rp) > 20 * 3600 or os.environ.get("TRIGGER") == "workflow_dispatch":
+        try:
+            sys.path.insert(0, os.path.dirname(__file__)); import rookies
+            d = rookies.build()
+            if d["prospects"]:
+                json.dump(d, open(rp, "w"), separators=(",", ":"))
+                meta["sources"]["prospects_2027.json"] = {"label": "ESPN college stats → 2027 prospect board" + (" + CFBD usage" if d["hasCFBD"] else " (CFBD_API_KEY not set)"), "updated": now_et()}
+        except Exception as e:
+            print("rookies failed", e)
     run("advanced.json", "nflverse usage / snaps / schedule + Sleeper depth (derived)", advanced_data)
     meta["lastFull"] = now_et(); meta["trigger"] = os.environ.get("TRIGGER", "manual")
     meta["lastRun"] = now_et(); meta["timezone"] = "America/New_York"

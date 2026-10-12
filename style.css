@@ -391,3 +391,4 @@ tr.total td { border-top: 1px solid var(--border-strong); }
 @media (max-width: 640px) { .fm-tiles { grid-template-columns: repeat(2, 1fr); } .tm-grid { grid-template-columns: 1fr; } .fm-hero-stats { grid-template-columns: repeat(2, 1fr); } .fm-crest { display: none; } .depth-grid { grid-template-columns: 1fr; } .need-row { grid-template-columns: 40px 1fr 30px 64px; gap: 6px; } .vbar { grid-template-columns: 70px 1fr 40px; } .hstat b { font-size: 21px; } }
 @media print { .tile:hover { transform: none; } }
 
+.linkish{background:none;border:0;padding:0;color:inherit;cursor:pointer;text-align:left;font:inherit}.linkish:hover b,.linkish:hover{text-decoration:underline}
