@@ -79,7 +79,7 @@
     const nm = needMap(lg, m); let win = ''; try { win = (windowOf(lg, m, m.me) || {}).label || ''; } catch (e) { /* */ }
     const sims = simulate(B, O.picks, m.me.id);
     const recs = sims.map(({ pk, avail }) => { const opts = B.filter((p) => (avail.get(U.norm(p.name)) || 0) >= 25).map((p) => ({ p, a: avail.get(U.norm(p.name)), fit: fit(lg, m, p, nm, win) })).sort((a, b) => b.fit - a.fit).slice(0, 5); return { pk, opts }; });
-    const live = RD.live ? `<span class="tag hi">LIVE · ${RD.live.status}${RD.timer ? ' · polling every 15s' : ''}</span>` : '';
+    const live = RD.waiting && RD.timer ? '<span class="tag med">Watching: Sleeper hasn\'t created the 2027 draft yet · switches to the real order automatically</span>' : RD.live ? `<span class="tag hi">LIVE · ${RD.live.status}${RD.timer ? ' · polling every 15s' : ''}</span>` : '';
     return `<div class="card" style="margin-bottom:14px"><div class="card-head"><h2>Draft planner · 2027 rookie draft</h2><span class="sub">${O.projected ? 'Order projected from record + lineup strength (estimate) until Sleeper posts the 2027 draft' : 'Order from Sleeper'} · traded picks included · ${sims.length} pick(s) for you</span></div>
       <div class="row" style="gap:8px;flex-wrap:wrap"><button class="btn ${RD.timer ? '' : 'primary'}" data-rdlive="1">${RD.timer ? 'Stop live draft mode' : 'Start live draft mode'}</button>${live}<span class="small muted">Needs: ${Object.entries(nm).map(([k, v]) => `${k} ${v}`).join(' · ')} · Window: ${U.esc(win || '—')}</span></div></div>
       ${recs.map(({ pk, opts }) => `<div class="card" style="margin-bottom:12px"><div class="card-head"><h2>Pick ${pk.label} <span class="muted small">(#${pk.no}${pk.orig !== m.me.id ? ' · via ' + U.esc(tn(pk.orig)) : ''})</span></h2><span class="sub">Likely available (1,500 sims of ADP + noise) · ranked by fit</span></div>
@@ -90,7 +90,7 @@
   async function poll() {
     try {
       const L = (D.sleeper || {}).league || {}; const ds = await (await fetch(`https://api.sleeper.app/v1/league/${L.league_id}/drafts`)).json();
-      const d = ds.find((x) => String(x.season) === '2027') || ds.find((x) => x.status === 'drafting') || ds[0]; if (!d) return;
+      const d = ds.find((x) => String(x.season) === '2027'); if (!d) { RD.waiting = true; if (/draftplan/.test(location.hash)) render(); return; } RD.waiting = false;
       RD.live = await (await fetch(`https://api.sleeper.app/v1/draft/${d.draft_id}`)).json();
       const pk = await (await fetch(`https://api.sleeper.app/v1/draft/${d.draft_id}/picks`)).json();
       RD.picksMade = pk.sort((a, b) => a.pick_no - b.pick_no).map((x) => `${(x.metadata || {}).first_name || ''} ${(x.metadata || {}).last_name || ''}`.trim());
