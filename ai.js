@@ -6,7 +6,7 @@ COMMON.unshift({ id: 'ai', label: 'AI Fantasy Manager', title: 'AI Fantasy Manag
 const AI_SECTIONS = [['startsit', 'Start / Sit', 'Optimal vs your saved lineup'], ['waivers', 'Waiver adds & drops', 'Opportunity spikes and "their shot" breakouts'], ['trades', 'Trades to propose', 'Offers that improve both lineups'], ['sellhold', 'Sell / Hold', 'Usage vs production signals'], ['rookie', 'Rookie draft & future moves', 'Dynasty only']];
 fetch('data/ai_manager.json?v=' + Date.now(), { cache: 'no-store' }).then((r) => r.ok ? r.json() : null).then((d) => { AI.d = d; if (window.FFO) render(); }).catch(() => {});
 const aiConf = (r) => `<span class="ai-conf ${r.confLabel.toLowerCase()}" title="Confidence ${r.conf}%">${r.confLabel} · ${r.conf}%</span>`;
-const aiScores = (mt) => AI.d && AI.d.edgeScore && mt && mt.edge ? `<span class="ai-score" title="Sports Labs Edge Score (1-99)">Edge <b>${mt.edge}</b></span><span class="ai-score risk" title="Sports Labs Risk Score (1-99)">Risk <b>${mt.risk}</b></span>` : '';
+const aiScores = (mt) => AI.d && AI.d.edgeScore && mt && mt.edge ? `<span class="ai-score" title="SportsLabs Edge Score (1-99)">Edge <b>${mt.edge}</b></span><span class="ai-score risk" title="Sports Labs Risk Score (1-99)">Risk <b>${mt.risk}</b></span>` : '';
 function aiRec(lgId, r, key) {
   const open = AI.open[key];
   return `<div class="ai-rec ${open ? 'open' : ''}"><div class="ai-rec-head"><span class="ai-rank num">${r.rank}</span><div class="grow"><div class="ai-call">${U.esc(r.call)}</div><div class="ai-meta">${aiConf(r)}<span class="tag">${U.esc(r.headline)}</span>${aiScores(r.metrics)}</div></div>
