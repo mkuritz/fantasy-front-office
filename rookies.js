@@ -55,21 +55,21 @@
       <p class="small" style="line-height:1.6">${U.esc(p.summary)}</p>
       <div class="small muted">Percentiles vs. 2027 ${p.pos}s: ${Object.entries(p.pcts).map(([k, v]) => `${k} ${v}`).join(' · ')}</div>
       <div class="table-wrap" style="margin-top:10px"><table><thead><tr><th>Season</th><th>GP</th>${p.pos === 'QB' ? '<th>Cmp%</th><th>Pass yds</th><th>TD/INT</th>' : ''}<th>Rush</th><th>Rec</th><th>Dominator</th><th>Age (est.)</th></tr></thead><tbody>${rows}</tbody></table></div>
-      <p class="small muted">Breakout age ${f(p.m.breakoutAge)} · YPC ${f(p.m.ypc)} · Yds/rec ${f(p.m.ypr)} · Yds/target ${f(p.m.ypt)}${p.m.tgtShare != null ? ` · target share ${Math.round(p.m.tgtShare * 100)}%` : ' · target share / YPRR need CFBD_API_KEY'}. Ages are estimated from class year; dominator uses current school totals.</p>
+      <p class="small muted">Breakout age ${f(p.m.breakoutAge)} · YPC ${f(p.m.ypc)} · Yds/rec ${f(p.m.ypr)} · Yds/target ${f(p.m.ypt)}${p.pos === 'QB' ? '' : p.m.tgtShare != null ? ` · target share ${Math.round(p.m.tgtShare * 100)}% (CFBD pass-play usage, ${p.seasons[p.seasons.length - 1].yr})` : RD.data.hasCFBD ? ' · target share n/a (no CFBD match)' : ' · target share needs CFBD_API_KEY'}. Ages are estimated from class year; dominator uses current school totals.</p>
       <button class="btn" data-action="closeModal">Close</button>`);
   }
   window.RDprofile = (i) => profileModal(RD.data.prospects.find((p) => p.id === i));
   document.addEventListener('click', (e) => { const b = e.target.closest('[data-rdp]'); if (b) window.RDprofile(b.dataset.rdp); const l = e.target.closest('[data-rdlive]'); if (l) toggleLive(); const fp = e.target.closest('[data-rdpos]'); if (fp) { RD.pos = fp.dataset.rdpos; render(); } });
 
-  const row = (p, extra = '') => `<tr><td class="num">${p.rank}</td><td><button class="linkish" data-rdp="${p.id}"><b>${U.esc(p.name)}</b></button><div class="small muted">${U.esc(p.school || '')} · ${U.esc(p.cls || '')}</div></td><td>${p.pos}</td><td>${tierTag(p.tier)}</td><td class="num"><b>${p.score}</b></td><td class="num">${p.pos === 'QB' ? '—' : f(p.m.peakDom, '%')}</td><td class="num">${f(p.m.breakoutAge)}</td><td class="num">${p.pos === 'RB' ? f(p.m.ypc) : p.pos === 'QB' ? f(p.m.ypa) : f(p.m.ypr)}</td><td class="small">${lineOf(p)}</td><td class="small">${p.capitalEst}</td>${extra}</tr>`;
+  const row = (p, extra = '') => `<tr><td class="num">${p.rank}</td><td><button class="linkish" data-rdp="${p.id}"><b>${U.esc(p.name)}</b></button><div class="small muted">${U.esc(p.school || '')} · ${U.esc(p.cls || '')}</div></td><td>${p.pos}</td><td>${tierTag(p.tier)}</td><td class="num"><b>${p.score}</b></td><td class="num">${p.pos === 'QB' ? '—' : f(p.m.peakDom, '%')}</td><td class="num">${f(p.m.breakoutAge)}</td><td class="num">${p.pos !== 'QB' && p.m.tgtShare != null ? Math.round(p.m.tgtShare * 100) + '%' : '—'}</td><td class="num">${p.pos === 'RB' ? f(p.m.ypc) : p.pos === 'QB' ? f(p.m.ypa) : f(p.m.ypr)}</td><td class="small">${lineOf(p)}</td><td class="small">${p.capitalEst}</td>${extra}</tr>`;
 
   V.rookieboard = (lg, m) => {
     if (!isDyn(lg)) return onlyDyn; if (!RD.data) return loading;
     const pos = RD.pos || 'ALL'; const L = RD.data.prospects.filter((p) => pos === 'ALL' || p.pos === pos).slice(0, 60);
-    return `<div class="card"><div class="card-head"><h2>2027 Rookie Draft Board</h2><span class="sub">${RD.data.prospects.length} QB/RB/WR/TE prospects · stat-based prospect score (percentiles vs. class) · ${RD.data.hasCFBD ? 'CFBD usage included' : 'CFBD key not set: target share / YPRR off'}</span></div>
+    return `<div class="card"><div class="card-head"><h2>2027 Rookie Draft Board</h2><span class="sub">${RD.data.prospects.length} QB/RB/WR/TE prospects · stat-based prospect score (percentiles vs. class) · ${RD.data.hasCFBD ? 'target share via CFBD (YPRR not in free sources)' : 'CFBD key not set: target share off'}</span></div>
       <div class="row" style="gap:6px;margin-bottom:10px">${['ALL', 'QB', 'RB', 'WR', 'TE'].map((x) => `<button class="btn sm ${x === pos ? 'primary' : ''}" data-rdpos="${x}">${x}</button>`).join('')}</div>
-      <div class="table-wrap"><table><thead><tr><th>#</th><th>Prospect</th><th>Pos</th><th>Tier</th><th>Score</th><th>Peak dom.</th><th>Breakout age (est.)</th><th>Eff.</th><th>2026 line</th><th>Draft capital (est.)</th></tr></thead><tbody>${L.map((p) => row(p)).join('')}</tbody></table></div>
-      <p class="small muted" style="margin-top:8px">Eff. = YPC (RB), yds/att (QB), yds/rec (WR/TE). ${U.esc(RD.data.notes)} Click a name for the full profile and scouting summary.</p></div>`;
+      <div class="table-wrap"><table><thead><tr><th>#</th><th>Prospect</th><th>Pos</th><th>Tier</th><th>Score</th><th>Peak dom.</th><th>Breakout age (est.)</th><th>Tgt share</th><th>Eff.</th><th>2026 line</th><th>Draft capital (est.)</th></tr></thead><tbody>${L.map((p) => row(p)).join('')}</tbody></table></div>
+      <p class="small muted" style="margin-top:8px">Tgt share = share of team pass plays involving the player (CFBD usage; YPRR needs route data no free source has). Eff. = YPC (RB), yds/att (QB), yds/rec (WR/TE). ${U.esc(RD.data.notes)} Click a name for the full profile and scouting summary.</p></div>`;
   };
 
   V.draftplan = (lg, m) => {
