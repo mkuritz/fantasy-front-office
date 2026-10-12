@@ -172,7 +172,7 @@ def sleeper_league():
         except Exception:
             pass
     tx = []
-    for w in range(max(1, week - 4), week + 1):
+    for w in range(1, week + 1):
         try:
             tx += jget(f"{base}/league/{L}/transactions/{w}")
         except Exception:
@@ -189,7 +189,7 @@ def sleeper_league():
             "users": [{"user_id": u["user_id"], "display_name": u.get("display_name"), "team_name": (u.get("metadata") or {}).get("team_name")} for u in users],
             "rosters": [{k: r.get(k) for k in ("roster_id", "owner_id", "players", "starters", "taxi", "reserve")} | {"settings": r.get("settings")} for r in rosters],
             "matchups": {w: [{k: m.get(k) for k in ("roster_id", "matchup_id", "points", "starters")} for m in ms] for w, ms in weeks.items()},
-            "transactions": sorted([{k: t.get(k) for k in ("type", "status", "created", "roster_ids", "adds", "drops", "draft_picks", "waiver_budget", "leg", "settings")} for t in tx if t.get("status") == "complete"], key=lambda t: -(t["created"] or 0))[:80],
+            "transactions": sorted([{k: t.get(k) for k in ("type", "status", "created", "roster_ids", "adds", "drops", "draft_picks", "waiver_budget", "leg", "settings")} for t in tx if t.get("status") == "complete"], key=lambda t: -(t["created"] or 0))[:400],
             "tradedPicks": picks, "drafts": [{k: d.get(k) for k in ("draft_id", "season", "status", "type")} for d in drafts]}, ids
 
 
@@ -222,6 +222,56 @@ def news():
 
 
 # ---------- ESPN private leagues ----------
+SEASON_START_MS = int(datetime(SEASON, 8, 1, tzinfo=timezone.utc).timestamp() * 1000)
+
+
+def espn_name_map(teams):
+    """ESPN player id -> (name, pos) from rosters, then the Sleeper DB (espn_id)."""
+    m = {}
+    for pid, p in sleeper_players().items():
+        if p.get("espn_id"):
+            m[str(p["espn_id"])] = (p.get("full_name"), p.get("position"), pid)
+    for t in teams:
+        for pl in t["players"]:
+            m.setdefault(str(pl["id"]), (pl["name"], None, None))
+    return m
+
+
+def espn_transactions(cfg, base, hdr, week, teams):
+    """Season-only executed roster transactions (adds, drops, waiver claims w/ FAAB, trades).
+    Lineup-only moves (type ROSTER / item LINEUP), failed/proposed items and unresolved players are dropped."""
+    names = espn_name_map(teams); out = {}
+    for sp in range(0, int(week) + 1):
+        try:
+            jj = jget(f"{base}?view=mTransactions2&scoringPeriodId={sp}", headers=hdr)
+        except Exception:
+            continue
+        for t in jj.get("transactions", []) or []:
+            if t.get("status") != "EXECUTED" or t.get("type") not in ("FREEAGENT", "WAIVER", "TRADE_ACCEPT", "TRADE_UPHOLD", "DRAFT"):
+                continue
+            ts = t.get("processDate") or t.get("proposedDate") or 0
+            if ts and ts < 1e12:
+                ts *= 1000  # seconds -> ms
+            if ts < SEASON_START_MS and t.get("type") != "DRAFT":
+                continue
+            items = []
+            for it in t.get("items", []) or []:
+                if it.get("type") not in ("ADD", "DROP", "TRADE", "DRAFT") or it.get("playerId") in (None, -1, 0):
+                    continue
+                nm = names.get(str(it["playerId"]))
+                if not nm or not nm[0]:
+                    continue
+                items.append({"act": it["type"].lower(), "name": nm[0], "pos": nm[1], "sid": nm[2], "espn": it["playerId"],
+                              "from": it.get("fromTeamId"), "to": it.get("toTeamId"), "keeper": bool(it.get("isKeeper"))})
+            if not items:
+                continue
+            if t.get("type") == "DRAFT" and not any(i["keeper"] for i in items):
+                continue
+            kind = {"FREEAGENT": "free_agent", "WAIVER": "waiver", "TRADE_ACCEPT": "trade", "TRADE_UPHOLD": "trade", "DRAFT": "keeper"}[t["type"]]
+            out[t.get("id") or f"{ts}{t.get('teamId')}"] = {"t": int(ts), "kind": kind, "team": t.get("teamId"), "bid": t.get("bidAmount") or 0, "week": t.get("scoringPeriodId"), "items": items}
+    return sorted(out.values(), key=lambda x: -x["t"])
+
+
 def espn_league(cfg):
     s2, swid = os.environ.get("ESPN_S2"), os.environ.get("ESPN_SWID")
     # Clean pasted cookie values: strip whitespace and map look-alike (homoglyph) chars to ASCII.
@@ -251,13 +301,7 @@ def espn_league(cfg):
     sch = [{"week": m.get("matchupPeriodId"), "home": (m.get("home") or {}).get("teamId"), "away": (m.get("away") or {}).get("teamId"),
             "hp": (m.get("home") or {}).get("totalPoints"), "ap": (m.get("away") or {}).get("totalPoints"), "winner": m.get("winner")} for m in j.get("schedule", [])]
     st = j.get("settings", {})
-    tx = []
-    try:
-        tj = jget(url.split("?")[0] + "?view=kona_league_communication", headers={"Cookie": f"espn_s2={s2}; SWID={swid}"})
-        for t in (tj.get("communication") or {}).get("topics", [])[:60]:
-            tx.append({"type": t.get("type"), "date": t.get("date"), "msgs": [{"type": m.get("messageTypeId"), "team": m.get("for"), "player": m.get("targetId")} for m in t.get("messages", [])]})
-    except Exception:
-        pass
+    tx = espn_transactions(cfg, url.split("?")[0], {"Cookie": f"espn_s2={s2}; SWID={swid}"}, j.get("scoringPeriodId") or 1, teams)
     return {"cfg": cfg, "name": st.get("name"), "week": j.get("scoringPeriodId"), "teams": teams, "schedule": sch, "transactions": tx,
             "scoring": (st.get("scoringSettings") or {}).get("scoringItems"), "rosterSlots": (st.get("rosterSettings") or {}).get("lineupSlotCounts"),
             "acqBudget": (st.get("acquisitionSettings") or {}).get("acquisitionBudget")}
