@@ -1,13 +1,13 @@
 {
  "espnConnected": true,
- "lastFull": "2026-10-12T23:30:30-04:00",
- "lastRun": "2026-10-12T23:30:30-04:00",
+ "lastFull": "2026-10-13T14:10:51-04:00",
+ "lastRun": "2026-10-13T14:10:51-04:00",
  "sources": {
   "advanced.json": {
    "error": null,
    "label": "nflverse usage / snaps / schedule + Sleeper depth (derived)",
-   "lastChange": "2026-10-12T23:30:30-04:00",
-   "lastSuccess": "2026-10-12T23:30:30-04:00",
+   "lastChange": "2026-10-13T14:10:51-04:00",
+   "lastSuccess": "2026-10-13T14:10:51-04:00",
    "ok": true,
    "pending": false
   },
@@ -15,8 +15,8 @@
    "error": null,
    "label": "ESPN D CIGS (private; needs secrets)",
    "lastAttempt": "2026-10-11T20:25:41-04:00",
-   "lastChange": "2026-10-12T23:30:15-04:00",
-   "lastSuccess": "2026-10-12T23:30:15-04:00",
+   "lastChange": "2026-10-13T14:10:29-04:00",
+   "lastSuccess": "2026-10-13T14:10:29-04:00",
    "ok": true,
    "pending": false
   },
@@ -24,8 +24,8 @@
    "error": null,
    "label": "ESPN KAL (private; needs secrets)",
    "lastAttempt": "2026-10-11T20:25:41-04:00",
-   "lastChange": "2026-10-12T23:30:13-04:00",
-   "lastSuccess": "2026-10-12T23:30:13-04:00",
+   "lastChange": "2026-10-13T14:10:27-04:00",
+   "lastSuccess": "2026-10-13T14:10:27-04:00",
    "ok": true,
    "pending": false
   },
@@ -33,32 +33,32 @@
    "error": null,
    "label": "ESPN LOMOFAGS (private; needs secrets)",
    "lastAttempt": "2026-10-11T20:25:41-04:00",
-   "lastChange": "2026-10-12T23:30:17-04:00",
-   "lastSuccess": "2026-10-12T23:30:17-04:00",
+   "lastChange": "2026-10-13T14:10:30-04:00",
+   "lastSuccess": "2026-10-13T14:10:30-04:00",
    "ok": true,
    "pending": false
   },
   "news.json": {
    "error": null,
    "label": "ESPN NFL news (public)",
-   "lastChange": "2026-10-12T23:30:09-04:00",
-   "lastSuccess": "2026-10-12T23:30:09-04:00",
+   "lastChange": "2026-10-13T14:10:24-04:00",
+   "lastSuccess": "2026-10-13T14:10:24-04:00",
    "ok": true,
    "pending": false
   },
   "performance.json": {
    "error": null,
    "label": "nflverse weekly stats \u2192 league-scored Performance Score",
-   "lastChange": "2026-10-12T03:32:52-04:00",
-   "lastSuccess": "2026-10-12T23:30:18-04:00",
+   "lastChange": "2026-10-13T14:10:32-04:00",
+   "lastSuccess": "2026-10-13T14:10:32-04:00",
    "ok": true,
    "pending": false
   },
   "players.json": {
    "error": null,
    "label": "Sleeper player DB (rostered + relevant FAs)",
-   "lastChange": "2026-10-12T23:30:29-04:00",
-   "lastSuccess": "2026-10-12T23:30:29-04:00",
+   "lastChange": "2026-10-13T14:10:50-04:00",
+   "lastSuccess": "2026-10-13T14:10:50-04:00",
    "ok": true,
    "pending": false
   },
@@ -69,21 +69,21 @@
   "sleeper_dynasty.json": {
    "error": null,
    "label": "Sleeper league (public API)",
-   "lastChange": "2026-10-12T23:30:09-04:00",
-   "lastSuccess": "2026-10-12T23:30:09-04:00",
+   "lastChange": "2026-10-13T14:10:23-04:00",
+   "lastSuccess": "2026-10-13T14:10:23-04:00",
    "ok": true,
    "pending": false
   },
   "values_market.json": {
    "error": null,
    "label": "FantasyCalc market values (public)",
-   "lastChange": "2026-10-12T23:30:11-04:00",
-   "lastSuccess": "2026-10-12T23:30:11-04:00",
+   "lastChange": "2026-10-13T14:10:25-04:00",
+   "lastSuccess": "2026-10-13T14:10:25-04:00",
    "ok": true,
    "pending": false
   }
  },
  "timezone": "America/New_York",
- "trigger": "schedule",
- "updated": "2026-10-12T23:30:30-04:00"
+ "trigger": "news",
+ "updated": "2026-10-13T14:10:51-04:00"
 }

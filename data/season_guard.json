@@ -1,43 +1,20 @@
 {
- "generated": "2026-10-13T02:51:00-04:00",
+ "generated": "2026-10-13T14:10:55-04:00",
  "seasons": {
   "nfl": 2026,
   "mlb": 2026,
   "nhl": 20262027
  },
- "checked": 739,
+ "checked": 740,
  "conflicts": [],
  "unverified": [],
- "stale": [
-  {
-   "src": "players.json",
-   "why": "fetched 2026-10-12, not today 2026-10-13"
-  }
- ],
+ "stale": [],
  "notes": [],
  "resolved": [
   {
    "src": "players.json",
-   "player": "Zonovan Knight",
-   "team": "ARI",
-   "via": "sleeper live (practice squad/reserve)"
-  },
-  {
-   "src": "players.json",
-   "player": "Irvin Charles",
-   "team": "SEA",
-   "via": "sleeper live (practice squad/reserve)"
-  },
-  {
-   "src": "players.json",
    "player": "Mitch Tinsley",
    "team": "CIN",
-   "via": "sleeper live (practice squad/reserve)"
-  },
-  {
-   "src": "players.json",
-   "player": "Jalen Cropper",
-   "team": "NO",
    "via": "sleeper live (practice squad/reserve)"
   },
   {
@@ -48,38 +25,14 @@
   },
   {
    "src": "players.json",
-   "player": "Dontae McMillan",
-   "team": "SEA",
+   "player": "Blake Grupe",
+   "team": "LAR",
    "via": "sleeper live (practice squad/reserve)"
   },
   {
    "src": "players.json",
-   "player": "Travis Vokolek",
-   "team": "ARI",
-   "via": "sleeper live (practice squad/reserve)"
-  },
-  {
-   "src": "players.json",
-   "player": "Bryce Oliver",
-   "team": "HOU",
-   "via": "sleeper live (practice squad/reserve)"
-  },
-  {
-   "src": "players.json",
-   "player": "Jared Wayne",
-   "team": "HOU",
-   "via": "sleeper live (practice squad/reserve)"
-  },
-  {
-   "src": "players.json",
-   "player": "Devin Culp",
-   "team": "TB",
-   "via": "sleeper live (practice squad/reserve)"
-  },
-  {
-   "src": "players.json",
-   "player": "Malik Heath",
-   "team": "ATL",
+   "player": "Jalen Cropper",
+   "team": "NO",
    "via": "sleeper live (practice squad/reserve)"
   },
   {
@@ -90,8 +43,80 @@
   },
   {
    "src": "players.json",
+   "player": "Irvin Charles",
+   "team": "SEA",
+   "via": "sleeper live (practice squad/reserve)"
+  },
+  {
+   "src": "players.json",
    "player": "Alex Kessman",
    "team": "CAR",
+   "via": "sleeper live (practice squad/reserve)"
+  },
+  {
+   "src": "players.json",
+   "player": "Bryce Oliver",
+   "team": "HOU",
+   "via": "sleeper live (practice squad/reserve)"
+  },
+  {
+   "src": "players.json",
+   "player": "Emari Demercado",
+   "team": "DAL",
+   "via": "sleeper live (practice squad/reserve)"
+  },
+  {
+   "src": "players.json",
+   "player": "Brady Cook",
+   "team": "MIA",
+   "via": "sleeper live (practice squad/reserve)"
+  },
+  {
+   "src": "players.json",
+   "player": "Devin Neal",
+   "team": "WAS",
+   "via": "sleeper live (practice squad/reserve)"
+  },
+  {
+   "src": "players.json",
+   "player": "Travis Vokolek",
+   "team": "ARI",
+   "via": "sleeper live (practice squad/reserve)"
+  },
+  {
+   "src": "players.json",
+   "player": "Jamaal Pritchett",
+   "team": "NYJ",
+   "via": "sleeper live (practice squad/reserve)"
+  },
+  {
+   "src": "players.json",
+   "player": "Zonovan Knight",
+   "team": "ARI",
+   "via": "sleeper live (practice squad/reserve)"
+  },
+  {
+   "src": "players.json",
+   "player": "Malik Heath",
+   "team": "ATL",
+   "via": "sleeper live (practice squad/reserve)"
+  },
+  {
+   "src": "players.json",
+   "player": "Devin Culp",
+   "team": "TB",
+   "via": "sleeper live (practice squad/reserve)"
+  },
+  {
+   "src": "players.json",
+   "player": "Dontae McMillan",
+   "team": "SEA",
+   "via": "sleeper live (practice squad/reserve)"
+  },
+  {
+   "src": "players.json",
+   "player": "Audric Estime",
+   "team": "CLE",
    "via": "sleeper live (practice squad/reserve)"
   }
  ]

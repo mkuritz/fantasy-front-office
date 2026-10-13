@@ -1,5 +1,76 @@
 [
  {
+  "detected": "2026-10-13T14:10:05-04:00",
+  "t": "2026-10-13T18:06:14Z",
+  "kind": "Injury",
+  "src": "ESPN news",
+  "text": "Source: Patriots lineman Will Campbell out with MCL sprain",
+  "players": [
+   "Will Campbell",
+   "Caleb Lomu"
+  ],
+  "url": "https://www.espn.com/nfl/story/_/id/50175463/source-patriots-lineman-campbell-mcl-sprain"
+ },
+ {
+  "detected": "2026-10-13T14:10:05-04:00",
+  "t": "2026-10-13T18:05:51Z",
+  "kind": "Signing",
+  "src": "ESPN news",
+  "text": "Sources: Rams release kicker Mevis after miscues in loss, sign Grupe from Jets",
+  "players": [
+   "Harrison Mevis",
+   "Blake Grupe"
+  ],
+  "url": "https://www.espn.com/nfl/story/_/id/50175234/rams-release-kicker-mevis-miscues-ot-loss"
+ },
+ {
+  "detected": "2026-10-13T14:10:05-04:00",
+  "t": "2026-10-13T16:43:38Z",
+  "kind": "IR",
+  "src": "ESPN news",
+  "text": "Bengals tight end Tanner Hudson out for season with torn pec",
+  "players": [
+   "Tanner Hudson"
+  ],
+  "url": "https://www.espn.com/nfl/story/_/id/50174705/bengals-tight-end-tanner-hudson-season-torn-pec"
+ },
+ {
+  "detected": "2026-10-13T14:10:05-04:00",
+  "t": "2026-10-13T16:00:15Z",
+  "kind": "Trade",
+  "src": "ESPN news",
+  "text": "Marvin Harrison Jr. latest in Texans' quest to solve their WR2 conundrum",
+  "players": [
+   "Marvin Harrison Jr",
+   "Tank Dell",
+   "Nico Collins",
+   "Jayden Higgins"
+  ],
+  "url": "https://www.espn.com/nfl/story/_/id/50167782/texans-wr2-issues-marvin-harrison-jr"
+ },
+ {
+  "detected": "2026-10-13T14:10:05-04:00",
+  "t": "2026-10-13T15:10:23Z",
+  "kind": "Injury",
+  "src": "ESPN news",
+  "text": "Sources: Patriots' TreVeyon Henderson out multiple weeks with high ankle sprain",
+  "players": [
+   "TreVeyon Henderson"
+  ],
+  "url": "https://www.espn.com/nfl/story/_/id/50173985/sources-patriots-treveyon-henderson-high-ankle-sprain"
+ },
+ {
+  "detected": "2026-10-13T14:10:05-04:00",
+  "t": "2026-10-13T15:49:13Z",
+  "kind": "Injury",
+  "src": "ESPN news",
+  "text": "Sources: Jaguars LT Anton Harrison to undergo knee surgery",
+  "players": [
+   "Anton Harrison"
+  ],
+  "url": "https://www.espn.com/nfl/story/_/id/50172717/sources-jaguars-lt-anton-harrison-undergo-knee-surgery"
+ },
+ {
   "detected": "2026-10-12T16:14:25-04:00",
   "t": "2026-10-12T20:10:29Z",
   "kind": "Injury",
