@@ -1,11 +1,11 @@
 {
- "generated": "2026-10-13T15:21:48-04:00",
+ "generated": "2026-10-13T19:46:18-04:00",
  "seasons": {
   "nfl": 2026,
   "mlb": 2026,
   "nhl": 20262027
  },
- "checked": 740,
+ "checked": 741,
  "conflicts": [],
  "unverified": [],
  "stale": [],
@@ -13,25 +13,7 @@
  "resolved": [
   {
    "src": "players.json",
-   "player": "Mitch Tinsley",
-   "team": "CIN",
-   "via": "sleeper live (practice squad/reserve)"
-  },
-  {
-   "src": "players.json",
-   "player": "DeaMonte Trayanum",
-   "team": "NYJ",
-   "via": "sleeper live (practice squad/reserve)"
-  },
-  {
-   "src": "players.json",
-   "player": "Blake Grupe",
-   "team": "LAR",
-   "via": "sleeper live (practice squad/reserve)"
-  },
-  {
-   "src": "players.json",
-   "player": "Jalen Cropper",
+   "player": "Ulysses Bentley",
    "team": "NO",
    "via": "sleeper live (practice squad/reserve)"
   },
@@ -43,8 +25,20 @@
   },
   {
    "src": "players.json",
-   "player": "Irvin Charles",
-   "team": "SEA",
+   "player": "Ryan Miller",
+   "team": "MIA",
+   "via": "sleeper live (practice squad/reserve)"
+  },
+  {
+   "src": "players.json",
+   "player": "Mitch Tinsley",
+   "team": "CIN",
+   "via": "sleeper live (practice squad/reserve)"
+  },
+  {
+   "src": "players.json",
+   "player": "Jalen Cropper",
+   "team": "NO",
    "via": "sleeper live (practice squad/reserve)"
   },
   {
@@ -55,32 +49,20 @@
   },
   {
    "src": "players.json",
-   "player": "Bryce Oliver",
-   "team": "HOU",
+   "player": "Malik Heath",
+   "team": "ATL",
    "via": "sleeper live (practice squad/reserve)"
   },
   {
    "src": "players.json",
-   "player": "Emari Demercado",
-   "team": "DAL",
+   "player": "Xavier Guillory",
+   "team": "BAL",
    "via": "sleeper live (practice squad/reserve)"
   },
   {
    "src": "players.json",
-   "player": "Devin Neal",
-   "team": "WAS",
-   "via": "sleeper live (practice squad/reserve)"
-  },
-  {
-   "src": "players.json",
-   "player": "Travis Vokolek",
-   "team": "ARI",
-   "via": "sleeper live (practice squad/reserve)"
-  },
-  {
-   "src": "players.json",
-   "player": "Jamaal Pritchett",
-   "team": "NYJ",
+   "player": "Harrison Mevis",
+   "team": "LAR",
    "via": "sleeper live (practice squad/reserve)"
   },
   {
@@ -91,14 +73,8 @@
   },
   {
    "src": "players.json",
-   "player": "Malik Heath",
-   "team": "ATL",
-   "via": "sleeper live (practice squad/reserve)"
-  },
-  {
-   "src": "players.json",
-   "player": "Devin Culp",
-   "team": "TB",
+   "player": "Bryce Oliver",
+   "team": "HOU",
    "via": "sleeper live (practice squad/reserve)"
   },
   {
@@ -109,8 +85,26 @@
   },
   {
    "src": "players.json",
-   "player": "Audric Estime",
-   "team": "CLE",
+   "player": "Irvin Charles",
+   "team": "SEA",
+   "via": "sleeper live (practice squad/reserve)"
+  },
+  {
+   "src": "players.json",
+   "player": "Travis Vokolek",
+   "team": "ARI",
+   "via": "sleeper live (practice squad/reserve)"
+  },
+  {
+   "src": "players.json",
+   "player": "Velus Jones",
+   "team": "SEA",
+   "via": "sleeper live (practice squad/reserve)"
+  },
+  {
+   "src": "players.json",
+   "player": "DeaMonte Trayanum",
+   "team": "NYJ",
    "via": "sleeper live (practice squad/reserve)"
   }
  ]
