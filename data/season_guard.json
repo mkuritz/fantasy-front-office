@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-12T18:01:10-04:00",
+ "generated": "2026-10-12T23:04:24-04:00",
  "seasons": {
   "nfl": 2026,
   "mlb": 2026,
@@ -55,6 +55,12 @@
   },
   {
    "src": "players.json",
+   "player": "Jared Wayne",
+   "team": "HOU",
+   "via": "sleeper live (practice squad/reserve)"
+  },
+  {
+   "src": "players.json",
    "player": "DeaMonte Trayanum",
    "team": "NYJ",
    "via": "sleeper live (practice squad/reserve)"
@@ -81,12 +87,6 @@
    "src": "players.json",
    "player": "Travis Vokolek",
    "team": "ARI",
-   "via": "sleeper live (practice squad/reserve)"
-  },
-  {
-   "src": "players.json",
-   "player": "Jamari Thrash",
-   "team": "LV",
    "via": "sleeper live (practice squad/reserve)"
   }
  ]
