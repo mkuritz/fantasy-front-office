@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-13T14:10:55-04:00",
+ "generated": "2026-10-13T15:21:48-04:00",
  "seasons": {
   "nfl": 2026,
   "mlb": 2026,
@@ -63,12 +63,6 @@
    "src": "players.json",
    "player": "Emari Demercado",
    "team": "DAL",
-   "via": "sleeper live (practice squad/reserve)"
-  },
-  {
-   "src": "players.json",
-   "player": "Brady Cook",
-   "team": "MIA",
    "via": "sleeper live (practice squad/reserve)"
   },
   {
