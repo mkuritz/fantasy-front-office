@@ -1,5 +1,30 @@
 [
  {
+  "detected": "2026-10-14T11:48:09-04:00",
+  "t": "2026-10-14T14:32:04Z",
+  "kind": "Injury",
+  "src": "ESPN news",
+  "text": "Micah Parsons wants to ensure 'all the small things fixed first' before return",
+  "players": [
+   "Micah Parsons"
+  ],
+  "url": "https://www.espn.com/nfl/story/_/id/50181654/micah-parsons-not-rushing-return-prevent-different-injury"
+ },
+ {
+  "detected": "2026-10-14T11:48:09-04:00",
+  "t": "2026-10-14T14:37:43Z",
+  "kind": "Injury",
+  "src": "ESPN news",
+  "text": "Facts vs. Feelings: Out of Love with Jeremiyah, but another Cardinal looms",
+  "players": [
+   "Jayden Daniels",
+   "Jeremiyah Love",
+   "MarShawn Lloyd",
+   "Mike Evans"
+  ],
+  "url": "https://www.espn.com/fantasy/football/story/_/id/50181259/facts-vs-feelings-fantasy-advice-week-6"
+ },
+ {
   "detected": "2026-10-13T19:45:42-04:00",
   "t": "2026-10-13T19:58:30Z",
   "kind": "Release",
