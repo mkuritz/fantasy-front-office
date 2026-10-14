@@ -1,12 +1,41 @@
 {
- "generated": "2026-10-14T11:48:41-04:00",
+ "generated": "2026-10-14T13:20:17-04:00",
  "seasons": {
   "nfl": 2026,
   "mlb": 2026,
   "nhl": 20262027
  },
  "checked": 740,
- "conflicts": [],
+ "conflicts": [
+  {
+   "src": "players.json",
+   "sport": "nfl",
+   "player": "Xavier Guillory",
+   "team": "BAL",
+   "why": "not on BAL live 2026 roster for 2026-10-14"
+  },
+  {
+   "src": "players.json",
+   "sport": "nfl",
+   "player": "Harrison Mevis",
+   "team": "LAR",
+   "why": "not on LAR live 2026 roster for 2026-10-14"
+  },
+  {
+   "src": "players.json",
+   "sport": "nfl",
+   "player": "Ryan Miller",
+   "team": "MIA",
+   "why": "not on MIA live 2026 roster for 2026-10-14"
+  },
+  {
+   "src": "players.json",
+   "sport": "nfl",
+   "player": "Ulysses Bentley",
+   "team": "NO",
+   "why": "not on NO live 2026 roster for 2026-10-14"
+  }
+ ],
  "unverified": [],
  "stale": [],
  "notes": [],
@@ -37,20 +66,8 @@
   },
   {
    "src": "players.json",
-   "player": "Xavier Guillory",
-   "team": "BAL",
-   "via": "sleeper live (practice squad/reserve)"
-  },
-  {
-   "src": "players.json",
    "player": "Mark Gronowski",
    "team": "HOU",
-   "via": "sleeper live (practice squad/reserve)"
-  },
-  {
-   "src": "players.json",
-   "player": "Harrison Mevis",
-   "team": "LAR",
    "via": "sleeper live (practice squad/reserve)"
   },
   {
@@ -67,20 +84,8 @@
   },
   {
    "src": "players.json",
-   "player": "Ryan Miller",
-   "team": "MIA",
-   "via": "sleeper live (practice squad/reserve)"
-  },
-  {
-   "src": "players.json",
    "player": "Velus Jones",
    "team": "SEA",
-   "via": "sleeper live (practice squad/reserve)"
-  },
-  {
-   "src": "players.json",
-   "player": "Ulysses Bentley",
-   "team": "NO",
    "via": "sleeper live (practice squad/reserve)"
   },
   {
