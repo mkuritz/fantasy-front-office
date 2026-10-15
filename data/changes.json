@@ -1,5 +1,29 @@
 [
  {
+  "detected": "2026-10-14T20:35:10-04:00",
+  "t": "2026-10-15T00:31:00Z",
+  "kind": "Injury",
+  "src": "ESPN news",
+  "text": "Seahawks rule out LB Thomas, RB Charbonnet for Thursday night game vs. Broncos",
+  "players": [
+   "Zach Charbonnet",
+   "Drake Thomas"
+  ],
+  "url": "https://www.espn.com/nfl/story/_/id/50185443/seahawks-rule-thomas-charbonnet-thursday-vs-broncos"
+ },
+ {
+  "detected": "2026-10-14T20:35:10-04:00",
+  "t": "2026-10-15T00:14:41Z",
+  "kind": "Release",
+  "src": "ESPN news",
+  "text": "Rams' Alaric Jackson has suspension cut to 1 game following appeal",
+  "players": [
+   "Alaric Jackson",
+   "Bradley Chubb"
+  ],
+  "url": "https://www.espn.com/nfl/story/_/id/50185418/rams-alaric-jackson-suspension-cut-1-game"
+ },
+ {
   "detected": "2026-10-14T17:47:53-04:00",
   "t": "2026-10-14T21:40:47Z",
   "kind": "Injury",
