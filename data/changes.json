@@ -1,5 +1,38 @@
 [
  {
+  "detected": "2026-10-15T17:30:59-04:00",
+  "t": "2026-10-15T21:09:13Z",
+  "kind": "Injury",
+  "src": "ESPN news",
+  "text": "Raiders' Ashton Jeanty feels 'great' ahead of game vs. Bills",
+  "players": [
+   "Ashton Jeanty"
+  ],
+  "url": "https://www.espn.com/nfl/story/_/id/50191564/raiders-ashton-jeanty-feels-great-ahead-game-vs-bills"
+ },
+ {
+  "detected": "2026-10-15T17:30:59-04:00",
+  "t": "2026-10-15T19:43:20Z",
+  "kind": "Release",
+  "src": "ESPN news",
+  "text": "Packers' Josh Jacobs joins woman in filing to block release of records, video",
+  "players": [
+   "Josh Jacobs"
+  ],
+  "url": "https://www.espn.com/nfl/story/_/id/50190063/packers-josh-jacobs-sues-block-release-records-video"
+ },
+ {
+  "detected": "2026-10-15T17:30:59-04:00",
+  "t": "2026-10-15T21:24:40Z",
+  "kind": "Injury",
+  "src": "ESPN news",
+  "text": "Eagles QB Jalen Hurts ruled out vs. Panthers with blood clot in calf",
+  "players": [
+   "Jalen Hurts"
+  ],
+  "url": "https://www.espn.com/nfl/story/_/id/50189940/eagles-qb-jalen-hurts-ruled-vs-panthers-blood-clot"
+ },
+ {
   "detected": "2026-10-15T11:34:07-04:00",
   "t": "2026-10-15T11:34:07-04:00",
   "kind": "Injury",
