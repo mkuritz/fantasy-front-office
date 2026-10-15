@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-14T20:35:37-04:00",
+ "generated": "2026-10-15T00:47:51-04:00",
  "seasons": {
   "nfl": 2026,
   "mlb": 2026,
@@ -8,15 +8,14 @@
  "checked": 740,
  "conflicts": [],
  "unverified": [],
- "stale": [],
- "notes": [],
- "resolved": [
+ "stale": [
   {
    "src": "players.json",
-   "player": "Velus Jones",
-   "team": "SEA",
-   "via": "sleeper live (practice squad/reserve)"
-  },
+   "why": "fetched 2026-10-14, not today 2026-10-15"
+  }
+ ],
+ "notes": [],
+ "resolved": [
   {
    "src": "players.json",
    "player": "Dontae McMillan",
@@ -27,12 +26,6 @@
    "src": "players.json",
    "player": "Travis Vokolek",
    "team": "ARI",
-   "via": "sleeper live (practice squad/reserve)"
-  },
-  {
-   "src": "players.json",
-   "player": "Kevin Austin",
-   "team": "NO",
    "via": "sleeper live (practice squad/reserve)"
   },
   {
