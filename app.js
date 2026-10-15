@@ -1,4 +1,4 @@
-/* Fantasy Front Office — a Sports Labs product. Static app; data/*.json refreshed by GitHub Actions. */
+/* Fantasy Front Office — a Sports Labs product. Static app; data/*.json refreshed on a schedule. */
 'use strict';
 const U = {
   esc: (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c])),
@@ -169,7 +169,7 @@ function kv(lg, p) {
 function keeperSel(lg) { const list = D.keeper.owners[D.keeper.myOwner] || []; return state.keepers[lg.id] || Object.fromEntries(list.map((p) => [p.name, true])); }
 function keeperSummary(lg) { if (!D.keeper) return { kept: 0, spend: 0, surplus: 0 }; const sel = keeperSel(lg); const kept = (D.keeper.owners[D.keeper.myOwner] || []).filter((p) => sel[p.name]); return { kept: kept.length, spend: kept.reduce((s, p) => s + p.salary, 0), surplus: kept.reduce((s, p) => s + kv(lg, p).surplus, 0) }; }
 function inbox(lg, m) {
-  const a = []; if (m.pending) a.push({ level: 'warning', title: 'ESPN connection pending', msg: 'Set the ESPN_S2 / ESPN_SWID repo secrets to load this private league.' });
+  const a = []; if (m.pending) a.push({ level: 'warning', title: 'ESPN connection pending', msg: 'ESPN private-league credentials are not configured yet for this league.' });
   if (lg.mode === 'keeper' && D.keeper) { const bad = (D.keeper.owners[D.keeper.myOwner] || []).map((p) => kv(lg, p)).filter((r) => r.call === 'Release'); if (bad.length) a.push({ level: 'warning', title: `${bad.length} keeper${bad.length > 1 ? 's' : ''} underwater`, msg: bad.map((r) => `${r.name} ($${r.salary} salary vs $${r.proj} value)`).join(', ') }); }
   if (!m.me) return a;
   m.me.players.forEach((p) => { const pl = D.players[p] || {}; if (['Out', 'IR', 'Doubtful'].includes(pl.i) && (m.me.starters || []).includes(p)) a.push({ level: 'critical', title: `${pl.n} is ${pl.i} and in your lineup`, msg: 'Swap him out (see Start / Sit).' }); });

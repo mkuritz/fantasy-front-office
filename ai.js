@@ -1,4 +1,4 @@
-/* AI Fantasy Manager — renders data/ai_manager.json, which scripts/ai_manager.py builds in the GitHub Actions refresh.
+/* AI Fantasy Manager — renders data/ai_manager.json, which scripts/ai_manager.py builds on each refresh.
    No LLM: every narrative sentence is composed from this app's own data fields. Loaded after app.js. */
 'use strict';
 const AI = { d: null, open: {} };
