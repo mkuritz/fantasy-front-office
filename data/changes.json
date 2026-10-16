@@ -1,5 +1,30 @@
 [
  {
+  "detected": "2026-10-16T12:20:43-04:00",
+  "t": "2026-10-16T15:50:41Z",
+  "kind": "Injury",
+  "src": "ESPN news",
+  "text": "Jets rookie WR Cooper to play vs. Patriots; RB Hall, WR Mitchell out",
+  "players": [
+   "Breece Hall",
+   "Adonai Mitchell",
+   "Omar Cooper Jr",
+   "Kenyon Sadiq"
+  ],
+  "url": "https://www.espn.com/nfl/story/_/id/50196775/jets-rookie-wr-cooper-play-vs-patriots-hall-mitchell-out"
+ },
+ {
+  "detected": "2026-10-16T12:20:43-04:00",
+  "t": "2026-10-16T15:28:14Z",
+  "kind": "Depth",
+  "src": "ESPN news",
+  "text": "Dopp's hesitancy over starting Josh Downs in Week 6",
+  "players": [
+   "Josh Downs"
+  ],
+  "url": "https://www.espn.com/video/clip/_/id/50196473/dopp-hesitancy-starting-josh-downs-week-6"
+ },
+ {
   "detected": "2026-10-15T20:28:23-04:00",
   "t": "2026-10-15T23:03:48Z",
   "kind": "Injury",
