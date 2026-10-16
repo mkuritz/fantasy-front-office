@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-15T21:13:27-04:00",
+ "generated": "2026-10-16T00:38:03-04:00",
  "seasons": {
   "nfl": 2026,
   "mlb": 2026,
@@ -8,7 +8,12 @@
  "checked": 742,
  "conflicts": [],
  "unverified": [],
- "stale": [],
+ "stale": [
+  {
+   "src": "players.json",
+   "why": "fetched 2026-10-15, not today 2026-10-16"
+  }
+ ],
  "notes": [],
  "resolved": [
   {
