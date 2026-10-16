@@ -1,6 +1,6 @@
 {
- "updated": "2026-10-16T14:46:40-04:00",
- "trigger": "schedule",
+ "updated": "2026-10-16T16:21:03-04:00",
+ "trigger": "news",
  "edgeScore": true,
  "betlab": {
   "lines": 13,
@@ -23,7 +23,7 @@
       "confLabel": "Low",
       "headline": "+1.0 pts",
       "narrative": [
-       "Start Joe Burrow (QB, CIN) over C.J. Stroud. C.J. Stroud projects for 16.7, while Burrow projects for 17.7, a gain of 1.0 points for this one swap. Across the whole lineup, your saved lineup projects 103.5 and the optimal one projects 121.1 (+17.6).",
+       "Start Joe Burrow (QB, CIN) over C.J. Stroud. C.J. Stroud projects for 16.7, while Burrow projects for 17.7, a gain of 1.0 points for this one swap. Across the whole lineup, your saved lineup projects 111.9 and the optimal one projects 121.1 (+9.3).",
        "Burrow draws BAL in Week 7 (road). Against QBs that defense ranks 21st of 32 in points allowed, a 0.88x matchup factor, a middle-of-the-pack matchup.",
        "Burrow is adding 3.0 rushes a game. Week by week lately: Wk3 22.6, Wk4 23.7, Wk5 24.6. That is up 3.9 points a game against his season average of 20.2.",
        "Burrow carries no injury tag, and the news check found nothing new.",
@@ -34,7 +34,7 @@
       ],
       "metrics": {
        "gain": 1.0,
-       "lineupNow": 103.5,
+       "lineupNow": 111.9,
        "lineupBest": 121.1,
        "proj": 17.7,
        "lo": 12.5,
@@ -47,7 +47,7 @@
        "9758"
       ],
       "priority": 3.34,
-      "rank": 4
+      "rank": 3
      },
      {
       "section": "startsit",
@@ -56,7 +56,7 @@
       "confLabel": "High",
       "headline": "+8.2 pts",
       "narrative": [
-       "The call is Tee Higgins in, Dontayvion Wicks out. Dontayvion Wicks projects for 6.7; Higgins is at 15.0, so the swap is worth about 8.2 projected points. Across the whole lineup, your saved lineup projects 103.5 and the optimal one projects 121.1 (+17.6).",
+       "The call is Tee Higgins in, Dontayvion Wicks out. Dontayvion Wicks projects for 6.7; Higgins is at 15.0, so the swap is worth about 8.2 projected points. Across the whole lineup, your saved lineup projects 111.9 and the optimal one projects 121.1 (+9.3).",
        "Higgins draws BAL in Week 7 (road). Against WRs that defense ranks 11th of 32 in points allowed, a 1.10x matchup factor, a middle-of-the-pack matchup.",
        "Usage: 77% snap rate, 74% in the last two, and 22.4% of team targets (21.5% recently), 8.6 targets per game. The last three box scores in this league's scoring were Wk3 21.0, Wk4 26.7, Wk5 4.2. His opportunity (yards and TDs expected from his targets and carries) is worth 14.4 points a game; he has scored 15.1, right in line (+0.7). Touchdowns: 1 scored on 1.9 expected.",
        "Higgins carries no injury tag, and the news check found nothing new.",
@@ -67,7 +67,7 @@
       ],
       "metrics": {
        "gain": 8.2,
-       "lineupNow": 103.5,
+       "lineupNow": 111.9,
        "lineupBest": 121.1,
        "proj": 15.0,
        "lo": 4.3,
@@ -80,75 +80,14 @@
        "9486"
       ],
       "priority": 5.75,
-      "rank": 2
-     },
-     {
-      "section": "startsit",
-      "call": "Start Josh Jacobs, bench Kendre Miller",
-      "conf": 95,
-      "confLabel": "High",
-      "headline": "+8.3 pts",
-      "narrative": [
-       "The call is Josh Jacobs in, Kendre Miller out. Kendre Miller projects for 5.3; Jacobs is at 13.6, so the swap is worth about 8.3 projected points. Across the whole lineup, your saved lineup projects 103.5 and the optimal one projects 121.1 (+17.6).",
-       "Week 7 puts Jacobs on the road at DET. DET ranks 25th of 32 in fantasy points allowed to RBs (one of the toughest matchups), a 0.85x multiplier against league average.",
-       "Bet Lab injury cascade: GB RB1 Chris Brooks (Injured Reserve, ankle) out; next man up: MarShawn Lloyd, Kaleb Johnson; its read is that this helps next man up. Bet Lab injury cascade: GB OL: 1 questionable \u2014 Jacob Monk (Questionable); its read is that this hurts run game & pass protection. Latest news: Packers' Josh Jacobs joins woman in filing to block release of records, video.",
-       "We project 13.6 points for Week 7 from a 14.2 ppg blend adjusted for the matchup (not enough weekly games for a range). Rest of season: 144.1 projected points through Week 17.",
-       "Miller draws PIT in Week 7 (home). Against RBs that defense ranks 12th of 32 in points allowed, a 1.04x matchup factor, a middle-of-the-pack matchup. Bet Lab injury cascade: NYG front seven: 1 starter out \u2014 Chauncey Golston (Injured Reserve, neck); its read is that this helps NO run game & protection. Bet Lab injury cascade: NO Alvin Kamara (Questionable, back); its read is that this player status risk.",
-       "The counter-case: the DET defense is a tough draw for RBs; at 28 he is past the typical RB peak. On the other side, Miller has no specific red flags, so he is a reasonable fallback if news changes.",
-       "What you give up: Miller's ceiling this week is about 9.3 points against 13.6 for Jacobs."
-      ],
-      "metrics": {
-       "gain": 8.3,
-       "lineupNow": 103.5,
-       "lineupBest": 121.1,
-       "proj": 13.6,
-       "lo": 13.6,
-       "hi": 13.6
-      },
-      "players": [
-       "5850",
-       "9757"
-      ],
-      "priority": 5.77,
       "rank": 1
      }
     ],
     "waivers": [
      {
       "section": "waivers",
-      "call": "Add Tyler Huntley, drop Sean Tucker",
-      "conf": 82,
-      "confLabel": "High",
-      "headline": "Their shot",
-      "narrative": [
-       "Add Tyler Huntley (QB, BAL). Their shot: Lamar Jackson is Out (Ankle), and Tyler Huntley is next on the BAL QB depth chart. You have $100 of FAAB left.",
-       "Huntley is adding 5.0 rushes a game. Recent scoring: Wk4 4.1, Wk5 24.0.",
-       "Week 7 puts Huntley at home against CIN. CIN ranks 13th of 32 in fantasy points allowed to QBs (a middle-of-the-pack matchup), a 1.04x multiplier against league average.",
-       "Cascade: Lamar Jackson (Out) is ahead of Huntley on the BAL depth chart and is not available, which moves Huntley up to the top of the QB room. Bet Lab injury cascade: BAL QB1 Lamar Jackson (Questionable, ankle); its read is that this QB risk \u2014 hurts pass game. Bet Lab injury cascade: BAL OL: 2 questionable \u2014 John Simpson (Questionable); Emery Jones Jr. (Questionable); its read is that this hurts run game & pass protection. Latest news: Ravens rule out QB Lamar Jackson; Tyler Huntley to start vs. Browns. From the wire: QB Tyler Huntley leads Ravens to comeback OT win vs. Falcons.",
-       "We project 9.6 points (80% band 0.0-22.5), built from a 9.5 ppg blend of this year and last year adjusted for the matchup. Rest of season: 95.3 projected points through Week 17. Lab Score 28 (SportsLabs Edge Score family), SportsLabs Risk Score 80 (1-99, ranked against every QB in this league's scoring).",
-       "Drop Sean Tucker: he is not in your optimal lineup and projects 51.2 rest-of-season points against 95.3 for Huntley, a net +44.1.",
-       "What could go wrong: his weekly scoring is volatile (standard deviation 10.0 on a 9.5 ppg base).",
-       "What you give up: Sean Tucker's 51.2 projected rest-of-season points and his roster spot."
-      ],
-      "metrics": {
-       "kind": "Their shot",
-       "ros": 95.3,
-       "proj": 9.6,
-       "net": 44.1,
-       "edge": 28,
-       "risk": 80
-      },
-      "players": [
-       "7083",
-       "9506"
-      ],
-      "priority": 5.2,
-      "rank": 3
-     },
-     {
-      "section": "waivers",
-      "call": "Add Jalon Daniels, drop Jerry Jeudy",
-      "conf": 69,
+      "call": "Add Jalon Daniels, drop Sean Tucker",
+      "conf": 71,
       "confLabel": "Medium",
       "headline": "Opportunity spike",
       "narrative": [
@@ -157,29 +96,29 @@
        "Week 7 puts Daniels on the road at CAR. CAR ranks 8th of 32 in fantasy points allowed to QBs (one of the softest matchups), a 1.16x multiplier against league average.",
        "Bet Lab injury cascade: TB QB1 Baker Mayfield (Out, thumb); next up Jalon Daniels; its read is that this QB risk \u2014 hurts pass game. Bet Lab injury cascade: PIT @ TB: High wind 16 mph (gusts 19); its read is that this hurts pass game & kicking.",
        "The projection is 8.4 points for Week 7, with an 80% range of roughly 0.0 to 17.2 based on his week-to-week spread (6.5 pt standard deviation). Rest of season: 82.5 projected points through Week 17. Lab Score 26 (SportsLabs Edge Score family), SportsLabs Risk Score 87 (1-99, ranked against every QB in this league's scoring).",
-       "Drop Jerry Jeudy: he is not in your optimal lineup and projects 59.3 rest-of-season points against 82.5 for Daniels, a net +23.3.",
+       "Drop Sean Tucker: he is not in your optimal lineup and projects 51.2 rest-of-season points against 82.5 for Daniels, a net +31.4.",
        "The counter-case: his weekly scoring is volatile (standard deviation 6.5 on a 8.1 ppg base).",
-       "What you give up: Jerry Jeudy's 59.3 projected rest-of-season points and his roster spot."
+       "What you give up: Sean Tucker's 51.2 projected rest-of-season points and his roster spot."
       ],
       "metrics": {
        "kind": "Opportunity spike",
        "ros": 82.5,
        "proj": 8.4,
-       "net": 23.3,
+       "net": 31.4,
        "edge": 26,
        "risk": 87
       },
       "players": [
        "13425",
-       "6783"
+       "9506"
       ],
-      "priority": 3.16,
-      "rank": 5
+      "priority": 3.57,
+      "rank": 2
      },
      {
       "section": "waivers",
-      "call": "Add Gavin Bartholomew, drop Rashod Bateman",
-      "conf": 65,
+      "call": "Add Gavin Bartholomew, drop Kendre Miller",
+      "conf": 68,
       "confLabel": "Medium",
       "headline": "Their shot",
       "narrative": [
@@ -188,23 +127,54 @@
        "The matchup is at home against IND: IND has allowed the 9th-most fantasy points to TEs of 32 defenses, which our schedule model scores at 1.18x average (one of the softest matchups).",
        "Cascade: T.J. Hockenson (Out) is ahead of Bartholomew on the MIN depth chart and is not available, which moves Bartholomew up to the top of the TE room.",
        "The projection is 5.1 points for Week 7, with an 80% range of roughly 0.5 to 9.8 based on his week-to-week spread (3.5 pt standard deviation). Rest of season: 57.0 projected points through Week 17. Lab Score 61 (SportsLabs Edge Score family), SportsLabs Risk Score 53 (1-99, ranked against every TE in this league's scoring).",
-       "Drop Rashod Bateman: he is not in your optimal lineup and projects 64.2 rest-of-season points against 57.0 for Bartholomew, a net -7.3.",
+       "Drop Kendre Miller: he is not in your optimal lineup and projects 52.6 rest-of-season points against 57.0 for Bartholomew, a net +4.4.",
        "The counter-case: his weekly scoring is volatile (standard deviation 3.5 on a 4.8 ppg base).",
-       "What you give up: Rashod Bateman's 64.2 projected rest-of-season points and his roster spot."
+       "What you give up: Kendre Miller's 52.6 projected rest-of-season points and his roster spot."
       ],
       "metrics": {
        "kind": "Their shot",
        "ros": 57.0,
        "proj": 5.1,
-       "net": -7.3,
+       "net": 4.4,
        "edge": 61,
        "risk": 53
       },
       "players": [
        "12700",
-       "7571"
+       "9757"
       ],
-      "priority": 2.64,
+      "priority": 3.22,
+      "rank": 4
+     },
+     {
+      "section": "waivers",
+      "call": "Add Cooper Kupp, drop Jerry Jeudy",
+      "conf": 64,
+      "confLabel": "Medium",
+      "headline": "Opportunity spike",
+      "narrative": [
+       "Opportunity spike add: Cooper Kupp (WR, SEA) is unrostered in KAL, and his usage jumped over the last two games (snaps 68% to 83%, targets 12.4% to 16.4%, carries 0.0% to 0.0%). You have $100 of FAAB left.",
+       "Usage: 68% snap rate, 83% in the last two, and 12.4% of team targets (16.4% recently), 4.2 targets per game. Recent scoring: Wk4 2.3, Wk5 3.5, Wk6 10.0. His opportunity (yards and TDs expected from his targets and carries) is worth 7.0 points a game; he has scored 6.7, right in line (-0.3). Touchdowns: 1 scored on 1.1 expected.",
+       "Week 7 puts Kupp at home against KC. KC ranks 32nd of 32 in fantasy points allowed to WRs (one of the toughest matchups), a 0.61x multiplier against league average.",
+       "Kupp carries no injury tag, and the news check found nothing new.",
+       "We project 6.1 points (80% band 1.3-11.0), built from a 7.0 ppg blend of this year and last year adjusted for the matchup. Rest of season: 69.1 projected points through Week 17. Lab Score 64 (SportsLabs Edge Score family), SportsLabs Risk Score 50 (1-99, ranked against every WR in this league's scoring).",
+       "Drop Jerry Jeudy: he is not in your optimal lineup and projects 59.3 rest-of-season points against 69.1 for Kupp, a net +9.9.",
+       "The counter-case: his weekly scoring is volatile (standard deviation 4.3 on a 7.0 ppg base); the KC defense is a tough draw for WRs; at 33 he is past the typical WR peak.",
+       "What you give up: Jerry Jeudy's 59.3 projected rest-of-season points and his roster spot."
+      ],
+      "metrics": {
+       "kind": "Opportunity spike",
+       "ros": 69.1,
+       "proj": 6.1,
+       "net": 9.9,
+       "edge": 64,
+       "risk": 50
+      },
+      "players": [
+       "4039",
+       "6783"
+      ],
+      "priority": 2.49,
       "rank": 6
      }
     ],
@@ -235,7 +205,7 @@
        "8151"
       ],
       "priority": 2.52,
-      "rank": 7
+      "rank": 5
      },
      {
       "section": "sellhold",
@@ -262,7 +232,7 @@
        "4217"
       ],
       "priority": 2.23,
-      "rank": 8
+      "rank": 7
      }
     ]
    },
@@ -270,54 +240,47 @@
     {
      "rank": 1,
      "section": "startsit",
-     "call": "Start Josh Jacobs, bench Kendre Miller",
-     "conf": 95,
-     "confLabel": "High"
-    },
-    {
-     "rank": 2,
-     "section": "startsit",
      "call": "Start Tee Higgins, bench Dontayvion Wicks",
      "conf": 82,
      "confLabel": "High"
     },
     {
-     "rank": 3,
+     "rank": 2,
      "section": "waivers",
-     "call": "Add Tyler Huntley, drop Sean Tucker",
-     "conf": 82,
-     "confLabel": "High"
+     "call": "Add Jalon Daniels, drop Sean Tucker",
+     "conf": 71,
+     "confLabel": "Medium"
     },
     {
-     "rank": 4,
+     "rank": 3,
      "section": "startsit",
      "call": "Start Joe Burrow, bench C.J. Stroud",
      "conf": 57,
      "confLabel": "Low"
     },
     {
+     "rank": 4,
+     "section": "waivers",
+     "call": "Add Gavin Bartholomew, drop Kendre Miller",
+     "conf": 68,
+     "confLabel": "Medium"
+    },
+    {
      "rank": 5,
-     "section": "waivers",
-     "call": "Add Jalon Daniels, drop Jerry Jeudy",
-     "conf": 69,
-     "confLabel": "Medium"
-    },
-    {
-     "rank": 6,
-     "section": "waivers",
-     "call": "Add Gavin Bartholomew, drop Rashod Bateman",
-     "conf": 65,
-     "confLabel": "Medium"
-    },
-    {
-     "rank": 7,
      "section": "sellhold",
      "call": "Sell high on Kenneth Walker",
      "conf": 85,
      "confLabel": "High"
     },
     {
-     "rank": 8,
+     "rank": 6,
+     "section": "waivers",
+     "call": "Add Cooper Kupp, drop Jerry Jeudy",
+     "conf": 64,
+     "confLabel": "Medium"
+    },
+    {
+     "rank": 7,
      "section": "sellhold",
      "call": "Sell high on George Kittle",
      "conf": 80,
@@ -343,7 +306,7 @@
       "narrative": [
        "The call is Josh Jacobs in, J.K. Dobbins out. J.K. Dobbins projects for 9.9; Jacobs is at 13.6, so the swap is worth about 3.7 projected points. Across the whole lineup, your saved lineup projects 115.1 and the optimal one projects 120.3 (+5.2).",
        "Week 7 puts Jacobs on the road at DET. DET ranks 25th of 32 in fantasy points allowed to RBs (one of the toughest matchups), a 0.85x multiplier against league average.",
-       "Bet Lab injury cascade: GB RB1 Chris Brooks (Injured Reserve, ankle) out; next man up: MarShawn Lloyd, Kaleb Johnson; its read is that this helps next man up. Bet Lab injury cascade: GB OL: 1 questionable \u2014 Jacob Monk (Questionable); its read is that this hurts run game & pass protection. In the news: Packers' Josh Jacobs joins woman in filing to block release of records, video.",
+       "Bet Lab injury cascade: GB RB1 Chris Brooks (Injured Reserve, ankle) out; next man up: MarShawn Lloyd, Kaleb Johnson; its read is that this helps next man up. Bet Lab injury cascade: GB OL: 1 questionable \u2014 Jacob Monk (Questionable); its read is that this hurts run game & pass protection. In the news: Packers' Josh Jacobs joins woman in filing to block release of records, video. In the news: Packers' Josh Jacobs eligible to return next week amid probe.",
        "We project 13.6 points for Week 7 from a 14.2 ppg blend adjusted for the matchup (not enough weekly games for a range). Rest of season: 144.1 projected points through Week 17.",
        "The matchup is on the road at ARI: ARI has allowed the 16th-most fantasy points to RBs of 32 defenses, which our schedule model scores at 0.99x average (a middle-of-the-pack matchup). From the wire: Fantasy football buzz: Denver RBs usable, Seattle's backfield a mess.",
        "The counter-case: the DET defense is a tough draw for RBs; at 28 he is past the typical RB peak. On the other side, Dobbins has his own flags: at 27 he is past the typical RB peak.",
@@ -532,7 +495,7 @@
        "Keep J.K. Dobbins; this is the wrong time to sell. He is scoring 8.3 a game on opportunity worth 10.9 (-2.6).",
        "Usage: 44% snap rate, 52% in the last two, and 5.6% of team targets (10.8% recently), a 55.0% carry share (61.4% the last two games) at 13.5 carries a game, 1.5 targets per game. Week by week lately: Wk4 7.2, Wk5 15.4, Wk6 13.6. That is up 6.2 points a game against his season average of 8.3. His opportunity (yards and TDs expected from his targets and carries) is worth 10.9 points a game; he has scored 8.3, leaving points on the table (-2.6). Touchdowns: 2 scored on 3.0 expected.",
        "Latest news: Fantasy football buzz: Denver RBs usable, Seattle's backfield a mess.",
-       "The projection is 9.9 points for Week 7, with an 80% range of roughly 4.0 to 15.8 based on his week-to-week spread (4.6 pt standard deviation). Rest of season: 102.4 projected points through Week 17. Lab Score 76 (SportsLabs Edge Score family), SportsLabs Risk Score 41 (1-99, ranked against every RB in this league's scoring).",
+       "The projection is 9.9 points for Week 7, with an 80% range of roughly 4.0 to 15.8 based on his week-to-week spread (4.6 pt standard deviation). Rest of season: 102.4 projected points through Week 17. Lab Score 78 (SportsLabs Edge Score family), SportsLabs Risk Score 41 (1-99, ranked against every RB in this league's scoring).",
        "Market check: J.K. Dobbins is valued at 744 in the public trade market (position rank 33).",
        "The counter-case: at 27 he is past the typical RB peak.",
        "What you give up by holding: the chance to cash in his current 8.3 ppg reputation."
@@ -540,7 +503,7 @@
       "metrics": {
        "ppg": 8.28,
        "xfp": 10.9,
-       "edge": 76,
+       "edge": 78,
        "risk": 41
       },
       "players": [
@@ -619,7 +582,7 @@
       "confLabel": "Low",
       "headline": "+1.6 pts",
       "narrative": [
-       "Start Jordan Love (QB, GB) over Drake Maye. Drake Maye projects for 23.0, while Love projects for 24.6, a gain of 1.6 points for this one swap. Across the whole lineup, your saved lineup projects 88.8 and the optimal one projects 106.3 (+17.4).",
+       "Start Jordan Love (QB, GB) over Drake Maye. Drake Maye projects for 23.0, while Love projects for 24.6, a gain of 1.6 points for this one swap. Across the whole lineup, your saved lineup projects 88.8 and the optimal one projects 102.8 (+14.0).",
        "The matchup is on the road at DET: DET has allowed the 1st-most fantasy points to QBs of 32 defenses, which our schedule model scores at 1.59x average (one of the softest matchups).",
        "Love is adding 1.4 rushes a game. Recent scoring: Wk3 24.1, Wk4 17.5, Wk5 30.3.",
        "Bet Lab injury cascade: GB OL: 1 questionable \u2014 Jacob Monk (Questionable); its read is that this hurts run game & pass protection.",
@@ -631,7 +594,7 @@
       "metrics": {
        "gain": 1.6,
        "lineupNow": 88.8,
-       "lineupBest": 106.3,
+       "lineupBest": 102.8,
        "proj": 24.6,
        "lo": 17.2,
        "hi": 31.9,
@@ -643,7 +606,7 @@
        "11564"
       ],
       "priority": 3.52,
-      "rank": 7
+      "rank": 5
      },
      {
       "section": "startsit",
@@ -652,7 +615,7 @@
       "confLabel": "High",
       "headline": "+10.7 pts",
       "narrative": [
-       "Start Jameson Williams (WR, DET) over Dameon Pierce. Dameon Pierce projects for 1.1, while Williams projects for 11.9, a gain of 10.7 points for this one swap. Across the whole lineup, your saved lineup projects 88.8 and the optimal one projects 106.3 (+17.4).",
+       "Start Jameson Williams (WR, DET) over Dameon Pierce. Dameon Pierce projects for 1.1, while Williams projects for 11.9, a gain of 10.7 points for this one swap. Across the whole lineup, your saved lineup projects 88.8 and the optimal one projects 102.8 (+14.0).",
        "The matchup is at home against GB: GB has allowed the 22nd-most fantasy points to WRs of 32 defenses, which our schedule model scores at 0.89x average (one of the toughest matchups).",
        "Usage: 90% snap rate, 94% in the last two, and 15.2% of team targets (14.7% recently), 5.8 targets per game. Recent scoring: Wk3 8.9, Wk4 16.2, Wk5 18.7. That is up 5.9 points a game against his season average of 11.5. His opportunity (yards and TDs expected from his targets and carries) is worth 9.7 points a game; he has scored 11.5, running hot (+1.8). Touchdowns: 2 scored on 1.3 expected.",
        "Williams carries no injury tag, and the news check found nothing new.",
@@ -664,7 +627,7 @@
       "metrics": {
        "gain": 10.7,
        "lineupNow": 88.8,
-       "lineupBest": 106.3,
+       "lineupBest": 102.8,
        "proj": 11.9,
        "lo": 5.6,
        "hi": 18.2,
@@ -680,49 +643,16 @@
      },
      {
       "section": "startsit",
-      "call": "Start Saquon Barkley, bench Braelon Allen",
-      "conf": 71,
-      "confLabel": "Medium",
-      "headline": "+3.4 pts",
-      "narrative": [
-       "The call is Saquon Barkley in, Braelon Allen out. Braelon Allen projects for 6.6; Barkley is at 10.0, so the swap is worth about 3.4 projected points. Across the whole lineup, your saved lineup projects 88.8 and the optimal one projects 106.3 (+17.4).",
-       "The matchup is at home against DAL: DAL has allowed the 7th-most fantasy points to RBs of 32 defenses, which our schedule model scores at 1.23x average (one of the softest matchups).",
-       "Barkley has played 42% of snaps (40% over the last two games) with a 6.7% target share (6.0% last two), a 39.7% carry share (43.2% the last two games) at 9.0 carries a game, 1.8 targets per game. Week by week lately: Wk2 3.0, Wk3 9.0, Wk4 2.0. His opportunity (yards and TDs expected from his targets and carries) is worth 8.6 points a game; he has scored 5.8, leaving points on the table (-2.8). Touchdowns: 0 scored on 1.5 expected.",
-       "Injury status: Questionable (Hamstring); next week's projection is discounted for the risk he sits. Bet Lab injury cascade: PHI OL: 1 starter out, 2 questionable \u2014 Landon Dickerson (Injured Reserve, knee); Tyler Steen (Questionable); Drew Kendall (Questionable); its read is that this hurts run game & pass protection. Bet Lab injury cascade: PHI WR1 DeVonta Smith (Questionable, hamstring); its read is that this role risk. In the news: Saquon Barkley (RB, PHI) Out for Week 5: Hamstring.",
-       "The projection is 10.0 points for Week 7, with an 80% range of roughly 6.2 to 13.8 based on his week-to-week spread (3.3 pt standard deviation). Rest of season: 109.3 projected points through Week 17. Lab Score 78 (SportsLabs Edge Score family), SportsLabs Risk Score 32 (1-99, ranked against every RB in this league's scoring).",
-       "Allen draws MIA in Week 7 (home). Against RBs that defense ranks 6th of 32 in points allowed, a 1.24x matchup factor, one of the softest matchups. Bet Lab injury cascade: NYJ OL: 1 starter out \u2014 Dylan Parham (Out); its read is that this hurts run game & pass protection. Bet Lab injury cascade: NYJ Omar Cooper Jr. (Injured Reserve, ankle); its read is that this player status risk.",
-       "What could go wrong: he is listed Questionable, so check the inactive list before kickoff; at 29 he is past the typical RB peak. On the other side, Allen has his own flags: his weekly scoring is volatile (standard deviation 5.2 on a 6.1 ppg base).",
-       "What you give up: Allen's ceiling this week is about 13.7 points against 13.8 for Barkley."
-      ],
-      "metrics": {
-       "gain": 3.4,
-       "lineupNow": 88.8,
-       "lineupBest": 106.3,
-       "proj": 10.0,
-       "lo": 6.2,
-       "hi": 13.8,
-       "edge": 78,
-       "risk": 32
-      },
-      "players": [
-       "4866",
-       "11576"
-      ],
-      "priority": 4.14,
-      "rank": 5
-     },
-     {
-      "section": "startsit",
       "call": "Start Quinshon Judkins, bench Kyle Pitts",
       "conf": 60,
       "confLabel": "Medium",
       "headline": "+1.7 pts",
       "narrative": [
-       "Start Quinshon Judkins (RB, CLE) over Kyle Pitts. Kyle Pitts projects for 7.9, while Judkins projects for 9.6, a gain of 1.7 points for this one swap. Across the whole lineup, your saved lineup projects 88.8 and the optimal one projects 106.3 (+17.4).",
+       "Start Quinshon Judkins (RB, CLE) over Kyle Pitts. Kyle Pitts projects for 7.9, while Judkins projects for 9.6, a gain of 1.7 points for this one swap. Across the whole lineup, your saved lineup projects 88.8 and the optimal one projects 102.8 (+14.0).",
        "Judkins draws TEN in Week 7 (road). Against RBs that defense ranks 21st of 32 in points allowed, a 0.89x matchup factor, a middle-of-the-pack matchup.",
        "Usage: 60% snap rate, 60% in the last two, and 13.2% of team targets (16.9% recently), a 57.6% carry share (60.6% the last two games) at 14.6 carries a game, 4.0 targets per game. The last three box scores in this league's scoring were Wk3 9.9, Wk4 21.6, Wk5 8.0. That is up 3.5 points a game against his season average of 11.3. His opportunity (yards and TDs expected from his targets and carries) is worth 15.8 points a game; he has scored 11.3, leaving points on the table (-4.5). Touchdowns: 1 scored on 3.2 expected.",
        "Injury status: Questionable (Lower Leg); next week's projection is discounted for the risk he sits. Bet Lab injury cascade: CLE OL: 1 questionable \u2014 Tytus Howard (Questionable, knee); its read is that this hurts run game & pass protection. Bet Lab injury cascade: CLE WR1 Denzel Boston (Questionable, foot); its read is that this role risk. Latest news: Judkins, Schwesinger (ankles) add to injury woes for Browns.",
-       "We project 9.6 points (80% band 4.1-15.2), built from a 11.7 ppg blend of this year and last year adjusted for the matchup. Rest of season: 116.2 projected points through Week 17. Lab Score 77 (SportsLabs Edge Score family), SportsLabs Risk Score 32 (1-99, ranked against every RB in this league's scoring).",
+       "We project 9.6 points (80% band 4.1-15.2), built from a 11.7 ppg blend of this year and last year adjusted for the matchup. Rest of season: 116.2 projected points through Week 17. Lab Score 78 (SportsLabs Edge Score family), SportsLabs Risk Score 32 (1-99, ranked against every RB in this league's scoring).",
        "Week 7 puts Pitts at home against SF. SF ranks 29th of 32 in fantasy points allowed to TEs (one of the toughest matchups), a 0.54x multiplier against league average. Pitts carries no injury tag, and the news check found nothing new.",
        "The risk on this call: he is listed Questionable, so check the inactive list before kickoff. On the other side, Pitts has his own flags: his weekly scoring is volatile (standard deviation 5.5 on a 9.2 ppg base); the SF defense is a tough draw for TEs.",
        "What you give up: Pitts's ceiling this week is about 14.1 points against 15.2 for Judkins."
@@ -730,11 +660,11 @@
       "metrics": {
        "gain": 1.7,
        "lineupNow": 88.8,
-       "lineupBest": 106.3,
+       "lineupBest": 102.8,
        "proj": 9.6,
        "lo": 4.1,
        "hi": 15.2,
-       "edge": 77,
+       "edge": 78,
        "risk": 32
       },
       "players": [
@@ -742,7 +672,7 @@
        "7553"
       ],
       "priority": 3.57,
-      "rank": 6
+      "rank": 4
      }
     ],
     "waivers": [
@@ -756,7 +686,7 @@
        "Add Sam Darnold (QB, SEA). Opportunity spike: his usage jumped over the last two games (snaps 82% to 100%, targets 0.0% to 0.0%, carries 5.2% to 5.8%). You have $100 of FAAB left.",
        "Darnold is adding 1.4 rushes a game. Recent scoring: Wk4 15.9, Wk5 11.9, Wk6 16.4.",
        "Darnold draws KC in Week 7 (home). Against QBs that defense ranks 26th of 32 in points allowed, a 0.78x matchup factor, one of the toughest matchups.",
-       "Latest news: Seahawks' Sam Darnold owns up to late interceptions in overtime loss to Broncos.",
+       "From the wire: Seahawks sticking with Sam Darnold as starter despite INTs. Latest news: Seahawks' Sam Darnold owns up to late interceptions in overtime loss to Broncos.",
        "The projection is 15.7 points for Week 7, with an 80% range of roughly 2.9 to 28.4 based on his week-to-week spread (10.7 pt standard deviation). Rest of season: 171.1 projected points through Week 17. Lab Score 42 (SportsLabs Edge Score family), SportsLabs Risk Score 79 (1-99, ranked against every QB in this league's scoring).",
        "Drop Ryan Flournoy: he is not in your optimal lineup and projects 74.2 rest-of-season points against 171.1 for Darnold, a net +96.9.",
        "What could go wrong: his weekly scoring is volatile (standard deviation 10.7 on a 16.8 ppg base); the KC defense is a tough draw for QBs.",
@@ -779,40 +709,9 @@
      },
      {
       "section": "waivers",
-      "call": "Add Tyler Huntley, drop Brian Thomas",
-      "conf": 80,
-      "confLabel": "High",
-      "headline": "Their shot",
-      "narrative": [
-       "Add Tyler Huntley (QB, BAL). Their shot: Lamar Jackson is Out (Ankle), and Tyler Huntley is next on the BAL QB depth chart. You have $100 of FAAB left.",
-       "Huntley is adding 5.0 rushes a game. The last three box scores in this league's scoring were Wk4 5.7, Wk5 28.8.",
-       "Huntley draws CIN in Week 7 (home). Against QBs that defense ranks 13th of 32 in points allowed, a 1.04x matchup factor, a middle-of-the-pack matchup.",
-       "Cascade: Lamar Jackson (Out) is ahead of Huntley on the BAL depth chart and is not available, which moves Huntley up to the top of the QB room. Bet Lab injury cascade: BAL QB1 Lamar Jackson (Questionable, ankle); its read is that this QB risk \u2014 hurts pass game. Bet Lab injury cascade: BAL OL: 2 questionable \u2014 John Simpson (Questionable); Emery Jones Jr. (Questionable); its read is that this hurts run game & pass protection. In the news: Ravens rule out QB Lamar Jackson; Tyler Huntley to start vs. Browns. In the news: QB Tyler Huntley leads Ravens to comeback OT win vs. Falcons.",
-       "The projection is 12.0 points for Week 7, with an 80% range of roughly 0.0 to 27.0 based on his week-to-week spread (11.6 pt standard deviation). Rest of season: 118.8 projected points through Week 17. Lab Score 28 (SportsLabs Edge Score family), SportsLabs Risk Score 82 (1-99, ranked against every QB in this league's scoring).",
-       "Drop Brian Thomas: he is not in your optimal lineup and projects 79.0 rest-of-season points against 118.8 for Huntley, a net +39.9.",
-       "The counter-case: his weekly scoring is volatile (standard deviation 11.6 on a 11.9 ppg base).",
-       "What you give up: Brian Thomas's 79.0 projected rest-of-season points and his roster spot."
-      ],
-      "metrics": {
-       "kind": "Their shot",
-       "ros": 118.8,
-       "proj": 12.0,
-       "net": 39.9,
-       "edge": 28,
-       "risk": 82
-      },
-      "players": [
-       "7083",
-       "11631"
-      ],
-      "priority": 4.99,
-      "rank": 4
-     },
-     {
-      "section": "waivers",
-      "call": "Add Jalon Daniels",
-      "conf": 90,
-      "confLabel": "High",
+      "call": "Add Jalon Daniels, drop Brian Thomas",
+      "conf": 71,
+      "confLabel": "Medium",
       "headline": "Opportunity spike",
       "narrative": [
        "Opportunity spike add: Jalon Daniels (QB, TB) is unrostered in LOMOFAGS, and his usage jumped over the last two games (snaps 69% to 100%, targets 0.0% to 0.0%, carries 16.2% to 21.9%). You have $100 of FAAB left.",
@@ -820,21 +719,52 @@
        "The matchup is on the road at CAR: CAR has allowed the 8th-most fantasy points to QBs of 32 defenses, which our schedule model scores at 1.16x average (one of the softest matchups).",
        "Bet Lab injury cascade: TB QB1 Baker Mayfield (Out, thumb); next up Jalon Daniels; its read is that this QB risk \u2014 hurts pass game. Bet Lab injury cascade: PIT @ TB: High wind 16 mph (gusts 19); its read is that this hurts pass game & kicking.",
        "We project 11.1 points (80% band 0.0-22.2), built from a 10.6 ppg blend of this year and last year adjusted for the matchup. Rest of season: 108.4 projected points through Week 17. Lab Score 26 (SportsLabs Edge Score family), SportsLabs Risk Score 89 (1-99, ranked against every QB in this league's scoring).",
-       "You have no clear drop candidate; make room by dropping your kicker or defense if you must.",
-       "The risk on this call: his weekly scoring is volatile (standard deviation 8.3 on a 10.6 ppg base)."
+       "Drop Brian Thomas: he is not in your optimal lineup and projects 79.0 rest-of-season points against 108.4 for Daniels, a net +29.4.",
+       "The risk on this call: his weekly scoring is volatile (standard deviation 8.3 on a 10.6 ppg base).",
+       "What you give up: Brian Thomas's 79.0 projected rest-of-season points and his roster spot."
       ],
       "metrics": {
        "kind": "Opportunity spike",
        "ros": 108.4,
        "proj": 11.1,
-       "net": 108.4,
+       "net": 29.4,
        "edge": 26,
        "risk": 89
       },
       "players": [
-       "13425"
+       "13425",
+       "11631"
       ],
-      "priority": 7.42,
+      "priority": 3.47,
+      "rank": 6
+     },
+     {
+      "section": "waivers",
+      "call": "Add Dalton Schultz",
+      "conf": 88,
+      "confLabel": "High",
+      "headline": "Best available",
+      "narrative": [
+       "Best available add: Dalton Schultz (TE, HOU) is unrostered in LOMOFAGS, and he is the type of producer rarely left on waivers: 9.7 ppg and positive value over replacement (0.2). You have $100 of FAAB left.",
+       "Usage: 61% snap rate, 58% in the last two, and 16.3% of team targets (9.9% recently), 6.2 targets per game. The last three box scores in this league's scoring were Wk3 6.0, Wk4 2.9, Wk5 6.0. That is down 5.2 points a game against his season average of 9.7. His opportunity (yards and TDs expected from his targets and carries) is worth 10.4 points a game; he has scored 9.7, right in line (-0.8). Touchdowns: 0 scored on 1.4 expected.",
+       "Week 7 puts Schultz at home against NYG. NYG ranks 17th of 32 in fantasy points allowed to TEs (a middle-of-the-pack matchup), a 0.98x multiplier against league average.",
+       "Schultz carries no injury tag, and the news check found nothing new.",
+       "We project 10.1 points (80% band 0.0-20.6), built from a 10.1 ppg blend of this year and last year adjusted for the matchup. Rest of season: 99.8 projected points through Week 17. Lab Score 86 (SportsLabs Edge Score family), SportsLabs Risk Score 61 (1-99, ranked against every TE in this league's scoring).",
+       "You have no clear drop candidate; make room by dropping your kicker or defense if you must.",
+       "What could go wrong: his weekly scoring is volatile (standard deviation 8.3 on a 10.1 ppg base); at 30 he is past the typical TE peak."
+      ],
+      "metrics": {
+       "kind": "Best available",
+       "ros": 99.8,
+       "proj": 10.1,
+       "net": 99.8,
+       "edge": 86,
+       "risk": 61
+      },
+      "players": [
+       "5001"
+      ],
+      "priority": 6.99,
       "rank": 1
      }
     ],
@@ -869,7 +799,7 @@
        "3163"
       ],
       "priority": 2.49,
-      "rank": 9
+      "rank": 8
      },
      {
       "section": "trades",
@@ -901,7 +831,7 @@
        "3163"
       ],
       "priority": 2.57,
-      "rank": 8
+      "rank": 7
      }
     ],
     "sellhold": [
@@ -930,7 +860,7 @@
        "6786"
       ],
       "priority": 2.4,
-      "rank": 10
+      "rank": 9
      },
      {
       "section": "sellhold",
@@ -942,7 +872,7 @@
        "Hold Quinshon Judkins. His production lags his usage, which usually corrects. He is scoring 11.3 a game on opportunity worth 15.8 (-4.5).",
        "Usage: 60% snap rate, 60% in the last two, and 13.2% of team targets (16.9% recently), a 57.6% carry share (60.6% the last two games) at 14.6 carries a game, 4.0 targets per game. Recent scoring: Wk3 9.9, Wk4 21.6, Wk5 8.0. That is up 3.5 points a game against his season average of 11.3. His opportunity (yards and TDs expected from his targets and carries) is worth 15.8 points a game; he has scored 11.3, leaving points on the table (-4.5). Touchdowns: 1 scored on 3.2 expected.",
        "Injury status: Questionable (Lower Leg); next week's projection is discounted for the risk he sits. Bet Lab injury cascade: CLE OL: 1 questionable \u2014 Tytus Howard (Questionable, knee); its read is that this hurts run game & pass protection. Bet Lab injury cascade: CLE WR1 Denzel Boston (Questionable, foot); its read is that this role risk. Latest news: Judkins, Schwesinger (ankles) add to injury woes for Browns.",
-       "We project 9.6 points (80% band 4.1-15.2), built from a 11.7 ppg blend of this year and last year adjusted for the matchup. Rest of season: 116.2 projected points through Week 17. Lab Score 77 (SportsLabs Edge Score family), SportsLabs Risk Score 32 (1-99, ranked against every RB in this league's scoring).",
+       "We project 9.6 points (80% band 4.1-15.2), built from a 11.7 ppg blend of this year and last year adjusted for the matchup. Rest of season: 116.2 projected points through Week 17. Lab Score 78 (SportsLabs Edge Score family), SportsLabs Risk Score 32 (1-99, ranked against every RB in this league's scoring).",
        "Market check: Quinshon Judkins is valued at 1,774 in the public trade market (position rank 23).",
        "The counter-case: he is listed Questionable, so check the inactive list before kickoff.",
        "What you give up by holding: the chance to cash in his current 11.3 ppg reputation."
@@ -950,14 +880,14 @@
       "metrics": {
        "ppg": 11.26,
        "xfp": 15.8,
-       "edge": 77,
+       "edge": 78,
        "risk": 32
       },
       "players": [
        "12512"
       ],
       "priority": 2.13,
-      "rank": 11
+      "rank": 10
      },
      {
       "section": "sellhold",
@@ -984,7 +914,7 @@
        "8146"
       ],
       "priority": 1.79,
-      "rank": 12
+      "rank": 11
      }
     ]
    },
@@ -992,8 +922,8 @@
     {
      "rank": 1,
      "section": "waivers",
-     "call": "Add Jalon Daniels",
-     "conf": 90,
+     "call": "Add Dalton Schultz",
+     "conf": 88,
      "confLabel": "High"
     },
     {
@@ -1012,62 +942,55 @@
     },
     {
      "rank": 4,
-     "section": "waivers",
-     "call": "Add Tyler Huntley, drop Brian Thomas",
-     "conf": 80,
-     "confLabel": "High"
-    },
-    {
-     "rank": 5,
-     "section": "startsit",
-     "call": "Start Saquon Barkley, bench Braelon Allen",
-     "conf": 71,
-     "confLabel": "Medium"
-    },
-    {
-     "rank": 6,
      "section": "startsit",
      "call": "Start Quinshon Judkins, bench Kyle Pitts",
      "conf": 60,
      "confLabel": "Medium"
     },
     {
-     "rank": 7,
+     "rank": 5,
      "section": "startsit",
      "call": "Start Jordan Love, bench Drake Maye",
      "conf": 54,
      "confLabel": "Low"
     },
     {
-     "rank": 8,
+     "rank": 6,
+     "section": "waivers",
+     "call": "Add Jalon Daniels, drop Brian Thomas",
+     "conf": 71,
+     "confLabel": "Medium"
+    },
+    {
+     "rank": 7,
      "section": "trades",
      "call": "Trade Stefon Diggs + Jared Goff to Jew  And Chung  for D'Andre Swift",
      "conf": 64,
      "confLabel": "Medium"
     },
     {
-     "rank": 9,
+     "rank": 8,
      "section": "trades",
      "call": "Trade Stefon Diggs + Jared Goff to Blue Square Massage Academy for Chase Brown",
      "conf": 60,
      "confLabel": "Medium"
     },
     {
-     "rank": 10,
+     "rank": 9,
      "section": "sellhold",
      "call": "Sell high on CeeDee Lamb",
      "conf": 83,
      "confLabel": "High"
     },
     {
-     "rank": 11,
+     "rank": 10,
      "section": "sellhold",
      "call": "Hold Quinshon Judkins (do not sell low)",
      "conf": 78,
      "confLabel": "High"
     },
     {
-     "rank": 12,
+     "rank": 11,
      "section": "sellhold",
      "call": "Sell high on Garrett Wilson",
      "conf": 71,
@@ -1091,23 +1014,23 @@
       "confLabel": "High",
       "headline": "+8.7 pts",
       "narrative": [
-       "The call is Aaron Jones in, Dameon Pierce out. Dameon Pierce projects for 1.0; Jones is at 9.7, so the swap is worth about 8.7 projected points. Across the whole lineup, your saved lineup projects 71.9 and the optimal one projects 90.0 (+18.0).",
+       "The call is Aaron Jones in, Dameon Pierce out. Dameon Pierce projects for 1.0; Jones is at 9.7, so the swap is worth about 8.7 projected points. Across the whole lineup, your saved lineup projects 70.6 and the optimal one projects 88.6 (+18.0).",
        "The matchup is at home against IND: IND has allowed the 5th-most fantasy points to RBs of 32 defenses, which our schedule model scores at 1.26x average (one of the softest matchups).",
        "Jones has played 73% of snaps (80% over the last two games) with a 12.6% target share (17.3% last two), a 65.1% carry share (67.0% the last two games) at 19.4 carries a game, 3.6 targets per game. Week by week lately: Wk3 11.7, Wk4 14.8, Wk5 17.2. That is up 3.2 points a game against his season average of 12.8. His opportunity (yards and TDs expected from his targets and carries) is worth 16.9 points a game; he has scored 12.8, leaving points on the table (-4.1). Touchdowns: 2 scored on 3.9 expected.",
        "Injury status: Questionable (Leg); next week's projection is discounted for the risk he sits.",
-       "We project 9.7 points (80% band 6.5-12.9), built from a 10.6 ppg blend of this year and last year adjusted for the matchup. Rest of season: 117.2 projected points through Week 17. Lab Score 82 (SportsLabs Edge Score family), SportsLabs Risk Score 11 (1-99, ranked against every RB in this league's scoring).",
+       "We project 9.7 points (80% band 6.5-12.9), built from a 10.6 ppg blend of this year and last year adjusted for the matchup. Rest of season: 117.2 projected points through Week 17. Lab Score 83 (SportsLabs Edge Score family), SportsLabs Risk Score 11 (1-99, ranked against every RB in this league's scoring).",
        "Week 7 puts Pierce at home against DAL. DAL ranks 7th of 32 in fantasy points allowed to RBs (one of the softest matchups), a 1.23x multiplier against league average. Bet Lab injury cascade: PHI OL: 1 starter out, 2 questionable \u2014 Landon Dickerson (Injured Reserve, knee); Tyler Steen (Questionable); Drew Kendall (Questionable); its read is that this hurts run game & pass protection. Bet Lab injury cascade: PHI WR1 DeVonta Smith (Questionable, hamstring); its read is that this role risk.",
        "What could go wrong: he is listed Questionable, so check the inactive list before kickoff; at 31 he is past the typical RB peak. On the other side, Pierce has his own flags: at 26 he is past the typical RB peak.",
        "What you give up: Pierce's ceiling this week is about 1.0 points against 12.9 for Jones."
       ],
       "metrics": {
        "gain": 8.7,
-       "lineupNow": 71.9,
-       "lineupBest": 90.0,
+       "lineupNow": 70.6,
+       "lineupBest": 88.6,
        "proj": 9.7,
        "lo": 6.5,
        "hi": 12.9,
-       "edge": 82,
+       "edge": 83,
        "risk": 11
       },
       "players": [
@@ -1124,7 +1047,7 @@
       "confLabel": "High",
       "headline": "+8.8 pts",
       "narrative": [
-       "Start Darren Waller (TE, CAR) over Stefon Diggs. Stefon Diggs is on bye, while Waller projects for 8.8, a gain of 8.8 points for this one swap. Across the whole lineup, your saved lineup projects 71.9 and the optimal one projects 90.0 (+18.0).",
+       "Start Darren Waller (TE, CAR) over Stefon Diggs. Stefon Diggs is on bye, while Waller projects for 8.8, a gain of 8.8 points for this one swap. Across the whole lineup, your saved lineup projects 70.6 and the optimal one projects 88.6 (+18.0).",
        "Waller draws TB in Week 7 (home). Against TEs that defense ranks 10th of 32 in points allowed, a 1.15x matchup factor, one of the softest matchups.",
        "Waller has played 46% of snaps (52% over the last two games) with a 12.4% target share (17.2% last two), 4.8 targets per game. The last three box scores in this league's scoring were Wk2 16.8, Wk3 7.6, Wk4 5.1. His opportunity (yards and TDs expected from his targets and carries) is worth 6.5 points a game; he has scored 8.3, running hot (+1.8). Touchdowns: 2 scored on 0.9 expected.",
        "Bet Lab injury cascade: CAR AJ Dillon (Out); its read is that this player status risk.",
@@ -1135,8 +1058,8 @@
       ],
       "metrics": {
        "gain": 8.8,
-       "lineupNow": 71.9,
-       "lineupBest": 90.0,
+       "lineupNow": 70.6,
+       "lineupBest": 88.6,
        "proj": 8.8,
        "lo": 2.0,
        "hi": 15.6,
@@ -1157,7 +1080,7 @@
       "confLabel": "Low",
       "headline": "+0.5 pts",
       "narrative": [
-       "Start Noah Fant (TE, NO) over Darius Cooper. Darius Cooper projects for 5.1, while Fant projects for 5.6, a gain of 0.5 points for this one swap. Across the whole lineup, your saved lineup projects 71.9 and the optimal one projects 90.0 (+18.0).",
+       "Start Noah Fant (TE, NO) over Darius Cooper. Darius Cooper projects for 5.1, while Fant projects for 5.6, a gain of 0.5 points for this one swap. Across the whole lineup, your saved lineup projects 70.6 and the optimal one projects 88.6 (+18.0).",
        "Fant draws PIT in Week 7 (home). Against TEs that defense ranks 16th of 32 in points allowed, a 0.98x matchup factor, a middle-of-the-pack matchup.",
        "Fant has played 52% of snaps (62% over the last two games) with a 7.4% target share (7.1% last two), 3.2 targets per game. Week by week lately: Wk2 0.0, Wk3 17.3, Wk5 1.2. His opportunity (yards and TDs expected from his targets and carries) is worth 4.4 points a game; he has scored 7.5, running hot (+3.0). Touchdowns: 3 scored on 0.6 expected.",
        "Bet Lab injury cascade: NO Alvin Kamara (Questionable, back); its read is that this player status risk. Bet Lab injury cascade: NO Chris Olave (Questionable, illness); its read is that this player status risk.",
@@ -1168,8 +1091,8 @@
       ],
       "metrics": {
        "gain": 0.5,
-       "lineupNow": 71.9,
-       "lineupBest": 90.0,
+       "lineupNow": 70.6,
+       "lineupBest": 88.6,
        "proj": 5.6,
        "lo": 0,
        "hi": 14.8,
@@ -1290,7 +1213,7 @@
        "Offer Morgan & Morgan  David Njoku + Alec Pierce for Jalen Hurts. QB is a need for you (need score 89/100: your starters average 15.9 ppg there vs a league average of 19.8). Morgan & Morgan  is thin where you are deep (TE need score 84/100, WR need score 82/100).",
        "The numbers: on our blended value scale you send 2,064 and receive 1,974 (-90). Your optimal lineup improves by 2.1 points a week and theirs changes by +0.0, which is why it is pitchable: both sides start better players. Estimated acceptance: 47%.",
        "Hurts is adding 4.6 rushes a game. Week by week lately: Wk3 13.6, Wk4 13.5, Wk5 13.0. That is down 3.3 points a game against his season average of 16.6.",
-       "Injury status: Out (Calf); the rest-of-season projection assumes he misses about 1 week (an estimate for this status). Bet Lab injury cascade: PHI QB1 Jalen Hurts (Out); next up Andy Dalton; its read is that this QB risk \u2014 hurts pass game. Bet Lab injury cascade: PHI OL: 1 starter out, 2 questionable \u2014 Landon Dickerson (Injured Reserve, knee); Tyler Steen (Questionable); Drew Kendall (Questionable); its read is that this hurts run game & pass protection. In the news: Eagles QB Jalen Hurts ruled out vs. Panthers with blood clot in calf. In the news: Stephen A. \u2018fearful\u2019 over Jalen Hurts\u2019 blood clot.",
+       "Injury status: Out (Calf); the rest-of-season projection assumes he misses about 1 week (an estimate for this status). Bet Lab injury cascade: PHI QB1 Jalen Hurts (Out); next up Andy Dalton; its read is that this QB risk \u2014 hurts pass game. Bet Lab injury cascade: PHI OL: 1 starter out, 2 questionable \u2014 Landon Dickerson (Injured Reserve, knee); Tyler Steen (Questionable); Drew Kendall (Questionable); its read is that this hurts run game & pass protection. In the news: Eagles QB Jalen Hurts ruled out vs. Panthers with blood clot in calf. In the news: Jalen Hurts' health bigger than football, as teammates, coach detail QB concern.",
        "The projection is 0.0 points for Week 7, with an 80% range of roughly 0.0 to 0.0 based on his week-to-week spread (4.5 pt standard deviation). Rest of season: 164.4 projected points through Week 17. Lab Score 31 (SportsLabs Edge Score family), SportsLabs Risk Score 31 (1-99, ranked against every QB in this league's scoring).",
        "What you give up: David Njoku (TE, LAC) projects 42.7 rest-of-season points. Njoku has played 36% of snaps (36% over the last two games) with a 15.0% target share (15.0% last two), 4.0 targets per game. Recent scoring: Wk1 8.3, Wk2 1.4. His opportunity (yards and TDs expected from his targets and carries) is worth 5.5 points a game; he has scored 4.8, right in line (-0.7). Touchdowns: 0 scored on 0.4 expected.",
        "What you give up: Alec Pierce (WR, IND) projects 56.8 rest-of-season points. Usage: 42% snap rate, 42% in the last two, and 12.0% of team targets (12.0% recently), 3.5 targets per game. Week by week lately: Wk1 8.1, Wk2 1.6. His opportunity (yards and TDs expected from his targets and carries) is worth 4.7 points a game; he has scored 4.8, right in line (+0.2). Touchdowns: 0 scored on 0.3 expected.",
@@ -1410,7 +1333,7 @@
        "Keep Aaron Jones; this is the wrong time to sell. He is scoring 12.8 a game on opportunity worth 16.9 (-4.1).",
        "Jones has played 73% of snaps (80% over the last two games) with a 12.6% target share (17.3% last two), a 65.1% carry share (67.0% the last two games) at 19.4 carries a game, 3.6 targets per game. The last three box scores in this league's scoring were Wk3 11.7, Wk4 14.8, Wk5 17.2. That is up 3.2 points a game against his season average of 12.8. His opportunity (yards and TDs expected from his targets and carries) is worth 16.9 points a game; he has scored 12.8, leaving points on the table (-4.1). Touchdowns: 2 scored on 3.9 expected.",
        "Injury status: Questionable (Leg); next week's projection is discounted for the risk he sits.",
-       "The projection is 9.7 points for Week 7, with an 80% range of roughly 6.5 to 12.9 based on his week-to-week spread (2.8 pt standard deviation). Rest of season: 117.2 projected points through Week 17. Lab Score 82 (SportsLabs Edge Score family), SportsLabs Risk Score 11 (1-99, ranked against every RB in this league's scoring).",
+       "The projection is 9.7 points for Week 7, with an 80% range of roughly 6.5 to 12.9 based on his week-to-week spread (2.8 pt standard deviation). Rest of season: 117.2 projected points through Week 17. Lab Score 83 (SportsLabs Edge Score family), SportsLabs Risk Score 11 (1-99, ranked against every RB in this league's scoring).",
        "Market check: Aaron Jones is valued at 1,720 in the public trade market (position rank 34).",
        "What could go wrong: he is listed Questionable, so check the inactive list before kickoff; at 31 he is past the typical RB peak.",
        "What you give up by holding: the chance to cash in his current 12.8 ppg reputation."
@@ -1418,7 +1341,7 @@
       "metrics": {
        "ppg": 12.84,
        "xfp": 16.9,
-       "edge": 82,
+       "edge": 83,
        "risk": 11
       },
       "players": [

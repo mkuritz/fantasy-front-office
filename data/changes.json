@@ -1,5 +1,39 @@
 [
  {
+  "detected": "2026-10-16T16:20:43-04:00",
+  "t": "2026-10-16T20:04:22Z",
+  "kind": "Injury",
+  "src": "ESPN news",
+  "text": "Cardinals 'do what's right,' rule RB Jeremiyah Love (ankle) out vs. Rams",
+  "players": [
+   "Jeremiyah Love"
+  ],
+  "url": "https://www.espn.com/nfl/story/_/id/50197712/cardinals-rb-jeremiyah-love-ankle-sunday-vs-rams"
+ },
+ {
+  "detected": "2026-10-16T16:20:43-04:00",
+  "t": "2026-10-16T19:33:47Z",
+  "kind": "Depth",
+  "src": "ESPN news",
+  "text": "Seahawks sticking with Sam Darnold as starter despite INTs",
+  "players": [
+   "Sam Darnold"
+  ],
+  "url": "https://www.espn.com/nfl/story/_/id/50197704/seahawks-sticking-sam-darnold-starter-ints"
+ },
+ {
+  "detected": "2026-10-16T16:20:43-04:00",
+  "t": "2026-10-16T19:19:10Z",
+  "kind": "Injury",
+  "src": "ESPN news",
+  "text": "Chiefs WR Rashee Rice out Sunday vs. Chargers with hamstring injury",
+  "players": [
+   "Rashee Rice",
+   "Josh Simmons"
+  ],
+  "url": "https://www.espn.com/nfl/story/_/id/50197599/chiefs-wr-rashee-rice-vs-chargers-hamstring-injury"
+ },
+ {
   "detected": "2026-10-16T14:20:44-04:00",
   "t": "2026-10-16T18:05:04Z",
   "kind": "Injury",
