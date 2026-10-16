@@ -7,7 +7,7 @@ import json, math, os, re, csv, hashlib, urllib.request, datetime as dt
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 DATA = os.path.join(ROOT, "data")
-BET = "https://mkuritz.github.io/bet-lab/data/"
+BET = "https://betlab.sportslabshq.com/data/"
 
 
 def load(n, default=None):

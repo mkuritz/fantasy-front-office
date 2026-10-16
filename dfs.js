@@ -1,7 +1,7 @@
 /* One-way weekly DFS snapshot from Fantasy Frontier (display-only). Nothing from Front Office is sent back. */
 'use strict';
 (function(){
-const URL_='https://mkuritz.github.io/fantasy-frontier/data/weekly_snapshot.json';
+const URL_='https://fantasyfrontier.sportslabshq.com/data/weekly_snapshot.json';
 let SNAP=null;
 const tbl=(rows)=>`<div class="table-wrap"><table><thead><tr><th>Player</th><th>Pos</th><th>Team</th><th>Opp</th><th class="num">DFS proj (est.)</th><th>Why</th></tr></thead><tbody>${rows.map(r=>`<tr><td>${U.esc(r.name)}</td><td>${U.esc(r.pos)}</td><td>${U.esc(r.team)}</td><td>${U.esc(r.opp||'')}</td><td class="num">${r.proj}</td><td>${U.esc(r.note)}</td></tr>`).join('')}</tbody></table></div>`;
 function fill(){const el=document.getElementById('dfsSnap');if(!el)return;

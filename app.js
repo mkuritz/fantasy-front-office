@@ -8,7 +8,7 @@ const U = {
   norm: (n) => String(n || '').toLowerCase().replace(/[.']/g, '').replace(/-/g, ' ').replace(/[^a-z ]/g, '').replace(/\b(jr|sr|ii|iii|iv|v)\b/g, '').replace(/\s+/g, ' ').trim(),
   randn: () => { let u = 0, v = 0; while (!u) u = Math.random(); while (!v) v = Math.random(); return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v); },
 };
-const SL_MARK = `<a class="sl-mark" href="https://mkuritz.github.io/sports-labs/" title="Sports Labs — all suites"><svg width="16" height="16" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0b1220"/><path d="M9 21c2 2 4.5 3 7 3 3.3 0 6-1.6 6-4.4 0-5.6-12-3.4-12-8.6C10 8.6 12.6 7 15.6 7c2.2 0 4.2.8 5.6 2.2" stroke="#22d3ee" stroke-width="2.6" fill="none" stroke-linecap="round"/></svg>A Sports Labs product</a>`;
+const SL_MARK = `<a class="sl-mark" href="https://sportslabshq.com/" title="Sports Labs — all suites"><svg width="16" height="16" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0b1220"/><path d="M9 21c2 2 4.5 3 7 3 3.3 0 6-1.6 6-4.4 0-5.6-12-3.4-12-8.6C10 8.6 12.6 7 15.6 7c2.2 0 4.2.8 5.6 2.2" stroke="#22d3ee" stroke-width="2.6" fill="none" stroke-linecap="round"/></svg>A Sports Labs product</a>`;
 const LOGO = `<svg width="34" height="34" viewBox="0 0 34 34" fill="none" aria-label="Fantasy Front Office" role="img"><rect x="1" y="1" width="32" height="32" rx="8" fill="#0b3a4a"/><path d="M10 24V10h11M10 17h8" stroke="#2cc1b0" stroke-width="2.6" stroke-linecap="round"/><circle cx="24" cy="23" r="2.4" fill="#f5b942"/></svg>`;
 const LEAGUES = { // slots below are fallbacks; sim.js replaces them with the league API's real slots
 
