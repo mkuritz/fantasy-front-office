@@ -3,11 +3,13 @@ name: Update fantasy data
 # significant NFL news is detected, on a twice-daily baseline, or manually.
 on:
   schedule:
-    - cron: "23 12-23/2 * * *"   # check every 2h, 8 AM-8 PM ET
-    - cron: "23 0-4/2 * * *"     # check 8 PM-midnight ET
-    - cron: "53 16-23 * * 0"     # extra hourly checks Sunday 12:53-7:53 PM ET
-    - cron: "7 11,23 * * *"      # full baseline refresh ~7 AM / 7 PM ET
+    # Primary schedule lives in the Cloudflare sl-scheduler (2-hourly checks, 7:20 AM/PM full). Sparse daily backup:
+    - cron: "7 15 * * *"   # ~11 AM ET full baseline
   workflow_dispatch:
+    inputs:
+      mode:
+        description: "check (light, full only if news changed) or full"
+        default: "full"
 permissions:
   contents: write
 concurrency:
@@ -27,7 +29,7 @@ jobs:
       - name: Decide
         id: decide
         run: |
-          if [ "${{ steps.check.outputs.changed }}" = "true" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ "${{ github.event.schedule }}" = "7 11,23 * * *" ]; then
+          if [ "${{ steps.check.outputs.changed }}" = "true" ] || { [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ github.event.inputs.mode }}" != "check" ]; } || [ "${{ github.event.schedule }}" = "7 15 * * *" ]; then
             echo "full=true" >> "$GITHUB_OUTPUT"; else echo "full=false" >> "$GITHUB_OUTPUT"; fi
       - uses: actions/setup-python@v5
         if: steps.decide.outputs.full == 'true'
