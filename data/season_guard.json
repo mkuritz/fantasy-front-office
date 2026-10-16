@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-16T16:21:06-04:00",
+ "generated": "2026-10-16T18:21:18-04:00",
  "seasons": {
   "nfl": 2026,
   "mlb": 2026,
@@ -13,8 +13,20 @@
  "resolved": [
   {
    "src": "players.json",
+   "player": "Mitch Tinsley",
+   "team": "CIN",
+   "via": "sleeper live (practice squad/reserve)"
+  },
+  {
+   "src": "players.json",
    "player": "Alex Kessman",
    "team": "CAR",
+   "via": "sleeper live (practice squad/reserve)"
+  },
+  {
+   "src": "players.json",
+   "player": "Travis Vokolek",
+   "team": "ARI",
    "via": "sleeper live (practice squad/reserve)"
   },
   {
@@ -25,20 +37,14 @@
   },
   {
    "src": "players.json",
+   "player": "Jalen Cropper",
+   "team": "NO",
+   "via": "sleeper live (practice squad/reserve)"
+  },
+  {
+   "src": "players.json",
    "player": "Irvin Charles",
    "team": "SEA",
-   "via": "sleeper live (practice squad/reserve)"
-  },
-  {
-   "src": "players.json",
-   "player": "Mitch Tinsley",
-   "team": "CIN",
-   "via": "sleeper live (practice squad/reserve)"
-  },
-  {
-   "src": "players.json",
-   "player": "Travis Vokolek",
-   "team": "ARI",
    "via": "sleeper live (practice squad/reserve)"
   },
   {
@@ -51,12 +57,6 @@
    "src": "players.json",
    "player": "Zonovan Knight",
    "team": "ARI",
-   "via": "sleeper live (practice squad/reserve)"
-  },
-  {
-   "src": "players.json",
-   "player": "Jalen Cropper",
-   "team": "NO",
    "via": "sleeper live (practice squad/reserve)"
   },
   {

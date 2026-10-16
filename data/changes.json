@@ -1,5 +1,19 @@
 [
  {
+  "detected": "2026-10-16T18:20:44-04:00",
+  "t": "2026-10-16T21:09:31Z",
+  "kind": "Injury",
+  "src": "ESPN news",
+  "text": "Eagles' Saquon Barkley ruled out; DeVonta Smith to return",
+  "players": [
+   "Saquon Barkley",
+   "DeVonta Smith",
+   "Dameon Pierce",
+   "Will Shipley"
+  ],
+  "url": "https://www.espn.com/nfl/story/_/id/50198056/eagles-saquon-barkley-ruled-devonta-smith-return"
+ },
+ {
   "detected": "2026-10-16T16:20:43-04:00",
   "t": "2026-10-16T20:04:22Z",
   "kind": "Injury",
