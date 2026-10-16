@@ -1,10 +1,10 @@
 {
- "updated": "2026-10-16T18:21:16-04:00",
- "trigger": "news",
+ "updated": "2026-10-16T19:21:47-04:00",
+ "trigger": "workflow_dispatch",
  "edgeScore": true,
  "betlab": {
   "lines": 13,
-  "cascades": 68
+  "cascades": 69
  },
  "leagues": {
   "kal": {
@@ -308,7 +308,7 @@
        "Week 7 puts Jacobs on the road at DET. DET ranks 25th of 32 in fantasy points allowed to RBs (one of the toughest matchups), a 0.85x multiplier against league average.",
        "Bet Lab injury cascade: GB OL: 1 questionable \u2014 Jacob Monk (Questionable); its read is that this hurts run game & pass protection. In the news: Packers' Josh Jacobs joins woman in filing to block release of records, video. In the news: Packers' Josh Jacobs eligible to return next week amid probe.",
        "We project 13.6 points for Week 7 from a 14.2 ppg blend adjusted for the matchup (not enough weekly games for a range). Rest of season: 144.1 projected points through Week 17.",
-       "The matchup is on the road at ARI: ARI has allowed the 16th-most fantasy points to RBs of 32 defenses, which our schedule model scores at 0.99x average (a middle-of-the-pack matchup). From the wire: Fantasy football buzz: Denver RBs usable, Seattle's backfield a mess.",
+       "The matchup is on the road at ARI: ARI has allowed the 16th-most fantasy points to RBs of 32 defenses, which our schedule model scores at 0.99x average (a middle-of-the-pack matchup). No injury designation and no flagged news on Dobbins in this refresh.",
        "The counter-case: the DET defense is a tough draw for RBs; at 28 he is past the typical RB peak. On the other side, Dobbins has his own flags: at 27 he is past the typical RB peak.",
        "What you give up: Dobbins's ceiling this week is about 15.8 points against 13.6 for Jacobs."
       ],
@@ -494,7 +494,7 @@
       "narrative": [
        "Keep J.K. Dobbins; this is the wrong time to sell. He is scoring 8.3 a game on opportunity worth 10.9 (-2.6).",
        "Usage: 44% snap rate, 52% in the last two, and 5.6% of team targets (10.8% recently), a 55.0% carry share (61.4% the last two games) at 13.5 carries a game, 1.5 targets per game. Week by week lately: Wk4 7.2, Wk5 15.4, Wk6 13.6. That is up 6.2 points a game against his season average of 8.3. His opportunity (yards and TDs expected from his targets and carries) is worth 10.9 points a game; he has scored 8.3, leaving points on the table (-2.6). Touchdowns: 2 scored on 3.0 expected.",
-       "Latest news: Fantasy football buzz: Denver RBs usable, Seattle's backfield a mess.",
+       "No injury designation and no flagged news on Dobbins in this refresh.",
        "The projection is 9.9 points for Week 7, with an 80% range of roughly 4.0 to 15.8 based on his week-to-week spread (4.6 pt standard deviation). Rest of season: 102.4 projected points through Week 17. Lab Score 78 (SportsLabs Edge Score family), SportsLabs Risk Score 41 (1-99, ranked against every RB in this league's scoring).",
        "Market check: J.K. Dobbins is valued at 724 in the public trade market (position rank 34).",
        "The counter-case: at 27 he is past the typical RB peak.",
@@ -1180,7 +1180,7 @@
        "Add Cody White (WR, LV). Opportunity spike: his usage jumped over the last two games (snaps 34% to 62%, targets 8.0% to 9.7%, carries 0.0% to 0.0%). You have $90 of FAAB left.",
        "Usage: 34% snap rate, 62% in the last two, and 8.0% of team targets (9.7% recently), 2.8 targets per game. Week by week lately: Wk3 6.9, Wk4 6.6, Wk5 5.4. His opportunity (yards and TDs expected from his targets and carries) is worth 3.8 points a game; he has scored 6.9, running hot (+3.1). Touchdowns: 3 scored on 0.6 expected.",
        "White draws LA in Week 7 (home). Against WRs that defense ranks 25th of 32 in points allowed, a 0.87x matchup factor, one of the toughest matchups.",
-       "Bet Lab injury cascade: LV Jalen Nailor (Questionable, concussion); its read is that this player status risk.",
+       "White carries no injury tag, and the news check found nothing new.",
        "We project 4.1 points (80% band 0.0-10.2), built from a 4.2 ppg blend of this year and last year adjusted for the matchup. Rest of season: 41.8 projected points through Week 17. Lab Score 54 (SportsLabs Edge Score family), SportsLabs Risk Score 82 (1-99, ranked against every WR in this league's scoring).",
        "Drop Colbie Young: he is not in your optimal lineup and projects 9.5 rest-of-season points against 41.8 for White, a net +32.4. In dynasty terms his value is 32 on our blended scale, so check that you are not cutting a long-term asset.",
        "The counter-case: his weekly scoring is volatile (standard deviation 4.9 on a 4.2 ppg base); the LA defense is a tough draw for WRs; he has scored 3 TDs on 0.6 expected, so some touchdown regression is likely.",

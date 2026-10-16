@@ -1,13 +1,13 @@
 {
  "espnConnected": true,
- "lastFull": "2026-10-16T18:21:15-04:00",
- "lastRun": "2026-10-16T18:21:15-04:00",
+ "lastFull": "2026-10-16T19:21:46-04:00",
+ "lastRun": "2026-10-16T19:21:46-04:00",
  "sources": {
   "advanced.json": {
    "error": null,
    "label": "nflverse usage / snaps / schedule + Sleeper depth (derived)",
    "lastChange": "2026-10-16T16:21:03-04:00",
-   "lastSuccess": "2026-10-16T18:21:15-04:00",
+   "lastSuccess": "2026-10-16T19:21:46-04:00",
    "ok": true,
    "pending": false
   },
@@ -16,7 +16,7 @@
    "label": "ESPN D CIGS (private; needs secrets)",
    "lastAttempt": "2026-10-11T20:25:41-04:00",
    "lastChange": "2026-10-16T18:20:53-04:00",
-   "lastSuccess": "2026-10-16T18:20:53-04:00",
+   "lastSuccess": "2026-10-16T19:20:52-04:00",
    "ok": true,
    "pending": false
   },
@@ -25,7 +25,7 @@
    "label": "ESPN KAL (private; needs secrets)",
    "lastAttempt": "2026-10-11T20:25:41-04:00",
    "lastChange": "2026-10-16T18:20:52-04:00",
-   "lastSuccess": "2026-10-16T18:20:52-04:00",
+   "lastSuccess": "2026-10-16T19:20:51-04:00",
    "ok": true,
    "pending": false
   },
@@ -34,15 +34,15 @@
    "label": "ESPN LOMOFAGS (private; needs secrets)",
    "lastAttempt": "2026-10-11T20:25:41-04:00",
    "lastChange": "2026-10-16T18:20:54-04:00",
-   "lastSuccess": "2026-10-16T18:20:54-04:00",
+   "lastSuccess": "2026-10-16T19:20:53-04:00",
    "ok": true,
    "pending": false
   },
   "news.json": {
    "error": null,
    "label": "ESPN NFL news (public)",
-   "lastChange": "2026-10-16T18:20:49-04:00",
-   "lastSuccess": "2026-10-16T18:20:49-04:00",
+   "lastChange": "2026-10-16T19:20:48-04:00",
+   "lastSuccess": "2026-10-16T19:20:48-04:00",
    "ok": true,
    "pending": false
   },
@@ -50,27 +50,27 @@
    "error": null,
    "label": "nflverse weekly stats \u2192 league-scored Performance Score",
    "lastChange": "2026-10-16T08:22:52-04:00",
-   "lastSuccess": "2026-10-16T18:20:56-04:00",
+   "lastSuccess": "2026-10-16T19:20:55-04:00",
    "ok": true,
    "pending": false
   },
   "players.json": {
    "error": null,
    "label": "Sleeper player DB (rostered + relevant FAs)",
-   "lastChange": "2026-10-16T18:21:15-04:00",
-   "lastSuccess": "2026-10-16T18:21:15-04:00",
+   "lastChange": "2026-10-16T19:21:02-04:00",
+   "lastSuccess": "2026-10-16T19:21:02-04:00",
    "ok": true,
    "pending": false
   },
   "prospects_2027.json": {
    "label": "ESPN college stats \u2192 2027 prospect board + CFBD usage",
-   "updated": "2026-10-16T08:24:57-04:00"
+   "updated": "2026-10-16T19:21:46-04:00"
   },
   "sleeper_dynasty.json": {
    "error": null,
    "label": "Sleeper league (public API)",
    "lastChange": "2026-10-16T14:46:17-04:00",
-   "lastSuccess": "2026-10-16T18:20:49-04:00",
+   "lastSuccess": "2026-10-16T19:20:48-04:00",
    "ok": true,
    "pending": false
   },
@@ -78,12 +78,12 @@
    "error": null,
    "label": "FantasyCalc market values (public)",
    "lastChange": "2026-10-16T18:20:50-04:00",
-   "lastSuccess": "2026-10-16T18:20:50-04:00",
+   "lastSuccess": "2026-10-16T19:20:50-04:00",
    "ok": true,
    "pending": false
   }
  },
  "timezone": "America/New_York",
- "trigger": "news",
- "updated": "2026-10-16T18:21:15-04:00"
+ "trigger": "workflow_dispatch",
+ "updated": "2026-10-16T19:21:02-04:00"
 }
