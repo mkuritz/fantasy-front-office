@@ -1,5 +1,40 @@
 [
  {
+  "detected": "2026-10-15T20:28:23-04:00",
+  "t": "2026-10-15T23:03:48Z",
+  "kind": "Injury",
+  "src": "ESPN news",
+  "text": "Texans RB Montgomery, S Pitre out for London affair vs. Jaguars",
+  "players": [
+   "David Montgomery",
+   "Jalen Pitre",
+   "Tank Dell"
+  ],
+  "url": "https://www.espn.com/nfl/story/_/id/50192302/texans-rb-montgomery-s-pitre-london-affair-vs-jaguars"
+ },
+ {
+  "detected": "2026-10-15T20:28:23-04:00",
+  "t": "2026-10-15T23:03:35Z",
+  "kind": "Injury",
+  "src": "ESPN news",
+  "text": "Bears QB Williams unsure if he's playing, has to still go through protocols",
+  "players": [
+   "Caleb Williams"
+  ],
+  "url": "https://www.espn.com/nfl/story/_/id/50192123/bears-caleb-williams-yet-know-playing"
+ },
+ {
+  "detected": "2026-10-15T20:28:23-04:00",
+  "t": "2026-10-15T23:21:49Z",
+  "kind": "IR",
+  "src": "ESPN news",
+  "text": "Jayden Daniels addresses teammates on gaffe, vows 'it'll never happen again'",
+  "players": [
+   "Jayden Daniels"
+  ],
+  "url": "https://www.espn.com/nfl/story/_/id/50191830/jayden-daniels-addresses-commanders-teammates-ot-gaffe"
+ },
+ {
   "detected": "2026-10-15T17:30:59-04:00",
   "t": "2026-10-15T21:09:13Z",
   "kind": "Injury",

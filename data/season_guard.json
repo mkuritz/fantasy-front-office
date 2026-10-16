@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-15T17:31:29-04:00",
+ "generated": "2026-10-15T20:28:47-04:00",
  "seasons": {
   "nfl": 2026,
   "mlb": 2026,
@@ -11,6 +11,12 @@
  "stale": [],
  "notes": [],
  "resolved": [
+  {
+   "src": "players.json",
+   "player": "Travis Vokolek",
+   "team": "ARI",
+   "via": "sleeper live (practice squad/reserve)"
+  },
   {
    "src": "players.json",
    "player": "Zonovan Knight",
@@ -25,14 +31,8 @@
   },
   {
    "src": "players.json",
-   "player": "Alex Kessman",
-   "team": "CAR",
-   "via": "sleeper live (practice squad/reserve)"
-  },
-  {
-   "src": "players.json",
-   "player": "DeaMonte Trayanum",
-   "team": "NYJ",
+   "player": "Mitch Tinsley",
+   "team": "CIN",
    "via": "sleeper live (practice squad/reserve)"
   },
   {
@@ -43,8 +43,8 @@
   },
   {
    "src": "players.json",
-   "player": "Dontae McMillan",
-   "team": "SEA",
+   "player": "Alex Kessman",
+   "team": "CAR",
    "via": "sleeper live (practice squad/reserve)"
   },
   {
@@ -55,14 +55,14 @@
   },
   {
    "src": "players.json",
-   "player": "Travis Vokolek",
-   "team": "ARI",
+   "player": "DeaMonte Trayanum",
+   "team": "NYJ",
    "via": "sleeper live (practice squad/reserve)"
   },
   {
    "src": "players.json",
-   "player": "Mitch Tinsley",
-   "team": "CIN",
+   "player": "Dontae McMillan",
+   "team": "SEA",
    "via": "sleeper live (practice squad/reserve)"
   }
  ]
