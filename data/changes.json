@@ -1,5 +1,28 @@
 [
  {
+  "detected": "2026-10-16T14:20:44-04:00",
+  "t": "2026-10-16T18:05:04Z",
+  "kind": "Injury",
+  "src": "ESPN news",
+  "text": "Ravens rule out QB Lamar Jackson; Tyler Huntley to start vs. Browns",
+  "players": [
+   "Lamar Jackson",
+   "Tyler Huntley"
+  ],
+  "url": "https://www.espn.com/nfl/story/_/id/50197342/ravens-rule-qb-jackson-huntley-start-browns"
+ },
+ {
+  "detected": "2026-10-16T14:20:44-04:00",
+  "t": "2026-10-16T18:15:15Z",
+  "kind": "Injury",
+  "src": "ESPN news",
+  "text": "Browns WR KC Concepcion clears concussion protocol, will play vs. Ravens",
+  "players": [
+   "KC Concepcion"
+  ],
+  "url": "https://www.espn.com/nfl/story/_/id/50197266/browns-wr-concepcion-clears-protocol-play-vs-ravens"
+ },
+ {
   "detected": "2026-10-16T12:20:43-04:00",
   "t": "2026-10-16T15:50:41Z",
   "kind": "Injury",
