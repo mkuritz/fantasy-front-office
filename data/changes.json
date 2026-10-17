@@ -1,5 +1,41 @@
 [
  {
+  "detected": "2026-10-17T16:20:43-04:00",
+  "t": "2026-10-17T20:20:12Z",
+  "kind": "IR",
+  "src": "ESPN news",
+  "text": "Sources: Eagles star QB Jalen Hurts on IR due to blood clot, out indefinitely",
+  "players": [
+   "Jalen Hurts"
+  ],
+  "url": "https://www.espn.com/nfl/story/_/id/50202417/sources-eagles-place-jalen-hurts-ir-due-blood-clot"
+ },
+ {
+  "detected": "2026-10-17T16:20:43-04:00",
+  "t": "2026-10-17T20:00:08Z",
+  "kind": "IR",
+  "src": "ESPN news",
+  "text": "Steelers place Wilson on IR with finger injury",
+  "players": [
+   "Roman Wilson",
+   "Michael Pittman"
+  ],
+  "url": "https://www.espn.com/nfl/story/_/id/50203338/steelers-place-receiver-wilson-ir"
+ },
+ {
+  "detected": "2026-10-17T16:20:43-04:00",
+  "t": "2026-10-17T19:23:52Z",
+  "kind": "IR",
+  "src": "ESPN news",
+  "text": "Taylor Moton among 3 Panthers activated ahead of Eagles game",
+  "players": [
+   "Taylor Moton",
+   "Tershawn Wharton",
+   "Trevor Etienne"
+  ],
+  "url": "https://www.espn.com/nfl/story/_/id/50202634/taylor-moton-3-panthers-activated-ahead-eagles-game"
+ },
+ {
   "detected": "2026-10-17T13:51:14-04:00",
   "t": "2026-10-17T17:50:26Z",
   "kind": "Injury",
