@@ -1,5 +1,16 @@
 [
  {
+  "detected": "2026-10-17T08:20:44-04:00",
+  "t": "2026-10-17T12:17:04Z",
+  "kind": "IR",
+  "src": "ESPN news",
+  "text": "Sources: Eagles' Jalen Hurts, out indefinitely with blood clot, not planned for IR",
+  "players": [
+   "Jalen Hurts"
+  ],
+  "url": "https://www.espn.com/nfl/story/_/id/50200331/sources-no-ir-plans-hurts-indefinitely-clot"
+ },
+ {
   "detected": "2026-10-17T07:20:42-04:00",
   "t": "2026-10-17T10:00:02Z",
   "kind": "Trade",
