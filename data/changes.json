@@ -1,5 +1,16 @@
 [
  {
+  "detected": "2026-10-17T10:20:45-04:00",
+  "t": "2026-10-17T13:47:00Z",
+  "kind": "Injury",
+  "src": "ESPN news",
+  "text": "Source: Patriots likely to activate WR A.J. Brown for Sunday's game vs. Jets",
+  "players": [
+   "AJ Brown"
+  ],
+  "url": "https://www.espn.com/nfl/story/_/id/50200910/source-patriots-likely-activate-aj-brown-jets-game"
+ },
+ {
   "detected": "2026-10-17T08:20:44-04:00",
   "t": "2026-10-17T12:17:04Z",
   "kind": "IR",
