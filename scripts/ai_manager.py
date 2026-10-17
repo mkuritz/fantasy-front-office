@@ -72,7 +72,7 @@ GAMES = fetch("games_nfl.json") or []
 EDGE_ON = os.path.exists(os.path.join(ROOT, "..", "sports-labs", "docs", "edge-score.md"))
 if not EDGE_ON:
     try:
-        urllib.request.urlopen(urllib.request.Request("https://raw.githubusercontent.com/mkuritz/sports-labs/main/docs/edge-score.md", method="HEAD"), timeout=10)
+        urllib.request.urlopen(urllib.request.Request("https://sportslabshq.com/docs/edge-score.md", method="HEAD"), timeout=10)
         EDGE_ON = True
     except Exception:
         EDGE_ON = False
