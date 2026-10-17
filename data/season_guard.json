@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-17T07:21:10-04:00",
+ "generated": "2026-10-17T13:51:41-04:00",
  "seasons": {
   "nfl": 2026,
   "mlb": 2026,
@@ -13,7 +13,31 @@
  "resolved": [
   {
    "src": "players.json",
+   "player": "Mitch Tinsley",
+   "team": "CIN",
+   "via": "sleeper live (practice squad/reserve)"
+  },
+  {
+   "src": "players.json",
+   "player": "Travis Vokolek",
+   "team": "ARI",
+   "via": "sleeper live (practice squad/reserve)"
+  },
+  {
+   "src": "players.json",
    "player": "Dontae McMillan",
+   "team": "SEA",
+   "via": "sleeper live (practice squad/reserve)"
+  },
+  {
+   "src": "players.json",
+   "player": "Zonovan Knight",
+   "team": "ARI",
+   "via": "sleeper live (practice squad/reserve)"
+  },
+  {
+   "src": "players.json",
+   "player": "Irvin Charles",
    "team": "SEA",
    "via": "sleeper live (practice squad/reserve)"
   },
@@ -25,44 +49,20 @@
   },
   {
    "src": "players.json",
-   "player": "Irvin Charles",
-   "team": "SEA",
-   "via": "sleeper live (practice squad/reserve)"
-  },
-  {
-   "src": "players.json",
    "player": "DeaMonte Trayanum",
    "team": "NYJ",
    "via": "sleeper live (practice squad/reserve)"
   },
   {
    "src": "players.json",
-   "player": "Travis Vokolek",
-   "team": "ARI",
-   "via": "sleeper live (practice squad/reserve)"
-  },
-  {
-   "src": "players.json",
-   "player": "Zonovan Knight",
-   "team": "ARI",
+   "player": "Malik Heath",
+   "team": "ATL",
    "via": "sleeper live (practice squad/reserve)"
   },
   {
    "src": "players.json",
    "player": "Jalen Cropper",
    "team": "NO",
-   "via": "sleeper live (practice squad/reserve)"
-  },
-  {
-   "src": "players.json",
-   "player": "Mitch Tinsley",
-   "team": "CIN",
-   "via": "sleeper live (practice squad/reserve)"
-  },
-  {
-   "src": "players.json",
-   "player": "Malik Heath",
-   "team": "ATL",
    "via": "sleeper live (practice squad/reserve)"
   }
  ]

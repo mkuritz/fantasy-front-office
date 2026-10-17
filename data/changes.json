@@ -1,5 +1,30 @@
 [
  {
+  "detected": "2026-10-17T13:51:14-04:00",
+  "t": "2026-10-17T17:50:26Z",
+  "kind": "Injury",
+  "src": "ESPN news",
+  "text": "Fantasy football Week 6 inactives: Hurts, Jackson ruled out; Flowers to play",
+  "players": [
+   "Deebo Samuel Sr",
+   "Roman Wilson",
+   "Will Shipley",
+   "Jalen Hurts"
+  ],
+  "url": "https://www.espn.com/fantasy/football/story/_/page/FFSundayInactives-50188691/fantasy-football-injuries-nfl-week-6-inactive-active"
+ },
+ {
+  "detected": "2026-10-17T13:51:14-04:00",
+  "t": "2026-10-17T17:50:22Z",
+  "kind": "Injury",
+  "src": "ESPN news",
+  "text": "Commanders RB Jacory Croskey-Merritt out vs. 49ers with groin injury",
+  "players": [
+   "Jacory Croskey-Merritt"
+  ],
+  "url": "https://www.espn.com/nfl/story/_/id/50202044/commanders-rb-croskey-merritt-vs-49ers-groin-injury"
+ },
+ {
   "detected": "2026-10-17T10:20:45-04:00",
   "t": "2026-10-17T13:47:00Z",
   "kind": "Injury",
